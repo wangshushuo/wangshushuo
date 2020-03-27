@@ -1,6 +1,14 @@
 ---
-title: "Hello World"
+author: 王书硕
 date: 2020-03-28T02:52:52+08:00
+lastmod : 2020-03-28T05:02:40+08:00
+toc: true
+url: "/hugo常用格式.html"
+title: "hugo常用格式"
+summary: "代说明的图片，reference，表格"
+categories:
+	- API操作手册
+	- 工具
 ---
 
 hello world
@@ -33,6 +41,8 @@ hello world
 		- linux
 			- 使用源码安装软件
 			- ssh 登录，指定私钥文件（证书）
+	- 工具
+		- git
 - 知识点（技术原理）
 	- react
 		- diff
