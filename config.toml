@@ -1,8 +1,8 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://example.com/"
-title = "Hugo 主题 MemE"
+baseURL = "https://wss.cool/"
+title = "wss.cool"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
@@ -92,17 +92,17 @@ uglyURLs = false
 # 作者信息
 [author]
     # 名字
-    name = "reuixiy"
+    name = "wss"
     # 邮箱
-    email = "reuixiy@gmail.com"
+    email = "wss.six@foxmail.com"
     # 座右铭或简介
-    motto = "Viva La Vida"
+    motto = "Code Complete is Good"
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
-    website = "https://io-oi.me/"
+    website = "https://wss.cool/"
     # 推特
-    twitter = "reuixiy"
+    twitter = "shuo666"
 
 # 相关文章
 [related]
@@ -324,16 +324,16 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。"
+    siteDescription = "记录代码生涯，前端，React，Java，Spring，Nginx"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
     # 站点的创建时间
-    siteCreatedTime = "1969-07-20T20:17:43+00:00"
+    siteCreatedTime = "1990-07-20T20:17:43+00:00"
     # 注意：请保持此格式，更改数字
 
     # 站点的推特帐号
-    siteTwitter = "reuixiy"
+    siteTwitter = "shuo666"
     # 说明：用于 Twitter Cards
 
 
@@ -809,7 +809,7 @@ uglyURLs = false
     enableImageHost = false
 
     # 图片外链地址
-    imageHostURL = "https://example.com/"
+    imageHostURL = "https://wss.cool/"
 
     # 是否将 HTML 的头部元数据中的图片链接也替换为外链
     headAlso = false
