@@ -7,8 +7,8 @@ url: "/hugo常用格式.html"
 title: "hugo常用格式"
 summary: "代说明的图片，reference，表格"
 categories:
-	- API操作手册
-	- 工具
+- API操作手册
+- 工具
 ---
 
 hello world
