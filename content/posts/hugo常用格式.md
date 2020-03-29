@@ -13,14 +13,29 @@ categories:
 
 hello world
 
+{{< tag nihao >}}
 
 # 图片
 
-有说明文字
+下面引号内的文字是可以不加的，加了的话，会显示在图片下方，作为说明文字。
 
 ```
-![amstelvar-roman-gnome-fonts-info.png](/images/amstelvar-roman-gnome-fonts-info.png "Amstelvar Roman 字体的信息")
+![alt](/images/xx.png "说明文字")
 ```
+
+![52区](/images/hugo01.jpg "外域52区")
+
+# 引用 reference
+
+引用图片、网址等，在内容出标出。在文章最后列出所有引用。引用和标记可以互相跳转。
+
+```
+某文章[^1]说到某技术非常厉害
+
+[^1]: https://github.com/wangshushuo/abc.html
+```
+
+某文章[^1]说到某技术非常厉害
 
 # 分类
 
@@ -64,3 +79,11 @@ hello world
 	- 如何写出好的代码
 	- 如何少加班
 	- 面试时总是没什么聊的怎么办？
+
+# 行内代码
+
+这是一段代码 `a = b + c` 它是这样的。
+
+---
+
+[^1]: https://github.com/wangshushuo/abc.html
