@@ -68,6 +68,29 @@ categories:
 
 [链接的文字][a1]
 
+## 表格
+
+```
+操作 | 代码 
+:---:|:---:
+暂存 | git stash
+列表 | git stash list
+取出 | git stash pop 1
+```
+```
+:---: 表示文字居中
+:---  居左
+---:  局右，
+```
+
+**效果**⬇️
+
+操作 | 代码 
+:---:|:---:
+暂存 | git stash
+列表 | git stash list
+取出 | git stash pop 1
+
 ## 行内代码
 
 这是一段代码 `a = b + c` 它是这样的。
