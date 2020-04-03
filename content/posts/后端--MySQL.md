@@ -154,3 +154,205 @@ MySQL [(none)]> grant all privileges on db_name.* to db_user@’%’ identified 
 MySQL [(none)]> flush privileges;
 MySQL [(none)]> exit; #退出数据库控制台，特别注意有分号
 
+
+## 数据类型
+
+### varchar
+
+`varchar(666)`，其中参数`666`为字节数。
+
+`varchar`是可变长度的字符串，大小为`0-65535`字节。对应的字符串长度会受到字符集影响，若使用`utf-8`存储汉字，一个汉字字符对应`3`个字节。
+
+`varchar`还需要存储数据长度，当小于等于`255`个字节时，使用`1`个字节存储长度。大于`255`长度时，使用`2`个字节存储长度。
+
+比如`varchar(666)`，使用`2`个字节存储长度，剩下的`664`个字节存储实际内容，
+
+### text
+
+TEXT数据不存储在数据库服务器的内存中，因此，每当查询TEXT数据时，MySQL都必须从磁盘读取它，这与CHAR和VARCHAR相比要慢得多。
+![mysql文档][image1]
+
+> mysql的性能只有在上千万条纪律的时候才需要考虑。
+> ——潘老师
+
+### DATETIME
+
+将js的Date对象传进去，会直接保存，查出来返回到前端页面时，可以这样使用`new Date(props.time)`转换成Date对象。
+
+### 没有布尔值，使用tinyint
+
+```sql
+CREATE TABLE IF NOT EXISTS `ed_class_price_user`(
+   `id` INT UNSIGNED AUTO_INCREMENT,
+   `user_name` VARCHAR(200) NOT NULL unique,
+   `password` VARCHAR(200) NOT NULL,
+   `disable` TINYINT DEFAULT 0,
+   PRIMARY KEY ( `id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+## 表结构
+
+### 修改表结构
+
+1. 查看列：`desc 表名;`
+1. 修改表名：`alter table t_book rename to bbb;`
+1. 添加列：`alter table 表名 add column 列名 varchar(30);`
+1. 删除列：`alter table 表名 drop column 列名;`
+1. 修改列名MySQL： `alter table bbb change nnnnn hh int;`
+1. 修改列名SQLServer：`exec sp_rename't_student.name','nn','column';`
+1. 修改列名Oracle：`lter table bbb rename column nnnnn to hh int;`
+1. 修改列属性：`alter table t_book modify name varchar(22);`
+
+### 唯一性约束
+
+#### 建表时加上唯一性约束：
+
+```sql
+CREATE TABLE `t_user` (
+    `Id` int(11) NOT NULL AUTO_INCREMENT, 
+    `username` varchar(18) NOT NULL unique, 
+    `password` varchar(18) NOT NULL, 
+    PRIMARY KEY (`Id`) 
+) ENGINE=InnoDB AUTO_INCREMENT=1018 DEFAULT CHARSET=gbk; 
+```
+
+#### 给已经建好的表加上唯一性约束：
+
+```sql
+ALTER TABLE `t_user` ADD unique(`username`);
+```
+
+或者：
+
+```sql
+create unique index UserNameIndex on 't_user' ('username');
+```
+
+
+### 索引
+
+#### mysql索引类型
+
+- primary：唯一索引，不允许为null。
+- key：普通非唯一索引。
+- unique：表示唯一的，不允许重复的索引，可以为null。
+- fulltext: 表示全文搜索的索引。 FULLTEXT用于搜索很长一篇文章的时候，效果最好。用在比较短的文本，如果就一两行字的，普通的INDEX 也可以。
+- spatial：空间索引。
+
+## 表连接
+
+使用了连接语句以后，这两张表就被拼成了一张表。
+
+```sql
+SELECT * FROM A  
+INNER JOIN B ON A.book_id=B.book_id;
+```
+
+四种连接会像下图一样拼装2个表，空白的地方会被填充null
+
+![表连接1][image1]
+
+然后where等语句就可以像操作一张表一样了。
+
+## 数据
+
+### CRUD
+
+#### create
+```sql
+INSERT INTO tasks(subject,start_date,end_date,description)
+VALUES('Learn MySQL INSERT','2017-07-21','2017-07-22','Start learning..');
+```
+
+[image1]:/images/mysql-1.png
+
+#### read 左右链接
+
+```sql
+SELECT
+    plugin_of_user.id, plugin_of_user.user_plugin_name,
+    plugin_info.name, plugin_info.avatar, plugin_info.link, plugin_info.type
+FROM plugin_of_user
+RIGHT JOIN plugin_info
+ON plugin_of_user.plugin_id=plugin_info.id
+WHERE plugin_of_user.user_id = ?
+```
+#### update
+
+```sql
+UPDATE [LOW_PRIORITY] [IGNORE] table_name 
+SET 
+    column_name1 = expr1,
+    column_name2 = expr2,
+    ...
+WHERE
+    condition;
+```
+
+##### 无则添加，有则修改
+
+```sql
+insert into student
+  (number, name) 
+values
+  (45,‘张三’)
+ON DUPLICATE KEY UPDATE 
+number = 46, name = ‘李四’;
+```
+
+#### delete
+```sql
+DELETE FROM table_name
+WHERE condition;
+```
+
+
+## 实践
+
+评论回帖表
+
+轮子哥 vczh
+专业造轮子，拉黑抢前排。gaclib.net
+75 人赞同了该回答
+CommentID: GUID (primary key)
+UnderWhichAnswer: GUID (index + foreign key)
+ReplyWhichComment: GUID (nullable + foreign key)
+Author: GUID (foreign key)
+Time: datetime (ascend)
+Content: string
+
+## 性能测试
+
+mysqlslap是mysql自带的测试工具
+
+下面为测试一条sql的效率
+
+```
+mysqlslap --create-schema mind -q "select * from test1" --number-of-queries=100 -uroot -p123456
+```
+
+其中`--create-schema`后为数据库名，`-q`后为sql语句，`--number-of-queries`为重复次数。
+
+## 工具
+
+### phpmyadmin
+
+通过docker使用：拉镜像，然后运行，然后访问本地的[localhost:8080](http://localhost:8080)
+
+```
+docker pull phpmyadmin/phpmyadmin
+docker run --name myphpadmin -d -e PMA_ARBITRARY=1 -p 8080:80 phpmyadmin/phpmyadmin
+```
+
+#### 连本地的mysql(ubuntu)
+
+将`/etc/mysql/mysql.conf.d/mysql.cnf`中的`bind-address=127.0.0.1`改成`bind-address=0.0.0.0`，使可以远程访问。
+
+然后使用本机ip访问(192.168.*.*)，登录的主机地址也是前面那个ip
+
+## 资料
+
+[易百教程MySQL](https://www.yiibai.com/mysql/update-data.html)
+[Mysql设计与优化专题](https://www.kancloud.cn/thinkphp/mysql-design-optimalize/39325)
+[image1]:/images/mysql-1.jpg
