@@ -11,25 +11,6 @@ categories:
 - API操作手册
 - 工具
 ---
-
-## 攻略
-
-### Git 原理入门
-
-[阮一峰](http://www.ruanyifeng.com/blog/2018/10/git-internals.html)
-
-### Git 分支管理策略
-
-[阮一峰](http://www.ruanyifeng.com/blog/2012/07/git.html)
-
-### Git 工作流程
-
-[阮一峰](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
-
-### Git 使用规范流程
-
-[阮一峰](http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
-
 ## 删除本地的所有分支，除了master
 
 ```sh
@@ -149,3 +130,13 @@ git config --global --unset http.https://github.com.proxy
 ```
 git rm -r --cached 文件或目录
 ```
+
+## 攻略
+
+Git 原理入门 <http://www.ruanyifeng.com/blog/2018/10/git-internals.html>
+
+Git 分支管理策略 <http://www.ruanyifeng.com/blog/2012/07/git.html>
+
+Git 工作流程 <http://www.ruanyifeng.com/blog/2015/12/git-workflow.html>
+
+Git 使用规范流程 <http://www.ruanyifeng.com/blog/2015/08/git-use-process.html>
