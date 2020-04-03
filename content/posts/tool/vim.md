@@ -1,16 +1,14 @@
 ---
-title: "vim常用操作"
-url: "/vim-common-operations.html"
+title: "vim"
+url: "/vim.html"
 author: 王书硕
 date: 2020-04-01T21:27:14+08:00
 lastmod : 2020-04-01T21:27:14+08:00
 toc: true
-summary: 摘要，显示在meta的description中，
+summary: vim常用操作，替换、缩紧等
 categories:
-  - 分类
-  - 前端
-tags:
-  - 显示在底部
+- api
+- 工具
 ---
 
 ## 替换

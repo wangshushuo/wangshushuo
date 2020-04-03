@@ -8,6 +8,7 @@ toc: true
 summary: 摘要，显示在meta的description中，
 categories:
 - 知识点
+- 前端
 - JavaScript
 ---
 

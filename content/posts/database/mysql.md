@@ -5,12 +5,11 @@ author: 王书硕
 date: 2020-04-02T22:24:03+08:00
 lastmod : 2020-04-02T22:24:03+08:00
 toc: true
-summary: 摘要，显示在meta的description中，
+summary: ""
 categories:
-- 分类
-- 前端
-tags:
-- 显示在底部
+- api
+- 后端
+- mysql
 ---
 
 ## 安装MySQL

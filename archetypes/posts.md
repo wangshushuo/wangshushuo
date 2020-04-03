@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-url: "/{{ replace .Name "-" " " | title }}.html"
+title: "{{ replace .Name "-" "-" | title }}"
+url: "/{{ replace .Name "-" "-" | title }}.html"
 author: 王书硕
 date: {{ .Date }}
 lastmod : {{ .Date }}

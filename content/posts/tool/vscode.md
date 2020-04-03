@@ -7,7 +7,7 @@ url: "/vscode.html"
 title: "vscode"
 summary: ""
 categories:
-- API操作手册
+- api
 - 工具
 ---
 

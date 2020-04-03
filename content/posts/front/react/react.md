@@ -7,7 +7,7 @@ lastmod : 2020-03-30T23:19:26+08:00
 toc: true
 summary: 摘要，显示在meta的description中，
 categories:
-- API操作手册
+- API
 - 前端
 - react
 ---

@@ -8,6 +8,7 @@ toc: true
 summary: 介绍AJAX的基本API和作用
 categories:
 - 知识点
+- 前端
 - JavaScript
 ---
 
