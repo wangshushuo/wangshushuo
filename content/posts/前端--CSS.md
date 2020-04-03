@@ -88,3 +88,45 @@ input,textarea{
 	-webkit-appearance: none;
 }
 ```
+
+
+## margin塌陷
+在标准文档流中，竖直方向的margin会出现叠加现象，即较大的margin会覆盖掉较小的margin，竖直方向的两个盒子中间只有一个较大的margin，这就是margin的塌陷现象。  
+margin的塌陷现象分两种情况：
+1.兄弟关系的盒子：
+比如ul的li，相邻的li之间的margin会重叠取较大的一个;
+2.父子关系的盒子。
+子盒子的margin-top大于父盒子时，子的margin-top会覆盖父的。    
+
+解决方法：  
+当给父盒子设置边框或padding时，不会出现父子盒子的塌陷现象。  
+当父盒子设置display:flex;时，不会出现这2种坍塌现象。  
+
+## 盒子模型
+
+## 清除浮动
+
+## css优先级
+!important最高
+行内style属性 > 内联style标签 > 外联css文件
+id > class > tag
+计算：
+行内style属性 = 1000
+ID选择器 = 100
+类选择器、属性选择器、伪类 = 10
+元素/伪元素 = 1
+*通配选择器 = 0
+
+## 伪类&伪元素
+伪元素：
+::before
+::after
+::placeholder
+::first-line
+伪类：
+:first-child
+:nth-child
+:empty
+
+## inline-block元素有间隙
+解决方法：在这些inline-block元素的父元素设置样式——fontsize：0；
