@@ -1,9 +1,7 @@
 ---
-title: "SSH"
-url: "/SSH.html"
-author: 王书硕
+title: SSH
+url: /SSH.html
 date: 2020-03-31T08:37:31+08:00
-lastmod : 2020-03-31T08:37:31+08:00
 toc: true
 summary: 在自己的电脑上生成公钥、密钥。公钥放在远程服务器上，密钥在自己电脑里不用管。连接远程服务器时就不用输入密码了。
 categories:
@@ -16,17 +14,27 @@ categories:
 
 ## 安装
 
+新装的系统可能没有ssh服务，需要自己安装
+```
 sudo apt-get install openssh-server
+```
 
 ## 配置
 
-```
-sudo vim /etc/ssh/sshd_config {{< tag 编辑配置文件 >}}
-
-PasswordAuthentication yes {{< tag 找到这行改成yes >}}
-
-service ssh reload {{ tag 退出vim，重启ssh }}
-```
+新安装的 `ssh server` 需要一点配置：开启密码登录，开启公钥登录。
+1. 编辑配置文件
+    ```
+    sudo vim /etc/ssh/sshd_config
+    ```
+2. 开启密码登录、公钥登录
+    ```
+    PasswordAuthentication yes
+    PubkeyAuthentication yes
+    ```
+3. 重启 `ssh server`
+    ```
+    service ssh reload {{< tag 退出vim重启ssh >}}
+    ```
   
 ## 生成key
 ```shell
@@ -34,17 +42,30 @@ ssh-keygen -t rsa
 ```
 
 ## 复制公钥
-```shell
-scp ~/.ssh/id_rsa.pub username@hostname:~/.ssh/authorized_keys 
-```
-然后输入密码 . 
 
-> 如果报错 `scp: /root/.ssh/authorized_keys: No such file or directory`  
-> 可以使用`ssh root@45.77.251.51 "mkdir ~/.ssh/"`命令创建.ssh目录后在使用scp命令复制
+将本机的公钥copy到远程机器
+```shell
+ssh-copy-id username@remote_host_B
+```
+然后输入密码。
+
+> 该命令会把本机的公钥复制到远程机器的 .ssh/authorized_keys 文件中。
 
 ## 登陆服务器
+
+配置好公钥以后就可以使用如下命令登录了。
 ```shell
 ssh username@hostname
+```
+
+## 配置别名
+
+每次都使用 `ssh username@hostname` 登录会有点麻烦，可以通过配置将命令简化。比如下面的配置，可以将登录的命令简化为 `ssh azu` 。配置文件为 `~/.ssh/config` 。
+```
+Host azu
+   HostName 192.168.1.5
+   User azu
+   IdentityFile /homt/xx/.ssh/id_rsa
 ```
 
 ## alias命令
@@ -56,3 +77,20 @@ alias totx='ssh username@hostname'
 
 ## 永久保留alias命令
 每次登陆时.bash_profile文件是会自动执行，此过程会调用.bashrc，将alias命令写入.bashrc文件就可以将alias命令永久生效了。（如果没有此文件就创建一个）
+
+## 报错
+
+```
+WARNING: UNPROTECTED PRIVATE KEY FILE!
+Permissions 0644 '' are too open.
+...
+```
+
+我装了window是10和ubuntu双系统，将windows的一个公钥文件复制到ubuntu后，使用ssh的config配置了它。在使用ssh登录时，就报了这个错。
+
+是文件权限的问题，改成只读的权限即可解决。
+```
+chmod 400 ～/.ssh/id_rsa
+```
+
+## 
