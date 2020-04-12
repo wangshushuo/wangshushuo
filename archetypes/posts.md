@@ -1,9 +1,7 @@
 ---
-title: "{{ replace .Name "-" "-" | title }}"
-url: "/{{ replace .Name "-" "-" | title }}.html"
-author: 王书硕
+title: {{ replace .Name "-" "-" | title }}
+url: /{{ replace .Name "-" "-" | title }}.html
 date: {{ .Date }}
-lastmod : {{ .Date }}
 toc: true
 summary: 摘要，显示在meta的description中，
 categories:
