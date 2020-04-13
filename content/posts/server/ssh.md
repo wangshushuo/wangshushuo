@@ -93,4 +93,10 @@ Permissions 0644 '' are too open.
 chmod 400 ～/.ssh/id_rsa
 ```
 
-## 
+## 指定私钥(证书)登录
+
+```bash
+ssh name@6.6.6.6 -i ./identity_file.pem
+
+scp -i ./identity_file.pem file_a name@1.1.1.1:~/
+```
