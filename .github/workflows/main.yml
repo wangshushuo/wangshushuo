@@ -27,7 +27,7 @@ jobs:
           personal_token: ${{ secrets.TOKEN }}
           external_repository: wangshushuo/wangshushuo.github.io
           publish_dir: ./public
-          keep_files: true
+          keep_files: false
           publish_branch: master
           cname: wss.cool
 
