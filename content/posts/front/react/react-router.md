@@ -1,17 +1,13 @@
 ---
-title: "ReactRouter的哲学"
-url: "/ReactRouter-philosophy.html"
-author: 王书硕
+title: ReactRouter的哲学
+url: /ReactRouter-philosophy.html
 date: 2020-03-31T13:11:28+08:00
-lastmod : 2020-03-31T13:11:28+08:00
-toc: true
 summary: 机翻文档，新版的react-router是动态路由，它与传统的静态路由在使用上有很大的不同
 categories:
-- knowledge
-- front end
 - react
+tags:
+- knowledge
 ---
-
 
 ## 哲学
 本指南的目的是解释使用React Router时的心智模型。 我们将其称为“动态路由”，这与您可能更熟悉的“静态路由”完全不同。  
