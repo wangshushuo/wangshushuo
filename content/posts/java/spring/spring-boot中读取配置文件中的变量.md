@@ -1,14 +1,10 @@
 ---
+title: Spring Boot 中读取配置文件中的变量
 date: 2020-01-18T17:57:27+08:00
-toc: true
-url: /Spring Boot中读取配置文件中的变量.html
-title: Spring Boot中读取配置文件中的变量
 summary: 在application.yml配置文件中加入自定义变量，然后在程序中读取他们。
 categories:
-- api
-- 后端
-- spring-boot
-tags:
+- spring
+keywords:
 - 读取spring-boot配置
 - 读取spring-boot环境变量
 ---
