@@ -25,7 +25,7 @@ section | categories
 前端 | js、css、html、dom、react 
 后端 | java、spring 
 服务器 | linux、nginx
-编程 | 算法、网络（cors、tcp/ip）
+基础 | 算法、网络（cors、tcp/ip）
 工具 | ssh、git
 心得 | 处理bug、
 实践 | 博客服务、在线编辑hugo
