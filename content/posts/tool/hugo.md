@@ -1,6 +1,5 @@
 ---
-title: "Hugo"
-url: "/hugo.html"
+title: Hugo
 toc: true
 date: 2019-10-10T14:15:23+08:00
 summary: 改造hugo主题，修改hugo主题，显示、控制hugo分类和hugo摘要
@@ -11,7 +10,7 @@ categories:
 
 这个博客是使用hugo搭建的，选择来一个大体喜欢的主题。但是有一些细节还是不够满意，所以如何改造hugo主题，加上自己想要的内容，就成了一个值得研究的问题。
 
-# 分类法（Taxonomies）
+## 分类法（Taxonomies）
 
 我想解决的第一个问题就是文章的分类，因为一个单纯的列表看上去可能有点散乱。观察创建文章的可选参数，以及其他博客。可以确定hugo是支持分类的。在官网文档中的Content Management下有Taxonomies，阅读内容后可以确定，这就是我想找的东西。
 
@@ -49,7 +48,7 @@ categories         <- Taxonomy
 
 在“站点配置”中设置有哪些Taxonomy，在“文章首部”标记该文章是哪个Taxonomy中的哪种Term
 
-## 站点配置
+### 站点配置
 
 站点配置文件一般位于博客根目录中，叫做“config.toml”，在其中加上下面这段代码
 
@@ -59,11 +58,11 @@ categories         <- Taxonomy
   year = "year"
 ```
 
-## 文章首部
+### 文章首部
 
 创建每个文章时，都会有一些首部信息配置，现在这篇文章的首部信息如下：
 
-```
+```yml
 ---
 title: "Hugo"
 url: "/Hugo"
@@ -84,7 +83,7 @@ year:
 
 ……两种方式展示分类，一种是在一个特定的页面，一种是在其他地方。两种方式引用题目的方法不同。
 
-## 展示分类
+### 展示分类
 
 第一种展示方式是在`layouts/_default/terms.html`中，如下面的代码即可展示一种terms。通过访问地址`localhost:1313/categories/`或`localhost:1313/year/`即可查看到该页面。
 
@@ -106,7 +105,7 @@ year:
 
 第二种展示方式是任意一个页面，比如主页`layouts/index.html`模板中，通过`Site`变量引用分类数据。同样的其中的`categories`也可以替换成定义好的其他terms。
 
-```
+```html
 <ul>
   {{ range .Site.Taxonomies.categories }}
   <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
@@ -139,7 +138,7 @@ year:
 
 ……综上……实现了分类……
 
-# SEO
+## SEO
 
 robots.txt
 
@@ -149,7 +148,7 @@ google search console
 
 head模版
 
-# 摘要（summary）
+## 摘要（summary）
 
 摘要最重要的一个用处是生成head中的description标签（这个是主题的head.html部分定义的，可以修改成其他内容），搜索引擎会将其中的内容展示在搜索结果中。（搜索结果中也可能不显示摘要，而现实搜索引擎自己生成的内容）
 
@@ -165,7 +164,7 @@ head模版
 
 另外可以在网站配置中使用`summaryLength`控制摘要的字符长度，但是对中文貌似不起作用。
 
-# 函数
+## 函数
 
 [文档](https://gohugo.io/functions/)
 
@@ -189,7 +188,7 @@ head模版
 </ul>
 ```
 
-# 多语言模式
+## 多语言模式
 
 hugo可以管理多种语言，但是要自己翻译内容
 
