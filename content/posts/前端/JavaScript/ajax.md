@@ -1,15 +1,11 @@
 ---
-title: "AJAX"
-url: "/AJAX.html"
-author: 王书硕
+title: AJAX
 date: 2020-03-31T08:20:17+08:00
-lastmod : 2020-03-31T08:20:17+08:00
-toc: true
 summary: 介绍AJAX的基本API和作用
 categories:
-- 知识点
-- 前端
 - JavaScript
+tags:
+- api
 ---
 
 AJAX——异步的JavaScript和XML，就是使用`XMLHttpRequest`对象与服务器通信。

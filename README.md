@@ -50,3 +50,15 @@ section是页面，其中展示category及其子文章，文章标题后显示ta
 category 分为 css JavaScript HTML nginx java spring 等。
 
 section与category会分别有页面去展示它们的列表及所属 posts 。
+
+## 1
+
+文章：posts目录下所有的文章，按年分组。
+
+sections：posts目录下的section，在首页显示这几个sectin。显示每个section的名字、下属文章数量、下属文章的category列表及其各项文章数量
+
+前端 | 39 | <--section | section列表
+:---:|:---:|:---:|:---:
+React | 10 | <--category | category列表
+JavaScript | 15 | <--category | category列表
+CSS | 7 | <--category |category列表 

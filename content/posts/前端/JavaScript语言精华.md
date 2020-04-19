@@ -1,10 +1,9 @@
 ---
 date: 2019-10-23T06:56:30+08:00
-title: "JavaScript语言精华"
+title: JavaScript语言精华
 summary: 我相信我精雕细琢出来的优雅子集大大地优于这门语言的整体，它更可靠、更易读、更易于维护。
 categories:
 - 前端
-- 读书笔记
 ---
 
 ## 精华

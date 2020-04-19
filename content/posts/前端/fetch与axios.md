@@ -1,9 +1,10 @@
 ---
 title: Fetch 与 Axios
 date: 2019-07-17T10:27:44+00:00
-url: /fetch-and-axios.html
 categories:
-  - 前端
+- 前端
+tags:
+- api
 
 ---
 原文：[使用Fetch][1] 、[axios文档][2]

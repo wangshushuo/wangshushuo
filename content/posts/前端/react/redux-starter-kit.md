@@ -4,8 +4,6 @@ toc: true
 url: /redux-starter-kit.html
 title: Redux Starter Kit
 categories:
-- api
-- 前端
 - react
 ---
 

@@ -1,15 +1,10 @@
 ---
-title: "JavaScript"
-url: "/JavaScript.html"
-author: 王书硕
+title: JavaScript
 date: 2020-04-04T02:13:49+08:00
-lastmod : 2020-04-04T02:13:49+08:00
-toc: true
-summary: ""
 categories:
-- API
-- 前端
 - JavaScript
+tags:
+- api
 ---
 
 # 上传图片时，怎么拿到图片的src地址？

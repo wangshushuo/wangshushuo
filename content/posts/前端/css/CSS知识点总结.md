@@ -1,12 +1,10 @@
 ---
 title: CSS知识点汇总
-url: /CSS知识点汇总.html
-toc: true
 date: 2019-09-15T21:53:21+08:00
 categories:
+- CSS
+tags:
 - api
-- 前端
-- css
 ---
 
 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS)

@@ -5,9 +5,10 @@ toc: true
 date: 2019-08-28T09:53:21+08:00
 description: 利用workbox实现资源的预下载
 categories:
-- api
 - 前端
 tags:
+- api
+keywords:
 - service worker
 - workbox
 - 预下载

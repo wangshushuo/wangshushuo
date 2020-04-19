@@ -324,7 +324,7 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "记录代码生涯，前端，React，Java，Spring，Nginx"
+    siteDescription = "现在是一名前端，希望转到后端，最后做架构师。这里记录了常用到的前端、后端、服务器和各种工具的常用api、知识点等。记录的api方便查找，记录的知识点作为一种输出可以增加理解。"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 

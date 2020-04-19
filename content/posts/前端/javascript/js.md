@@ -1,4 +1,11 @@
-
+---
+title: jsvascript
+date: 2020-04-18T01:45:53+08:00
+categories:
+- JavaScript
+tags:
+- api
+---
 
 ## 原生获取真是宽高
 不知道为什么用#${divID}会报错，只能用div[]选择器了，id=后面要用单引号。

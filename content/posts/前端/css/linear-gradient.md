@@ -1,15 +1,11 @@
 ---
-title: "渐变色"
-url: "/linear-gradient.html"
-author: 王书硕
+title: 渐变色
 date: 2020-03-31T08:41:24+08:00
-lastmod : 2020-03-31T08:41:24+08:00
-toc: true
 summary: ""
 categories:
-- API
-- 前端
-- css
+- CSS
+tags:
+- api
 ---
 
 ## 先说草图布局
