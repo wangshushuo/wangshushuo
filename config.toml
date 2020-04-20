@@ -294,8 +294,9 @@ uglyURLs = false
     # 2. footage   视频片段
     # 3. posts     文章摘要
     # 4. page      普通页面
+    # 5. footage_and_posts  
 
-    homeLayout = "posts"
+    homeLayout = "footage_and_posts"
 
     ## 「诗意人生」
     # 诗句，支持 Markdown
@@ -305,15 +306,15 @@ uglyURLs = false
 
     ## 「视频片段」
     homePoster = ""
-    homeVideoWebm = ""
-    homeVideoMp4 = ""
+    homeVideoWebm = "http://q7yil3x3o.bkt.clouddn.com/programing_background_2.webm"
+    homeVideoMp4 = "http://q7yil3x3o.bkt.clouddn.com/programing_background_3.m4v"
     homeLogo = ""
     homeLogoLink = ""
-    homeTitle = ""
-    homeMotto = ""
-    homeDescription = ""
-    homeKeywords = ""
-    homeLinksDelimiter = ""
+    homeTitle = "123"
+    homeMotto = "456"
+    homeDescription = "789"
+    homeKeywords = "abc"
+    homeLinksDelimiter = "def"
 
 
     ######################################
