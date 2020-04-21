@@ -306,8 +306,8 @@ uglyURLs = false
 
     ## 「视频片段」
     homePoster = ""
-    homeVideoWebm = "http://q7yil3x3o.bkt.clouddn.com/programing_background_2.webm"
-    homeVideoMp4 = "http://q7yil3x3o.bkt.clouddn.com/programing_background_3.m4v"
+    homeVideoWebm = "https://hugo-1256216240.cos.ap-chengdu.myqcloud.com/programing_background_2.webm"
+    homeVideoMp4 = "https://hugo-1256216240.cos.ap-chengdu.myqcloud.com/programing_background_3.m4v"
     homeLogo = ""
     homeLogoLink = ""
     homeTitle = "123"
