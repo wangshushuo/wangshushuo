@@ -121,50 +121,15 @@ process.cwd()好像是启动程序的线程工作的目录
 
 ## electron中可以启动egg服务器，在程序中修改了文件以后，可能需要重启electron才能生效。  
 
-## 左右对齐文字：
-```
-.a{
-    width:596px;
-    text-align:justify;
-    text-align-last:justify;  
-}
-```
-
-## 固定位置显示背景图片
-background-attachment: fixed;  
-
-## 居中
-```css
-#wrapper {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
-#centred {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}  
-```
 
 ## chrome调试安卓设备的chrome浏览器的网页
 通过usb链接
 chrome://inspect/  
 
 
-
-
 ## ssh
 
-### 配置密钥文件 
 
-通常使用ssh生成的秘钥文件名是“id_rsa”，通常这一对公钥私钥也是够用的。如果有第二份秘钥的话（腾讯云生成的），需要一个"config"文件。
-该文件存放在".ssh"目录下（不需要后缀扩展名），内容为：
-```
-Host 128.128.666.666
-   IdentityFile C:\Users\anrui\.ssh\pc_pc  
-```
 
 ## 其他记录
 
@@ -241,70 +206,6 @@ Host 128.128.666.666
 
 click事件实际上也是一个mouseEvent事件。mouseEvent中有一个属性`path`，它可以看到触发事件的路径，从触发了事件的元素开始，以及他的所有父元素，一直到document然后是window。
 
-
-## 使用css画不规则边框
-
-```css
-.node {
-    background-image: linear-gradient(to right, #000 1px, transparent 0px);
-    background-size: 1px 50%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-}
-```
-
-这段样式可以画半个左边框。其中用到了渐变色属性。
-
-## 渐变色
-
-```css
-.node {
-    background-image: linear-gradient(to right, #000 1px, transparent 0px);
-}
-```
-
-` linear-gradient(方向, 开始颜色 大小, 结束颜色 大小);`
-
-## webpack
-### 代码分割
-
-```js
-function route(path, query) {
-  return import(`./routes/${path}/route`)
-    .then(route => new route.Route(query));
-}
-// 上面代码为每个可能的路由创建独立的 chunk
-```
-
-### 开发library
-
-#### 在代码中使用NODE_ENV
-```js
-let host = ref.url.getConfig;
-if (process.env.NODE_ENV === 'development') {
-  host = ref.url.getConfigDev;
-}
-```
-
-#### package.json
-如果将打包后的文件最为“main”字段，那么上面的NODE_ENV就会不起作用
-```json
-{
-  "name": "plugin-sdk",
-  "version": "0.0.3",
-  "main": "src/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+http://仓库地址/plugin-sdk.git"
-  }
-}
-```
-#### 使用
-需要通过npm安装依赖
-```
-yarn add git+http://仓库地址/plugin-sdk.git
-```
-
 ## parcel
 
 ### 静态资源
@@ -314,19 +215,6 @@ npm install parcel-plugin-asset-copier
 package.json中加一个字段  
 "assetsPath": "test-files/assets"
 
-
-## vscode
-
-### debugger for chrome
-
-当使用parcel时，实际引用js文件会带有hash，而编辑器中的文件没有hash，导致插件认为js文件没有被挂载，断点也就无效了。  
-按照如下调整launch.json，可解决此问题。
-
-```json
-"sourceMapPathOverrides": {
-	"../*": "${webRoot}/*"
-}
-```
 
 ## 自学php，找到远程工作项目的22岁程序员
 
@@ -338,67 +226,6 @@ package.json中加一个字段
 
 奖励的目的是它能让儿子获得短暂的快乐，满足他的某一个需求，但过去就没了，下一个目标又在眼前。
 
-## Redux Starter Kit
-
-Redux的脚手架工具
-
-### 安装
-
-yarn add redux-starter-kit
-
-### 创建store
-
-configureStore用于初始化redux仓库，可以合并reducer，可以方便的创建中间件等。
-
-```js
-function configureStore({
-    // A single reducer function that will be used as the root reducer,
-    // or an object of slice reducers that will be passed to combineReducers()
-    reducer: Object<string, ReducerFunction> | ReducerFunction,
-    // An array of Redux middlewares.  If not supplied, uses getDefaultMiddleware()
-    middleware?: MiddlewareFunction[],
-    // Enable support for the Redux DevTools Extension. Defaults to true.
-    devTools?: boolean | EnhancerOptions,
-    // Same as current createStore.
-    preloadedState?: State,
-    // An optional array of Redux store enhancers
-    enhancers?: ReduxStoreEnhancer[],
-})
-```
-
-例子
-
-```js
-const store = configureStore({
-  reducer: {
-    config: configReducer,
-    counter: counterReducer
-  },
-})
-```
-
-### 创建reducer
-
-createReducer用了immer包装reducer，可以用js原生写法来写immutable的数据。
-
-```js
-const configReducer = createReducer(initialState, {
-  currentQuestion: (state, action) => {
-    state.currentQuestion = action.currentQuestion
-  },
-  uploadBackground: (state, action) => {
-    let qu = state.questions[state.currentQuestion]
-    qu.bg = action.src;
-    qu = { ...qu }
-    state.updateBackground = +new Date();// 为了让播放器端更新
-  },
-})
-
-const counterReducer = createReducer(0, {
-  increment: (state, action) => state.inc = action.payload,
-  decrement: (state, action) => state.abc - action.abc
-})
-```
 
 
 ## 并发编程、网络编程
@@ -417,10 +244,6 @@ nodejs 并发编程：[资源1](https://segmentfault.com/a/1190000011086405)，[
 
 前端水平全看node.js、webpack、rollup、react、vue等生态链和框架的原理和实现细节的了解
 
-## wsl
-
-window 10 子linux系统
-
 ### 修改root密码
 
 使用普通给用户密码切换到root，在使用passwd修改密码
@@ -438,16 +261,6 @@ passwd root
 1. ./configure --with-ssl
 1. make
 1. sudo make install
-
-## audio音频
-
-使用new Audio 或者audio标签时，如果直接进行audio.play()的操作时，可能会报错。因为音频文件还没有准备好播放。应该这样处理音频的播放。
-
-```js
-audio.oncanplaythrough = function () {
-  audio.play();
-}
-```
 
 ## svg的image元素
 
@@ -491,22 +304,3 @@ parser.parse(open("Votes.xml", "r", encoding='utf-8'))
 ```
 
 
-## css滤镜
-
-```css
-filter: grayscale(100%);
-```
-
-## sass继承
-
-```scss
-.error {
-  border: 1px #f00;
-  background-color: #fdd;
-
-  &--serious {
-    @extend .error;
-    border-width: 3px;
-  }
-}
-```

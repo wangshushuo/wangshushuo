@@ -61,6 +61,29 @@ outline:  9999px solid rgba(0,0,0,.76);
   color: #B7B7B7;
 }
 ```
+
+## 渐变色
+各个参数的含义：`linear-gradient(方向, 开始颜色 大小, 结束颜色 大小);`
+```css
+.node {
+    background-image: linear-gradient(to right, #000 1px, transparent 0px);
+}
+```
+
+## 使用css画不规则边框
+
+```css
+.node {
+    background-image: linear-gradient(to right, #000 1px, transparent 0px);
+    background-size: 1px 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}
+```
+
+这段样式可以画半个左边框。其中用到了渐变色属性。
+
+
 ## 渐变色文字
 ```css
 .text{
@@ -123,3 +146,50 @@ ID选择器 = 100
 
 ## inline-block元素有间隙
 解决方法：在这些inline-block元素的父元素设置样式——fontsize：0；
+
+## 居中
+```css
+#wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+#centred {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}  
+```
+
+## 左右对齐文字：
+```
+.a{
+    width:596px;
+    text-align:justify;
+    text-align-last:justify;  
+}
+```
+
+## 固定位置显示背景图片
+background-attachment: fixed;  
+
+## css滤镜
+
+```css
+filter: grayscale(100%);
+```
+
+## sass继承
+
+```scss
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+
+  &--serious {
+    @extend .error;
+    border-width: 3px;
+  }
+}
+```

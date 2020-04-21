@@ -100,3 +100,12 @@ ssh name@6.6.6.6 -i ./identity_file.pem
 
 scp -i ./identity_file.pem file_a name@1.1.1.1:~/
 ```
+
+## 配置密钥文件 
+
+通常使用ssh生成的秘钥文件名是“id_rsa”，通常这一对公钥私钥也是够用的。如果有第二份秘钥的话（腾讯云生成的），需要一个"config"文件。
+该文件存放在".ssh"目录下（不需要后缀扩展名），内容为：
+```
+Host 128.128.666.666
+   IdentityFile C:\Users\anrui\.ssh\pc_pc  
+```
