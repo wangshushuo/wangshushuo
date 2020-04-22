@@ -1,11 +1,41 @@
 ---
-title: jsvascript
-date: 2020-04-18T01:45:53+08:00
+title: 常用DOM操作
+url: /常用DOM操作.html
+date: 2020-04-22T19:20:48+08:00
+summary: 摘要，显示在meta的description中，
 categories:
-- JavaScript
+- 分类
 tags:
-- api
+- 显示在底部
+keywords:
+- aa
 ---
+
+
+## 上传图片时，怎么拿到图片的src地址？
+input选中图片以后，只是得到了file对象，如果想在img中显示该图片的话，并不知道src，所以想得到src还需要额外的操作。
+```javascript
+function getObjectURL(file) {
+  var url = null;
+  if (window.createObjectURL != undefined) { // basic
+    url = window.createObjectURL(file);
+  } else if (window.URL != undefined) { // mozilla(firefox)
+    url = window.URL.createObjectURL(file);
+  } else if (window.webkitURL != undefined) { // webkit or chrome
+    url = window.webkitURL.createObjectURL(file);
+  }
+  return url;
+}
+```
+
+## JS操作样式class
+```js
+document.body.classList.add("c");
+document.body.classList.toggle("a");
+document.body.classList.remove("c");
+document.body.classList.contains("c");    // false 因为"c"上面remove掉了
+document.body.classList.toString() === document.body.className;
+```
 
 ## 原生获取真是宽高
 不知道为什么用#${divID}会报错，只能用div[]选择器了，id=后面要用单引号。
@@ -28,62 +58,6 @@ async funciton getImageInfo(image_res_url: string): Promise<{width: number, heig
     });
     return promise;
 }
-```
-
-
-## 数组的every方法
-every方法可以中断循环
-```js
-contentList.every((content, index) => {
-  if (element.id === content.id) {
-    contentList.splice(index, 1);
-    return false;
-  }
-  return true;
-});
-```
-
-## 事件
-
-```
-// 取消默认行为：
-e.preventDefault()
-// 停止冒泡：
-e.stopPropagation();  
-```
-
-
-## 将promise改装成await
-将一个element UI库的confirm改装成await：这个confirm方法原来返回的是promise，resolve在try中return，reject在catch中return。
-
-```ts
-public async confirm_async(message: string, title: string) {
-  try {
-    return await this.vue.$confirm(message, title);
-  } catch (error) {
-    return undefined;
-  }
-}
-```
-
-调用confirm_async方法：
-
-```ts
-const isConfirm = await this.ed_showConfirm_async('xx','xx');
-if(isConfirm === undefined) return;
-```
-
-这两个语句所在方法或函数，必须是一个async的函数或方法。这样就不需要把后续的操作都写在一个then方法中了。
-
-## Array reduce，数组的reduce方法
-
-```js
-Object.keys(obj).reduce((memo, key) => {
-    if (hooks.indexOf(key) > -1) {
-      memo[key] = obj[key];
-    }
-    return memo;
-  }, {});
 ```
 
 ## JS复制到剪切板(chrome 66+ 支持)
