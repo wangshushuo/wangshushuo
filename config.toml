@@ -108,7 +108,7 @@ uglyURLs = false
 [related]
     threshold = 80
     includeNewer = true
-    toLower = true
+    toLower = false
     [[related.indices]]
         name = "categories"
         weight = 100
