@@ -4,7 +4,7 @@ toc: true
 url: /redux-toolkit.html
 title: Redux Toolkit
 categories:
-- react
+- React
 ---
 
 [Redux Toolkit](https://redux-starter-kit.js.org/introduction/quick-start)是 `Redux` 官方提供的工具箱🧰，它指定了一个 `Redux` 的使用规则，集成了 `immer` `thunk` 等常用的工具库，还有很好的 `typescript` 支持。

@@ -4,7 +4,7 @@ url: /ReactRouter-philosophy.html
 date: 2020-03-31T13:11:28+08:00
 summary: 机翻文档，新版的react-router是动态路由，它与传统的静态路由在使用上有很大的不同
 categories:
-- react
+- React
 tags:
 - knowledge
 ---

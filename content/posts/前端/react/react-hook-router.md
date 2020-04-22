@@ -4,7 +4,7 @@ url: /react-router-hook.html
 date: 2019-07-08T09:36:38+08:00
 description: 利用React Hook的useContext使用React Router的history.push等api，使用useReducer管理数据。
 categories:
-- react
+- React
 tags:
 - api
 keywords:

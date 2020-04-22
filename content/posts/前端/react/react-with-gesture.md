@@ -5,7 +5,7 @@ toc: true
 date: 2019-08-28T13:21:48+08:00
 description: react的手势拖拽的库，支持鼠标和触屏
 categories:
-- react
+- React
 tags:
 - 手势
 - 拖拽

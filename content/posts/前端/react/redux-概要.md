@@ -2,7 +2,7 @@
 title: Redux 概要
 date: 2018-11-28T14:24:04+00:00
 categories:
-- react
+- React
 tags:
 - api
 ---

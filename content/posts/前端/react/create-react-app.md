@@ -4,7 +4,7 @@ url: /create-react-app.html
 date: 2020-02-27T11:10:50+08:00
 summary: 创建 React 项目
 categories:
-- react
+- React
 tags:
 - handbook
 ---

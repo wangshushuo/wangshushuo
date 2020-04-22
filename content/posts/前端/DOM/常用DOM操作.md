@@ -2,13 +2,16 @@
 title: 常用DOM操作
 url: /常用DOM操作.html
 date: 2020-04-22T19:20:48+08:00
-summary: 摘要，显示在meta的description中，
 categories:
-- 分类
+- DOM
 tags:
-- 显示在底部
+- api
 keywords:
-- aa
+- 复制文字
+- 剪切实践
+- 获取file的src
+- class
+- 图片原始尺寸
 ---
 
 

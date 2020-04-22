@@ -3,7 +3,7 @@ title: dvadva取消异步任务
 date: 2018-12-31T09:54:21+00:00
 url: /dva-saga-cancel-effect.html
 categories:
-- react
+- React
 keywords:
 - cancel effect
 - dva

@@ -2,7 +2,7 @@
 title: Redux Saga
 date: 2018-12-02T11:04:48+00:00
 categories:
-- react
+- React
 tags:
 - api
 

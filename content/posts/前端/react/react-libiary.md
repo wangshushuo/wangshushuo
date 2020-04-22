@@ -5,7 +5,7 @@ date: 2020-02-27T12:10:28+08:00
 summary: 将一个 React 组件打包为一个 library，可以通过 npm 安装使用。
 toc: false
 categories:
-- react
+- React
 tags:
 - handbook
 ---

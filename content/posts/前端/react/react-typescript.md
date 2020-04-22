@@ -3,7 +3,7 @@ title: Typescript & React
 date: 2019-01-20T14:15:47+00:00
 url: /typescript-react.html
 categories:
-- react
+- React
 
 ---
 ## 0. 类型
