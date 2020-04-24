@@ -866,7 +866,7 @@ uglyURLs = false
     #      SVG，则可留空（""）品牌栏字体。
 
     # 品牌栏
-    fontFamilySiteBrand = ""
+    fontFamilySiteBrand = "-apple-system,'Noto Mono',BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif,serif"
     # 菜单栏
     fontFamilyMenu = ""
     # 文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题、表格的表头、定义列表中的术语
@@ -874,7 +874,7 @@ uglyURLs = false
     # 分节标题、目录标题
     fontFamilyHeadings = ""
     # 代码、上标、文章元信息、文章更新徽章、文章的 Git 版本信息、极简页脚、不蒜子站点浏览计数
-    fontFamilyCode = "'Source Code Pro', 'Noto Serif SC', monospace"
+    fontFamilyCode = "Monaco,'Noto Mono','Source Code Pro', 'Noto Serif SC', monospace"
     # 引用
     fontFamilyQuote = ""
     # 文章目录
@@ -884,7 +884,7 @@ uglyURLs = false
     # 页脚
     fontFamilyFooter = ""
     # 主体
-    fontFamilyBody = "-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif,serif"
+    fontFamilyBody = "Monaco,-apple-system,'Noto Mono',BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif,serif"
 
     # 网络字体链接
     fontsLink = ""
@@ -1212,7 +1212,7 @@ uglyURLs = false
     enableHighlight = true
 
     # 是否开启竖直滚动
-    enableOverflowY = true
+    enableOverflowY = false
     # 最大高度
     maxHeight = 20
     # 单位：em
