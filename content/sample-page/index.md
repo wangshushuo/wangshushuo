@@ -92,15 +92,6 @@ chrome://inspect/
 
 [知乎1]:https://www.zhihu.com/question/312019918/answer/608965942  
 
-## parcel
-
-### 静态资源
-插件  
-npm install parcel-plugin-asset-copier
-  
-package.json中加一个字段  
-"assetsPath": "test-files/assets"
-
 
 ## 自学php，找到远程工作项目的22岁程序员
 
@@ -111,34 +102,3 @@ package.json中加一个字段
 没有惩罚，只有奖励
 
 奖励的目的是它能让儿子获得短暂的快乐，满足他的某一个需求，但过去就没了，下一个目标又在眼前。
-
-## stackoverflow的数据
-
-在[这个网站](https://archive.org/details/stackexchange)有它的数据包，可以下载。
-
-[这里](https://stackoverflow.blog/2014/01/23/stack-exchange-cc-data-now-hosted-by-the-internet-archive/)还介绍了另外一个可以输入sql进行查询的网站。
-
-有了这些资源就可以拿到想要的数据了。
-
-下载的数据是xml的格式，体积很大。
-
-可以用python的xml.sax进行解析。
-
-使用这个demo就可以解析了。
-```python
-import xml.sax
-
-class InkscapeSvgHandler(xml.sax.ContentHandler):
-    def startElement(self, name, attrs):
-        if name != "svg":
-            line = ""
-            for (k, v) in attrs.items():
-                line += (k + " " + v+",")
-            print("line:" + line)
-
-parser = xml.sax.make_parser()
-parser.setContentHandler(InkscapeSvgHandler())
-parser.parse(open("Votes.xml", "r", encoding='utf-8'))
-```
-
-
