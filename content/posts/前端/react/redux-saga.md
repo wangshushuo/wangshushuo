@@ -7,6 +7,15 @@ tags:
 - api
 
 ---
+
+## redux-saga中使用fetch
+
+```js
+const response = yield call(fetch, '/consult/v1/headCarousel');
+const data = yield response.json();
+yield put({ type: 'save', payload: data });
+```
+
 为了对它有一个感性的认识，首先看一下 <a rel="noreferrer noopener" href="http://link.zhihu.com/?target=http%3A//leonshi.com/redux-saga-in-chinese/docs/api/index.html%23effect-" target="_blank">中文文档</a> 把dome写出来，跑一下。另外还需要了解 [ES6的Generator][1] 。
 
 跑完了文档中的dome之后，在来看一个例子。

@@ -8,62 +8,11 @@ url: /questions
 description: 记录各种小问题、零散的知识点
 ---
 
-## redux-saga中使用fetch
-
-```js
-const response = yield call(fetch, '/consult/v1/headCarousel');
-const data = yield response.json();
-yield put({ type: 'save', payload: data });
-```
-
 ## virtual DOM ❗️
 
 * 使用javascript对象描述DOM树，并用它构建真的DOM树。
 * 状态变更会重新创建js对象树，并比较新旧树的差异，并记录。
 * 将记录的差异应用到真的DOM树，只修改差异的部分。
-
-
-## 可编辑元素
-
-```html
-<!-- vue -->
-<p class="content" v-text="item.title" @keydown="onEnter"  @dblclick="turnOnEditable" @blur="(e)=>{titleBlur(e, index)}">
-  {{item.title}}
-</p>
-```
-```js
-// js
-methods: {
-    // 修改标题，回车时失去焦点
-    onEnter(e) {
-        if(e.keyCode===13){
-            e.target.blur();
-        } 
-    },
-    // 失去焦点时，保存内容，并将元素修改为不可编辑
-    titleBlur(e, index){
-        const title = e.target.innerText;
-        this.onTitleChange({title:title,index:index});
-        e.target.setAttribute('contenteditable', false);
-    },
-    // 双击元素时，将其变为可编辑状态，并获取焦点。
-    turnOnEditable(e){
-        e.target.setAttribute('contenteditable', true)
-        e.target.focus();
-        var range = window.getSelection();//创建range
-        range.selectAllChildren(e.target);//range 选择obj下所有子内容
-        range.collapseToEnd(); // 光标放到最后
-    },
-}
-```
-
-
-html部分是基于vue的，不过也很容易用其他方式实现。这里实现的是双击元素后，将其变为可编辑模式，就是设置contenteditable属性，这个属性直接写在标签中也是可以的。
-失去焦点时，将contenteditable属性置为false。
-回车时，失去焦点，会触发blur事件。其中还有个操作光标的事件，因为可能出现focus后，光标在开始位置的问题。
-
-[MDN介绍][1]
-
 
 
 ## 如何在React中利用join插入&nbsp空格
@@ -75,16 +24,8 @@ html部分是基于vue的，不过也很容易用其他方式实现。这里实�
   }}
 />
 ```
-[1]: https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/Content_Editable
-[image1]:/uploads/2019/03/image-2.png
 
 ## 刷新`ipconfig /flushdns `  
-## 隐藏滚动条：
-```
-body::-webkit-scrollbar {
-    display: none;
-}  
-```
 
 ## ckeditor的回车绑定
 
@@ -97,69 +38,18 @@ this.instance.on('instanceReady', () => {
 }); 
 ```
 
-
-## 可编辑元素
-1. 可编辑元素可以直接在里面粘贴html内容，使用contenteditable="plaintext-only"属性可以防止html内容。  
-2. 隐藏滚动条.element::-webkit-scrollbar { width: 0 !important }  
-
-
 ## 记录网页操作的工具：
 https://www.rrweb.io/  
-
-## 剪裁元素内容
-
-```
-clip-path: inset(0 10px 0 10px);
-```
-这个可以剪裁元素内容，依次为上右下左，以边缘为起点，剪裁掉这么多宽度。
-参考：https://www.zhangxinxu.com/wordpress/2014/12/css3-svg-clip-path/
-和：https://developer.mozilla.org/zh-CN/docs/Web/CSS/clip-path  
 
 ## nodejs
 __dirname好像是文件所在当前目录
 process.cwd()好像是启动程序的线程工作的目录  
-
-## electron中可以启动egg服务器，在程序中修改了文件以后，可能需要重启electron才能生效。  
 
 
 ## chrome调试安卓设备的chrome浏览器的网页
 通过usb链接
 chrome://inspect/  
 
-
-## ssh
-
-
-
-## 其他记录
-
-* S2登录可以加chrome的凭证管理 API，实现保存账号密码。避免重复输入密码。登录页面自动显示登录过的老师信息。如果多个老师使用同一个设备，也可以列出老师的名字，让老师选择自己的名字登录，进行上课？（如果登录到其他老师的账号，会造成什么破坏性的后果吗？未授权课程？）
-
-* 尝试用postfix发邮件，用阿里邮箱，开始说权限不对，就是密码错误之类的。后来改成qq邮箱，说lost connection with smtp.qq.com[14.18.245.164] while receiving the initial server greeting，stackoverflow说可能是本地的防火墙限制了postfix使用的25端口。如果是这样的话，可以考虑用AppleScript或者用我的远程服务器来发了。 
-
-* qq的smtp服务器需要身份验证，找到了一个blog好像是要给qq发证书才行，像ssh一样吗？https://blog.csdn.net/pengzonglu7292/article/details/78850082  
-
-* 不是，在mac上的尝试失败，可能是因为mac做不了这个工作，qq的smtp服务器验证不通过。换到云服务器上就ok了。  
-
-* 凭证管理API介绍：https://lavas.baidu.com/pwa/automatic-login/credential-management-api/introduction  
-
-* sprite-react安装以后用不了，可能是因为react的版本是16.42，改成16.5可能就可以了。  
-
-* sprite-react的label的文字需要传text参数，scene可以传一个viewport={[300, 300]}设置宽高。sprite可以设置事件，作为富文本编辑可以做，但是可能需要较大的工作量来自定义各种编辑行为。作为备选方案吧，暂时不考虑做了，等目前gg和任务清单开发完了，可以考虑再试试。  
-
-* 怎么才能在网页上管理分支呢？管理分支需要运行git命令，egg是运行在nodejs环境，网页将指令传给后台，egg中执行git命令。git命令需要的路径怎么办？可以跨路径执行git吗？如果可以的话，就可以将egg单独运行。否则的话，需要在被管理的项目路径下运行egg项目。  
-
-* git可以clone本地的仓库，比如`git clone /f/code/ed-plugin-platform`，可以利用这一点吗？创建分支，merge分支？网页中点击创建分支按钮，egg目录创建分支，push到epp目录？epp接收到了分支，应该还需要切换。  
-
-* 利用nodejs子线程和目标目录路径去epp目录下操作git？  
-
-* diff方法现在的实现不大好，因为有student_page的存在，是逻辑变得复杂了很多。可能模仿虚拟dom的结构，用树来表示可能比较好。  
-
-* SonarSource 分析代码工具  
-
-* 怎么写单元测试？直觉：工具函数准备输入数据，验证输出数据；事件处理函数，模拟事件数据。难点是准备各种情况的输入数据。  
-* 目标为导向的团队都不会重考勤。过程为导向的肯定重考勤。  
-* 项目结构复杂，文档少，过于依赖经验。项目就失控了。 
 
 ## 工作成效
 
@@ -202,10 +92,6 @@ chrome://inspect/
 
 [知乎1]:https://www.zhihu.com/question/312019918/answer/608965942  
 
-## mouseEvent
-
-click事件实际上也是一个mouseEvent事件。mouseEvent中有一个属性`path`，它可以看到触发事件的路径，从触发了事件的元素开始，以及他的所有父元素，一直到document然后是window。
-
 ## parcel
 
 ### 静态资源
@@ -225,54 +111,6 @@ package.json中加一个字段
 没有惩罚，只有奖励
 
 奖励的目的是它能让儿子获得短暂的快乐，满足他的某一个需求，但过去就没了，下一个目标又在眼前。
-
-
-
-## 并发编程、网络编程
-nodejs 并发编程：[资源1](https://segmentfault.com/a/1190000011086405)，[资源2](https://segmentfault.com/a/1190000011447510)，[资源3](http://myfjdthink.com/2018/01/16/node-js-%E5%B9%B6%E5%8F%91%E6%A8%A1%E5%9E%8B/)
-
-## 其他
-[API网关](https://juejin.im/post/5d4846e26fb9a06ae3724744)
-
-## css module的composes在vscode中有警告
-在vscode的配置文件中加这个：
-```
-"css.lint.unknownProperties": "ignore"
-```
-
-## 前端水平
-
-前端水平全看node.js、webpack、rollup、react、vue等生态链和框架的原理和实现细节的了解
-
-### 修改root密码
-
-使用普通给用户密码切换到root，在使用passwd修改密码
-
-```
-sudo su
-passwd root
-```
-
-## ubuntu 安装python3
-
-1. wget http://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
-1. tar -xvzf Python-3.7.4.tgz
-1. cd Python-3.7.4
-1. ./configure --with-ssl
-1. make
-1. sudo make install
-
-## svg的image元素
-
-```js
-<image 
-  fill="#000000" 
-  x={x} y={x}
-  width={w} height={h} 
-  preserveAspectRatio="none"
-  xlinkHref={mark.point.image} 
-/>
-```
 
 ## stackoverflow的数据
 

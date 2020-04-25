@@ -91,3 +91,21 @@ sudo systemctl disable blog.service # stops autostart
 ```bash
 sudo service blog start/stop/status/restart
 ```
+
+## ubuntu 安装python3
+
+1. wget http://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
+1. tar -xvzf Python-3.7.4.tgz
+1. cd Python-3.7.4
+1. ./configure --with-ssl
+1. make
+1. sudo make install
+
+## 修改root密码
+
+使用普通给用户密码切换到root，在使用passwd修改密码
+
+```
+sudo su
+passwd root
+```

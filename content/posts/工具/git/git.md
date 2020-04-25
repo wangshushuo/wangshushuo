@@ -1,15 +1,12 @@
 ---
 title: "Git"
-url: "/Git"
-toc: true
-type: posts
-date: 2019-07-18T10:53:36+08:00
-lastmod: 2020-03-27T20:53:36+08:00 
+date: 2019-07-18T10:53:36+08:00 
 author: 王书硕
 summary: Git 常用操作，暂存，刷新远程分支列表，取消追踪，代理设置等。
 categories:
+- git
+tags:
 - api
-- 工具
 ---
 ## 删除本地的所有分支，除了master
 

@@ -193,3 +193,25 @@ filter: grayscale(100%);
   }
 }
 ```
+
+## css module 的 composes 在 vscode 中有警告
+在vscode的配置文件中加这个：
+```
+"css.lint.unknownProperties": "ignore"
+```
+
+## 剪裁元素内容
+
+```
+clip-path: inset(0 10px 0 10px);
+```
+这个可以剪裁元素内容，依次为上右下左，以边缘为起点，剪裁掉这么多宽度。
+参考：https://www.zhangxinxu.com/wordpress/2014/12/css3-svg-clip-path/
+和：https://developer.mozilla.org/zh-CN/docs/Web/CSS/clip-path  
+
+## 隐藏滚动条：
+```
+body::-webkit-scrollbar {
+    display: none;
+}  
+```

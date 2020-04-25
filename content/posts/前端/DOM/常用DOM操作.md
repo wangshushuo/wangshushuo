@@ -88,3 +88,12 @@ xxxElement.addEventListener("paste", function(e) {
 });  
 
 ```
+
+## 获取dataset
+```js
+const index = +e.target.dataset.id;
+```
+
+## mouseEvent
+
+click事件实际上也是一个mouseEvent事件。mouseEvent中有一个属性`path`，它可以看到触发事件的路径，从触发了事件的元素开始，以及他的所有父元素，一直到document然后是window。

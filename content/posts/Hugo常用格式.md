@@ -25,6 +25,11 @@ categories:
 {{< img "/images/linear-gradient-2.png" alt caption 1 >}}
 
 
+## 定义
+
+定义一
+: 说明文字
+
 ## 图片
 
 下面引号内的文字是可以不加的，加了的话，会显示在图片下方，作为说明文字。
