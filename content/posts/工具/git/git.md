@@ -1,5 +1,5 @@
 ---
-title: "Git"
+title: Git
 date: 2019-07-18T10:53:36+08:00 
 author: 王书硕
 summary: Git 常用操作，暂存，刷新远程分支列表，取消追踪，代理设置等。
@@ -238,3 +238,25 @@ Git 分支管理策略 <http://www.ruanyifeng.com/blog/2012/07/git.html>
 Git 工作流程 <http://www.ruanyifeng.com/blog/2015/12/git-workflow.html>
 
 Git 使用规范流程 <http://www.ruanyifeng.com/blog/2015/08/git-use-process.html>
+
+## git记住密码
+
+配置本地仓库
+
+```
+git config user.name "your_name"
+git config user.email XXXX@gmail.com
+```
+
+PS： HTTPS 方式会让每次输入用户名和密码，解决办法如下
+
+创建 `.git-credential` 文件 并写入用户信息：用户名和密码
+
+push 代码 这一步输入的用户名密码会被记住,
+下次再push代码时就不用输入用户名密码, 这一步会在用户目录下生成文件.git-credential记录用户名密码的信息。
+```
+// 当前仓库
+git config  credential.helper store
+// 全局仓库
+git config --global credential.helper store
+```
