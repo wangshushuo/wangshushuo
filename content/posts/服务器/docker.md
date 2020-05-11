@@ -25,6 +25,15 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
+## 操作
+
+进入 container 
+
+```
+docker exec -it container-name/id /bin/sh
+```
+最后的 `/bin/sh` 可以换成 `/bin/bash`
+
 ## tensorflow
 
 系统ubuntu 18.04，显卡Gtx950，驱动390。 
