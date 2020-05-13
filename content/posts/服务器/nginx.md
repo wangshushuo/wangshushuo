@@ -46,6 +46,16 @@ sudo nginx -s reload
 cat /var/log/nginx/access.log
 ```
 
+## http转https
+
+```
+server {
+    listen 80;
+    server_name www.test.com;
+    rewrite ^(.*)$ https://${server_name}$1 permanent; 
+}
+```
+
 ## https配置
 
 ```
