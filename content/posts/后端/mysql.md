@@ -7,9 +7,7 @@ lastmod : 2020-04-02T22:24:03+08:00
 toc: true
 summary: ""
 categories:
-- api
 - 后端
-- mysql
 ---
 
 ## 安装MySQL
@@ -148,96 +146,14 @@ LINES TERMINATED BY '\n'
 
 ## 远程连接新建一个帐号（帐号名不能为root）
 如：添加一个用户名为db_user，密码为db_pass，授权为% （%表示所有外围IP能连接）对db_name数据库所有权限，命令如下
+```
 /# mysql -uroot -p
 MySQL [(none)]> grant all privileges on db_name.* to db_user@’%’ identified by ‘db_pass’; #授权语句，特别注意有分号
 MySQL [(none)]> flush privileges;
 MySQL [(none)]> exit; #退出数据库控制台，特别注意有分号
-
-
-## 数据类型
-
-### varchar
-
-`varchar(666)`，其中参数`666`为字节数。
-
-`varchar`是可变长度的字符串，大小为`0-65535`字节。对应的字符串长度会受到字符集影响，若使用`utf-8`存储汉字，一个汉字字符对应`3`个字节。
-
-`varchar`还需要存储数据长度，当小于等于`255`个字节时，使用`1`个字节存储长度。大于`255`长度时，使用`2`个字节存储长度。
-
-比如`varchar(666)`，使用`2`个字节存储长度，剩下的`664`个字节存储实际内容，
-
-### text
-
-TEXT数据不存储在数据库服务器的内存中，因此，每当查询TEXT数据时，MySQL都必须从磁盘读取它，这与CHAR和VARCHAR相比要慢得多。
-![mysql文档][image1]
-
-> mysql的性能只有在上千万条纪律的时候才需要考虑。
-> ——潘老师
-
-### DATETIME
-
-将js的Date对象传进去，会直接保存，查出来返回到前端页面时，可以这样使用`new Date(props.time)`转换成Date对象。
-
-### 没有布尔值，使用tinyint
-
-```sql
-CREATE TABLE IF NOT EXISTS `ed_class_price_user`(
-   `id` INT UNSIGNED AUTO_INCREMENT,
-   `user_name` VARCHAR(200) NOT NULL unique,
-   `password` VARCHAR(200) NOT NULL,
-   `disable` TINYINT DEFAULT 0,
-   PRIMARY KEY ( `id` )
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
 ## 表结构
-
-### 修改表结构
-
-1. 查看列：`desc 表名;`
-1. 修改表名：`alter table t_book rename to bbb;`
-1. 添加列：`alter table 表名 add column 列名 varchar(30);`
-1. 删除列：`alter table 表名 drop column 列名;`
-1. 修改列名MySQL： `alter table bbb change nnnnn hh int;`
-1. 修改列名SQLServer：`exec sp_rename't_student.name','nn','column';`
-1. 修改列名Oracle：`lter table bbb rename column nnnnn to hh int;`
-1. 修改列属性：`alter table t_book modify name varchar(22);`
-
-### 唯一性约束
-
-#### 建表时加上唯一性约束：
-
-```sql
-CREATE TABLE `t_user` (
-    `Id` int(11) NOT NULL AUTO_INCREMENT, 
-    `username` varchar(18) NOT NULL unique, 
-    `password` varchar(18) NOT NULL, 
-    PRIMARY KEY (`Id`) 
-) ENGINE=InnoDB AUTO_INCREMENT=1018 DEFAULT CHARSET=gbk; 
-```
-
-#### 给已经建好的表加上唯一性约束：
-
-```sql
-ALTER TABLE `t_user` ADD unique(`username`);
-```
-
-或者：
-
-```sql
-create unique index UserNameIndex on 't_user' ('username');
-```
-
-
-### 索引
-
-#### mysql索引类型
-
-- primary：唯一索引，不允许为null。
-- key：普通非唯一索引。
-- unique：表示唯一的，不允许重复的索引，可以为null。
-- fulltext: 表示全文搜索的索引。 FULLTEXT用于搜索很长一篇文章的时候，效果最好。用在比较短的文本，如果就一两行字的，普通的INDEX 也可以。
-- spatial：空间索引。
 
 ## 表连接
 
@@ -253,58 +169,6 @@ INNER JOIN B ON A.book_id=B.book_id;
 ![表连接1][image1]
 
 然后where等语句就可以像操作一张表一样了。
-
-## 数据
-
-### CRUD
-
-#### create
-```sql
-INSERT INTO tasks(subject,start_date,end_date,description)
-VALUES('Learn MySQL INSERT','2017-07-21','2017-07-22','Start learning..');
-```
-
-[image1]:/images/mysql-1.png
-
-#### read 左右链接
-
-```sql
-SELECT
-    plugin_of_user.id, plugin_of_user.user_plugin_name,
-    plugin_info.name, plugin_info.avatar, plugin_info.link, plugin_info.type
-FROM plugin_of_user
-RIGHT JOIN plugin_info
-ON plugin_of_user.plugin_id=plugin_info.id
-WHERE plugin_of_user.user_id = ?
-```
-#### update
-
-```sql
-UPDATE [LOW_PRIORITY] [IGNORE] table_name 
-SET 
-    column_name1 = expr1,
-    column_name2 = expr2,
-    ...
-WHERE
-    condition;
-```
-
-##### 无则添加，有则修改
-
-```sql
-insert into student
-  (number, name) 
-values
-  (45,‘张三’)
-ON DUPLICATE KEY UPDATE 
-number = 46, name = ‘李四’;
-```
-
-#### delete
-```sql
-DELETE FROM table_name
-WHERE condition;
-```
 
 
 ## 实践

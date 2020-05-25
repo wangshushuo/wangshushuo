@@ -1,12 +1,9 @@
 ---
 date: 2020-01-16T23:55:23+08:00
-toc: true
 url: /Spring探索与扫盲.html
 title: Spring探索与扫盲
 categories:
-- api
 - 后端
-- Spring
 tags:
 - 入门
 - Java

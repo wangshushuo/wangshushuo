@@ -5,8 +5,6 @@ toc: true
 url: /Spring推荐使用构造器注入.html
 title: Spring推荐使用构造器注入
 categories:
-- knowledge
-- 后端
 - spring
 tags:
 - 构造器注入

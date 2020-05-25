@@ -4,7 +4,7 @@ url: /React-Rangeslider.html
 date: 2019-08-28T13:15:47+08:00
 description: react的进度条、刻度条的库，支持拖拽，支持鼠标和触屏
 categories:
-- React
+- React库
 tags:
 - api
 keywords:

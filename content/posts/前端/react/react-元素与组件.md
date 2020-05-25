@@ -1,9 +1,9 @@
 ---
-title: React 中的元素与组件
+title: 元素与组件
 date: 2018-11-24T04:49:54+00:00
 url: /react-element-and-component.html
 categories:
-- React
+- React原理
 tags:
 - knowledge
 ---

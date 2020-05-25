@@ -4,9 +4,7 @@ toc: true
 url: /Spring Security JWT.html
 title: Spring Security JWT
 categories:
-- api
 - 后端
-- spring
 ---
 
 # Spring Security Architecture
