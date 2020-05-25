@@ -1,10 +1,10 @@
 ---
-title: Git:Perission-Denied
+title: Git-Error
 date: 2020-04-18T01:43:23+08:00
 categories:
 - git
 ---
-## git:Perission denied
+## Perission denied
 刚使用了一下vuecli的mocha测试插件，然后切换分支，又切换回那个分支，就报了这个错误。把运行vue测试的命令行（窗口）关掉就可以了。
 ![666][image1]
 
