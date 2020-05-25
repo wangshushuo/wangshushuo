@@ -194,22 +194,16 @@ uglyURLs = false
         pre = "internal"
         post = "th"
     [[menu.main]]
-        url = "/tags/"
-        name = "标签"
-        weight = 4
-        pre = "internal"
-        post = "tags"
-    [[menu.main]]
         url = "/about/"
         name = "关于"
-        weight = 5
+        weight = 4
         pre = "internal"
         post = "user-circle"
     [[menu.main]]
-        weight = 6
+        weight = 5
         identifier = "theme-switcher"
     [[menu.main]]
-        weight = 7
+        weight = 6
         identifier = "lang-switcher"
 
 
@@ -389,7 +383,7 @@ uglyURLs = false
     # 最大字号
     largestFontSize = 2.5
     # 最小字号
-    smallestFontSize = 1
+    smallestFontSize = 1.6
 
 
     ######################################
@@ -404,7 +398,7 @@ uglyURLs = false
     displayListTitle = true
 
     # 日期的格式
-    listDateFormat = "1 月 2 日"
+    listDateFormat = "01 月 02 日"
     # 注意：请遵循格式 https://gohugo.io/functions/format/
 
     # 日期的位置
@@ -898,7 +892,7 @@ uglyURLs = false
     ######################################
     ## 字号（单位：px）
 
-    fontSize = 16
+    fontSize = 20
 
     ######################################
     ## 制表符的宽度

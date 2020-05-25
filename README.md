@@ -1,5 +1,10 @@
 # 博客
 
+下载项目 
+```
+git clone --recurse-submodules https://github.com/wangshushuo/wangshushuo.git
+```
+
 - [ ] 换图标fai
 - [x] 行内code的深色模式的样式
 - [x] 标题、引用字体更换
