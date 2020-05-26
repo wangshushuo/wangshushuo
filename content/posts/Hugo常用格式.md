@@ -24,6 +24,35 @@ categories:
 
 {{< img "/images/linear-gradient-2.png" alt caption 1 >}}
 
+## 代码块内的高亮
+
+Options:
+
+`linenos`: configure line numbers. Valid values are `true`, `false`, `table`, or `inline`. `false` will turn off line numbers if it’s configured to be on in site config. `New in v0.60.0` `table` will give copy-and-paste friendly code blocks.
+`hl_lines`: lists a set of line numbers or line number ranges to be highlighted.
+`linenostart=199`: starts the line number count from 199.
+
+<pre><code><span>{</span>{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+// ... code
+<span>{</span>{< / highlight >}}
+</code></pre>
+
+**效果**
+
+{{< highlight js "linenos=table,hl_lines=8 15-17,linenostart=1" >}}
+function clone(旧对象) {
+  var 新对象 = {};
+  Object.keys(旧对象).forEach(key => {
+    var value = 旧对象[key];
+    if(is基本类型(value)) {
+      新对象[key] = 旧对象[key];
+    } else {
+      clone(value)
+    }
+  })
+  return 新对象;
+}
+{{< / highlight >}}
 
 ## 定义
 
