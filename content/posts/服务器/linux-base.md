@@ -4,7 +4,6 @@ url: /linux.html
 date: 2019-06-11T23:02:30+08:00
 toc: true
 categories:
-- api
 - 服务器
 tags:
 - linux
@@ -23,7 +22,9 @@ tags:
 
 ## 复制
 
+```
 sudo cp -r public /usr/share/nginx/html/blog
+```
 
 ## 端口被占用
 
@@ -31,9 +32,11 @@ lsof -i :80
 
 ## 解析域名
 
+```
 apt install dig
 
 dig wss.cool
+```
 
 ## 设置梯子-客户端
 

@@ -5,7 +5,6 @@ url: "/Gitlab-Ci.html"
 title: "使用Gitlab的Ci"
 summary: 使用gitlab的ci/cd打包部署前端项目到oss对象存储
 categories:
-- api
 - 工具
 ---
 

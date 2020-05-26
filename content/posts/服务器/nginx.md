@@ -3,9 +3,8 @@ title: "Nginx的简单使用"
 url: "/Nginx.html"
 toc: true
 date: 2019-09-27T13:08:38+08:00
-summary: nginx的配置文件目录，默认静态网站目录，ubuntu安装nginx，websocket代理。
+description: nginx的配置文件目录，默认静态网站目录，ubuntu安装nginx，websocket代理。
 categories:
-- api
 - 服务器
 tags:
 - nginx
@@ -93,7 +92,7 @@ server {
 }
 ```
 
-# 反向代理配置
+## 反向代理配置
 
 ```
 server {
@@ -106,7 +105,7 @@ server {
 }
 ```
 
-# websocket代理
+## websocket代理
 
 ```
 location /wss {

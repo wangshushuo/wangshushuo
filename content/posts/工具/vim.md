@@ -5,9 +5,8 @@ author: 王书硕
 date: 2020-04-01T21:27:14+08:00
 lastmod : 2020-04-01T21:27:14+08:00
 toc: true
-summary: vim常用操作，替换、缩紧等
+description: vim常用操作，替换、缩紧等
 categories:
-- api
 - 工具
 ---
 

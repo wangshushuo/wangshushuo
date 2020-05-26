@@ -5,9 +5,8 @@ author: 王书硕
 date: 2020-04-03T11:36:01+08:00
 lastmod : 2020-04-03T11:36:01+08:00
 toc: true
-summary: 使用二分法或牛顿迭代法计算开平方，
+description: 使用二分法或牛顿迭代法计算开平方
 categories:
-- 知识点
 - 算法
 ---
 

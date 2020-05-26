@@ -7,7 +7,6 @@ url: "/vscode.html"
 title: "vscode"
 summary: ""
 categories:
-- api
 - 工具
 ---
 

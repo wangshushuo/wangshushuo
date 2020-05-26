@@ -4,7 +4,6 @@ toc: true
 date: 2019-10-10T14:15:23+08:00
 summary: 改造hugo主题，修改hugo主题，显示、控制hugo分类和hugo摘要
 categories:
-- api
 - 工具
 ---
 

@@ -3,13 +3,8 @@ title: "跨域CORS"
 url: "/跨域CORS.html"
 author: 王书硕
 date: 2020-03-31T08:33:05+08:00
-lastmod : 2020-03-31T08:33:05+08:00
-toc: true
-summary: 摘要，显示在meta的description中，
 categories:
-- 知识点
 - 前端
-- JavaScript
 ---
 
 

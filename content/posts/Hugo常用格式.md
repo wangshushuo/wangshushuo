@@ -28,9 +28,14 @@ categories:
 
 Options:
 
-`linenos`: configure line numbers. Valid values are `true`, `false`, `table`, or `inline`. `false` will turn off line numbers if it’s configured to be on in site config. `New in v0.60.0` `table` will give copy-and-paste friendly code blocks.
-`hl_lines`: lists a set of line numbers or line number ranges to be highlighted.
-`linenostart=199`: starts the line number count from 199.
+`linenos`
+: configure line numbers. Valid values are `true`, `false`, `table`, or `inline`. `false` will turn off line numbers if it’s configured to be on in site config. New in v0.60.0 `table` will give copy-and-paste friendly code blocks.
+
+`hl_lines`
+: lists a set of line numbers or line number ranges to be highlighted.
+
+`linenostart=199`
+: starts the line number count from 199.
 
 <pre><code><span>{</span>{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
 // ... code
@@ -72,12 +77,17 @@ function clone(旧对象) {
 
 ## 脚注
 
+[维基百科的列明来源](https://zh.wikipedia.org/wiki/Wikipedia:列明来源)介绍了脚注等说明性内容的用法。
+> 凡是引用前人（包括作者自己过去）已发表的文献中的观点、数据和材料等，我们建议都要对它们在文中出现的地方予以标明，并在文末列出参考文献表。
+
+[中文参考文献规则](https://zh.wikipedia.org/wiki/文后参考文献著录规则#GB/T_7714-2005)
+
 在词/句后或图片前加一个标记[^1]，其实是一个冒点，点击可追溯到页面地步的注脚定义。
 
 ```
 某文章[^1]说到某技术非常厉害
 
-[^1]: https://github.com/wangshushuo/abc.html
+[^1]: <https://github.com/wangshushuo/abc.html>
 ```
 
 **效果**⬇️
