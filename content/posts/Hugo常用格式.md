@@ -20,9 +20,7 @@ categories:
 
 {{< withTitle title ttt>}}
 
-{{< number 1 >}}
-
-{{< img "/images/linear-gradient-2.png" alt caption 1 >}}
+{{< number 1 >}} 与 #1# 在highlight
 
 ## 代码块内的高亮
 
@@ -46,7 +44,7 @@ Options:
 
 {{< highlight js "linenos=table,hl_lines=8 15-17,linenostart=1" >}}
 function clone(旧对象) {
-  var 新对象 = {};
+  var 新对象 = {}; #1#
   Object.keys(旧对象).forEach(key => {
     var value = 旧对象[key];
     if(is基本类型(value)) {
@@ -73,14 +71,25 @@ function clone(旧对象) {
 ```
 
 **效果**⬇️
-![52区](/images/hugo01.jpg "外域52区")
+![52区](/images/hugo01.jpg "外域52区" )[^1]
+![52区](/images/linear-gradient-2.png "外域52区" )[^1]
+
 
 ## 脚注
 
+维基百科的说明[^3]，脚注或称注脚（英语：footnote），用于：  
+- 为条目正文补充注解（解释性加注）  
+- 标明被引用于正文或注解的数据源
+
+
+
 [维基百科的列明来源](https://zh.wikipedia.org/wiki/Wikipedia:列明来源)介绍了脚注等说明性内容的用法。
-> 凡是引用前人（包括作者自己过去）已发表的文献中的观点、数据和材料等，我们建议都要对它们在文中出现的地方予以标明，并在文末列出参考文献表。
+> 凡是引用前人（包括作者自己过去）已发表的文献中的观点、数据和材料等，我们建议都要对它们在文中出现的地方予以标明，并在文末列出参考文献表。  
+> 书籍：序号 主要责任者．题名: 其他题名信息[文献类型标志]．其他责任者．版本．出版地: 出版者, 出版年: 引文页码[引用日期]．国际标准书号（ISBN）．获取和访问路径。  
+> 网页：作者，文章标题，网页地址，发表或更新日期。（网页语言）
 
 [中文参考文献规则](https://zh.wikipedia.org/wiki/文后参考文献著录规则#GB/T_7714-2005)
+
 
 在词/句后或图片前加一个标记[^1]，其实是一个冒点，点击可追溯到页面地步的注脚定义。
 
@@ -148,5 +157,6 @@ function clone(旧对象) {
 ---
 
 [^1]: https://github.com/wangshushuo/abc.html
+[^3]: https://zh.wikipedia.org/wiki/Help:%E8%84%9A%E6%B3%A8
 
 [a1]: https://wss.cool
