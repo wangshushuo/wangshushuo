@@ -95,6 +95,11 @@ sudo systemctl disable blog.service # stops autostart
 sudo service blog start/stop/status/restart
 ```
 
+修改了service文件后需要刷新
+```
+sudo systemctl daemon-reload
+```
+
 ## ubuntu 安装python3
 
 1. wget http://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
