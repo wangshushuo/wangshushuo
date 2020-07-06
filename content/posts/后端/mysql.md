@@ -166,7 +166,7 @@ INNER JOIN B ON A.book_id=B.book_id;
 
 四种连接会像下图一样拼装2个表，空白的地方会被填充null
 
-![表连接1][image1]
+![表连接1](/images/mysql-1.jpg)
 
 然后where等语句就可以像操作一张表一样了。
 
@@ -218,4 +218,3 @@ docker run --name myphpadmin -d -e PMA_ARBITRARY=1 -p 8080:80 phpmyadmin/phpmyad
 
 [易百教程MySQL](https://www.yiibai.com/mysql/update-data.html)
 [Mysql设计与优化专题](https://www.kancloud.cn/thinkphp/mysql-design-optimalize/39325)
-[image1]:/images/mysql-1.jpg
