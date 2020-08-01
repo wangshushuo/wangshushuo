@@ -69,6 +69,25 @@ git push origin :[远程分支名]
 git symbolic-ref --short -q HEAD 
 ``` 
 
+### 获取当前分支从哪个分支签出
+> 基于哪个分支拉的分支
+
+下面的两个命令都可以获取到“父分支”，来自——[How to find the nearest parent of a Git branch?](https://stackoverflow.com/questions/3161204/how-to-find-the-nearest-parent-of-a-git-branch)
+
+```sh
+git show-branch \
+| sed "s/].*//" \
+| grep "\*" \
+| grep -v "$(git rev-parse --abbrev-ref HEAD)" \
+| head -n1 \
+| sed "s/^.*\[//" 
+```
+
+```sh
+git show-branch | grep '*' | grep -v "$(git rev-parse --abbrev-ref HEAD)" | head -n1 | sed 's/.*\[\(.*\)\].*/\1/' | sed 's/[\^~].*//'
+```
+
+
 ### 推送当前分支到远端
 
 如果你还没有推到原点，那么`git push -u origin HEAD`可以在本地分支中设置上游跟踪信息。
