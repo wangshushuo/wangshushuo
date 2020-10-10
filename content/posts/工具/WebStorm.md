@@ -55,19 +55,14 @@ Settings for New Projects（Ctrl+Alt+S）→ Version Control，勾选 Show direc
 :---|:---
 重复选中的内容或当前行 | Ctrl+D
 删除行 | Ctrl+Y
-
 格式化代码 | Ctrl+Alt+L
 按prettier格式化 | Ctrl+Shift+Alt+P
 重命名 | Shift+F6
-
 撤销或反撤销修改 | Ctrl+Z 或 Ctr+Shift+Z
 回到之前的位置 | Ctrl+Alt+左\右
 光标移到内容的开始或结束标签处 | ctrl+[ 或 ctrl+]
-
-
 打开最近操作过的文件 | Ctrl+E
 搜索文件 | Ctrl+Shift+N
-
 在所有文件中列出代码使用情况 | Alt+F7
 在当前文件中高亮代码使用情况 | Ctrl+Shift+F7
 
