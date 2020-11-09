@@ -74,6 +74,18 @@ User=ubuntu
 WantedBy=multi-user.target
 ```
 
+```
+[Unit]
+Description=dinghe de image service
+
+[Service]
+ExecStart=/usr/bin/java -XX:+UseSerialGC -Xss512k -XX:MaxRAM=128m -jar /home/ubuntu/image-0.0.4-SNAPSHOT.jar
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
+```
+
 第三步，启动/关闭/查看状态。
 
 命令可以这样用：

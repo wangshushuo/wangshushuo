@@ -9,7 +9,7 @@ categories:
 
 我比较熟悉Redux，所以以Redux与Mobx作为类比我会比较容易理解。
 
-redux会有一个store与redux组件配合。
+redux会有一个store与react组件配合。
 
 store中定义变量、状态，写修改变量的reducer及相应的action。
 
@@ -24,3 +24,7 @@ reducer有两种写法——是否包含业务逻辑，这里选择不包含业�
 redux可以换成mobx。
 
 在mobx的store中，它可以作为MVP中的M。还是声明变量、定义action，作用与redux一样。
+
+## 声明变量
+
+如果使用observable声明的话，
