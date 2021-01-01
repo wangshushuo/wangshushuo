@@ -7,9 +7,14 @@ categories:
 - 其他
 ---
 
-光标回到之前的位置：
-1. mac：ctrl+`-` 和 ctrl+shift+`-`
-1. windows：`alt+左/右`
+## 常用快捷操作
+光标回到之前的位置：菜单是navigate>(back+forward)
+- mac：`ctrl -` 和 `ctrl shift -`
+- windows：`ctrl alt 左/右`
+
+折叠代码：菜单是code>folding
+- 折叠：`ctrl -`,`ctrl shift -`
+- 展开：`ctrl +`,`ctrl shift +`
 
 ## 常用设置
 
