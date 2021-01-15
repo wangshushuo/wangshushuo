@@ -4,7 +4,7 @@ url: /WebStorm.html
 date: 2020-08-13T09:39:16+08:00
 description: 编辑器常用的功能，vscode与WebStorm的配置和快捷键
 categories:
-- 其他
+- 效率
 ---
 
 ## 常用快捷操作
