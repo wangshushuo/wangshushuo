@@ -82,3 +82,10 @@ main.go 文件引用了 package main 中的另外两个文件中的函数。所�
 $ go run main.go demo.go average2.go 
 ```
 要把关联的文件都加载才行。
+
+## 单元测试
+命令是 go test 文件名，它会寻找以 _test.go 结尾的文件
+- -v 会打印出执行的用例的名字 
+- -run 加关键字，只会执行相关的文件
+
+一个 _test.go 文件内可以有多个测试函数，函数的名字要以 Test 开头
