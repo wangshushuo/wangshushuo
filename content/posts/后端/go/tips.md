@@ -94,3 +94,21 @@ $ go run main.go demo.go average2.go
 ```go
 fmt.Println(*myIntPointer) // 4
 ```
+## 单元测试
+命令是 go test 文件名，它会寻找以 _test.go 结尾的文件
+- -v 会打印出执行的用例的名字 
+- -run 加关键字，只会执行相关的文件
+
+一个 _test.go 文件内可以有多个测试函数，函数的名字要以 Test 开头
+
+## install
+`go install` 命令会对当前目录的go程序进行编译并安装编译后的结果文件到指定目录。可以到 `cd $GOPATH/bin` 目录中查看。
+
+安装后的程序是以目录名命名的。
+
+```
+go install -v -work // 
+go install -a -v -work // 强行重新安装指定代码包及其依赖包
+```
+
+[参考](https://wiki.jikexueyuan.com/project/go-command-tutorial/0.2.html)
