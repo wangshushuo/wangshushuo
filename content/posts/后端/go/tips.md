@@ -82,3 +82,15 @@ main.go 文件引用了 package main 中的另外两个文件中的函数。所�
 $ go run main.go demo.go average2.go 
 ```
 要把关联的文件都加载才行。
+
+## *
+- 声明变量为指针类型
+    ```go
+    var myIntPointer *int
+    myInt := 4
+    myIntPointer = &myInt
+    ```
+- 获取指针的值
+```go
+fmt.Println(*myIntPointer) // 4
+```
