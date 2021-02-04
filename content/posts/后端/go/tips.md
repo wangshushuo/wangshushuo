@@ -83,7 +83,7 @@ $ go run main.go demo.go average2.go
 ```
 要把关联的文件都加载才行。
 
-## *
+## * 运算符
 - 声明变量为指针类型
     ```go
     var myIntPointer *int
@@ -91,9 +91,19 @@ $ go run main.go demo.go average2.go
     myIntPointer = &myInt
     ```
 - 获取指针的值
-```go
-fmt.Println(*myIntPointer) // 4
-```
+    ```go
+    fmt.Println(*myIntPointer) // 4
+    ```
+- 修改指针指向的变量的值
+    ```go
+    var myIntPointer *int
+    myInt := 4
+    myIntPointer = &myInt
+    fmt.Println(*myIntPointer) //4
+    *myIntPointer = 8
+    fmt.Println(myInt) //8
+    ```
+
 ## 单元测试
 命令是 go test 文件名，它会寻找以 _test.go 结尾的文件
 - -v 会打印出执行的用例的名字 
