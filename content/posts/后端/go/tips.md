@@ -122,3 +122,37 @@ go install -a -v -work // 强行重新安装指定代码包及其依赖包
 ```
 
 [参考](https://wiki.jikexueyuan.com/project/go-command-tutorial/0.2.html)
+
+## go get
+
+go get 命令会下载并install一个go程序
+
+刚开始本地创建了项目时，要进行 go mode init 会创建一个 go.mod 文件
+
+```
+module gg
+
+go 1.14
+
+require (
+	github.com/atotto/clipboard v0.1.2
+	github.com/urfave/cli/v2 v2.3.0
+)
+```
+其中的 module 是你当前文件夹的名字
+
+当把它提交到 github 后，用 go get 命令安装时，命令应该是这样的
+```
+go get github.com/wangshushuo/gg
+```
+然后会报一个错误
+```
+$ go get github.com/wangshushuo/gg@v0.1.1
+go get: github.com/wangshushuo/gg@v0.1.1: parsing go.mod:
+module declares its path as: gg
+but was required as: github.com/wangshushuo/gg
+```
+
+module 这个字段现在是 gg ，要求的是 github.com/wangshushuo/gg 。
+
+所以需要在 go.mod 文件中将 gg 改为 github.com/wangshushuo/gg 。
