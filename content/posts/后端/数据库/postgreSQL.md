@@ -18,3 +18,8 @@ pg_hba.conf 文件
 # TYPE  DATABASE  USER  CIDR-ADDRESS  METHOD
 host  all  all 0.0.0.0/0 md5
 ```
+
+3. 重启
+```
+sudo service postgresql restart
+```
