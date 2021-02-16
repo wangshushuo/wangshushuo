@@ -156,3 +156,24 @@ but was required as: github.com/wangshushuo/gg
 module 这个字段现在是 gg ，要求的是 github.com/wangshushuo/gg 。
 
 所以需要在 go.mod 文件中将 gg 改为 github.com/wangshushuo/gg 。
+
+## html/template
+
+简单的方式
+```go
+temp, err := template.ParseFiles("tech_keyword/category/view.html")
+```
+这样的模板不能植入方法，需要用template.New方法
+```go
+func demo() {
+    funcMap := template.FuncMap{"add": add}
+    temp, err := template.New("view.html").Funcs(funcMap).ParseFiles("tech_keyword/category/view.html")
+}
+func add(a, b int) int {
+	return a + b
+}
+```
+New的参数需要是ParseFiles中文件名一样，不然会报错
+```
+error: template: “…” is an incomplete or empty template
+```
