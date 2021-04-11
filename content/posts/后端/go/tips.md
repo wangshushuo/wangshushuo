@@ -193,3 +193,23 @@ loginInfoJson, err := json.Marshal(loginInfo)
 
 req, err := http.NewRequest("POST", "http://xxx/api/loginapi", bytes.NewBuffer(loginInfoJson))
 ```
+## html/template
+
+简单的方式
+```go
+temp, err := template.ParseFiles("tech_keyword/category/view.html")
+```
+这样的模板不能植入方法，需要用template.New方法
+```go
+func demo() {
+    funcMap := template.FuncMap{"add": add}
+    temp, err := template.New("view.html").Funcs(funcMap).ParseFiles("tech_keyword/category/view.html")
+}
+func add(a, b int) int {
+	return a + b
+}
+```
+New的参数需要是ParseFiles中文件名一样，不然会报错
+```
+error: template: “…” is an incomplete or empty template
+```
