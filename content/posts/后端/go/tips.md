@@ -156,3 +156,40 @@ but was required as: github.com/wangshushuo/gg
 module 这个字段现在是 gg ，要求的是 github.com/wangshushuo/gg 。
 
 所以需要在 go.mod 文件中将 gg 改为 github.com/wangshushuo/gg 。
+
+## http 请求
+
+form
+
+```go
+client := &http.Client{}
+form := url.Values{}
+form.Add("username", "xxx")
+form.Add("password", "xxx")
+
+req, err := http.NewRequest("POST", "http://xxx/api/loginapi", strings.NewReader(form.Encode()))
+
+if req != nil {
+    req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
+}
+if err != nil {
+    fmt.Println("err")
+    // handle error
+}
+res, _ := client.Do(req)
+defer res.Body.Close()
+body, err := ioutil.ReadAll(res.Body)
+fmt.Println(string(body))
+```
+
+json
+
+```go
+loginInfo := LoginInfo{
+    Username: "王书硕",
+    Password: "ISxUo7Ol",
+}
+loginInfoJson, err := json.Marshal(loginInfo)
+
+req, err := http.NewRequest("POST", "http://xxx/api/loginapi", bytes.NewBuffer(loginInfoJson))
+```
