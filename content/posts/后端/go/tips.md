@@ -1,6 +1,6 @@
 ---
-title: Tips
-url: /Tips.html
+title: Go Tips
+url: /GoTips.html
 date: 2021-01-27T15:03:39+08:00
 categories:
 - 后端
@@ -212,4 +212,29 @@ func add(a, b int) int {
 New的参数需要是ParseFiles中文件名一样，不然会报错
 ```
 error: template: “…” is an incomplete or empty template
+```
+
+## template bing data
+
+```go
+func (o *OAuth2) view(w http.ResponseWriter, r *http.Request) {
+	temp, _ := template.New("view.html").ParseFiles("oauth2/view.gohtml")
+	res, _ := o.client.Get("https://api.github.com/user")
+	robots, err := ioutil.ReadAll(res.Body)
+	res.Body.Close()
+	if err != nil {
+		log.Println("err: ", err)
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+	fmt.Printf("%s", string(robots))
+	userInfo := UserInfoData{}
+	err = json.Unmarshal(robots, &userInfo)
+	if err != nil {
+		log.Println("err: ", err)
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+	_ = temp.Execute(w, userInfo)
+}
 ```
