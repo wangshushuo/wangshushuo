@@ -1,8 +1,8 @@
 ---
-title: WebStorm的code-snippet
-url: /WebStorm的code-snippet.html
+title: WebStorm的live-template
+url: /WebStorm的live-template.html
 date: 2020-08-19T10:23:09+08:00
-description: code snippet 就是输入abc后，编辑器提示出一个菜单，选择后可以输入一段代码
+description: live-template(code snippet) 就是输入abc后，编辑器提示出一个菜单，选择后可以输入一段代码
 categories:
 - 效率
 ---
@@ -34,6 +34,17 @@ export default function Keyword() {
 
 3. 点击 ok 保存设置
 4. 尝试一下吧，可以把刚才的代码删掉，输入 `imfc` 看看效果。
+
+## 例子
+打开设置，选择Editor > Live Templates，点右侧 + ，选 1
+
+```ts
+const [$NAME$, set$SETNAME$] = useState($END$)
+```
+
+![20210509210549_8d772096ee68ed7f6805b3559bb76c95.png](https://hugo-1256216240.cos.ap-chengdu.myqcloud.com/20210509210549_8d772096ee68ed7f6805b3559bb76c95.png)
+
+变量间可以互相引用，可以通过表达式进行一些自动变化，如果通过表达式计算出了值，还可以跳过用户输入。
 
 ## 变量
 
