@@ -238,3 +238,37 @@ func (o *OAuth2) view(w http.ResponseWriter, r *http.Request) {
 	_ = temp.Execute(w, userInfo)
 }
 ```
+
+## io
+### 读取http请求的body
+http.Request中的Body是一个io.ReadCloser，可以使用ioutil.ReadAll将其中的内容全部读出来。
+
+## byte string
+```go
+// 将字符串转化为byte
+[]byte("hello")
+
+// 将byte转化为string
+string([]byte("hello"))
+```
+
+## os
+### 打开文件
+```go
+f, err := os.OpenFile(filePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+```
+
+### 清空文件内容
+```go
+if err := os.Truncate(filePath, 0); err != nil {
+    log.Printf("Failed to truncate: %v", err)
+}
+```
+Truncate方法是用来剪切文件大小的。0就相当于把内容清空。
+
+## writer
+```go
+w := csv.NewWriter(f)
+w.Write(record)
+```
+用Write往文件中写入内容，是增量的写入。

@@ -22,6 +22,7 @@ tags:
 ```js
 fetch('http://example.com/movies.json')
 .then(function(response) {
+  // return response.text();
   return response.json();
 })
 .then(function(myJson) {
@@ -33,6 +34,7 @@ fetch('http://example.com/movies.json')
 2. 当`Http状态码`是`404`或者`500`时也是`resolve`，但是会将`resolve`的返回值的`ok`属性设置为`false`。
 3. 只有当网络故障或者请求被阻止时才会是`reject`。
 4. `resolve`中进行`response.json()`才能拿到返回数据。
+5. `response.json()`会读取body，如果是json格式的，会将其转化。如果是不是json要用`response.text()`
 
 ## 怎么设置 method、header等参数呢？
 
