@@ -35,4 +35,12 @@ export default function Keyword() {
 3. 点击 ok 保存设置
 4. 尝试一下吧，可以把刚才的代码删掉，输入 `imfc` 看看效果。
 
+## 变量
+
+camelCase 将所有字母变为驼峰，会忽略掉其中的 - _ 等符号，只保留字母
+
+fileNameWithoutExtension 取文件名，且不带扩展名
+
+capitalize 将首字母大写
+
 [^1]: 有两种方法：a. mac 快捷键：`shift+cmd+a` （可能与系统的快捷键冲突，需要修改一下系统快捷键）；b. 可以通过连按（2次） `shift` 呼出搜索面板，在切换到 action 标签。
