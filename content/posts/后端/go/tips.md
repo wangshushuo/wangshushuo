@@ -272,3 +272,22 @@ w := csv.NewWriter(f)
 w.Write(record)
 ```
 用Write往文件中写入内容，是增量的写入。
+
+## 排序
+
+```go
+type ByOrdinal []Column
+
+func (o ByOrdinal) Len() int           { return len(o) }
+func (o ByOrdinal) Swap(i, j int)      { o[i], o[j] = o[j], o[i] }
+func (o ByOrdinal) Less(i, j int) bool { return o[i].Ordinal < o[j].Ordinal }
+
+// 
+import (
+	"sort"
+)
+
+var columns []Column
+columns = make([]Column, 0)
+sort.Sort(ByOrdinal(columns))
+```
