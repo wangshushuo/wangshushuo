@@ -11,7 +11,9 @@ keywords:
 - aa
 ---
 
-参考资料：https://developers.google.com/protocol-buffers/docs/gotutorial
+参考资料：
+1. https://developers.google.com/protocol-buffers/docs/gotutorial
+2. https://developers.google.com/protocol-buffers/docs/reference/go-generated#package
 
 ```protocolbuffer
 syntax = "proto3";
