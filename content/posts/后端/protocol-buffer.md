@@ -1,0 +1,58 @@
+---
+title: Protocol-Buffer
+url: /Protocol-Buffer.html
+date: 2021-11-11T13:00:13+08:00
+description: 摘要，显示在meta的description中
+categories:
+- 分类
+tags:
+- 显示在底部
+keywords:
+- aa
+---
+
+参考资料：
+1. https://developers.google.com/protocol-buffers/docs/gotutorial
+2. https://developers.google.com/protocol-buffers/docs/reference/go-generated#package
+
+```protocolbuffer
+syntax = "proto3";
+package tutorial; // 定义报名，避免命名冲突
+
+import "google/protobuf/timestamp.proto";
+
+message Person {
+  string name = 1; // 
+  int32 id = 2;  // Unique ID number for this person.
+  string email = 3;
+
+  enum PhoneType {
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+
+  message PhoneNumber {
+    string number = 1;
+    PhoneType type = 2;
+  }
+
+  repeated PhoneNumber phones = 4;
+
+  google.protobuf.Timestamp last_updated = 5;
+}
+
+// Our address book file is just one of these.
+message AddressBook {
+  repeated Person people = 1;
+}
+```
+每个元素上的“= 1”、“= 2”标记标识字段在二进制编码中使用的唯一“标签”。标记数字 1-15 需要比更高数字少一个字节来编码，因此作为一种优化，您可以决定将这些标记用于常用或重复的元素，而将标记 16 和更高的标记用于不太常用的可选元素。重复字段中的每个元素都需要重新编码标签编号，因此重复字段特别适合这种优化。
+
+
+下载protoc ：https://github.com/protocolbuffers/protobuf/releases/tag/v3.19.1
+
+安装插件：
+```
+go install google.golang.org/protobuf/cmd/protoc-gen-go
+```
