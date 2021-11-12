@@ -15,9 +15,17 @@ keywords:
 1. https://developers.google.com/protocol-buffers/docs/gotutorial
 2. https://developers.google.com/protocol-buffers/docs/reference/go-generated#package
 
+## 内容
+1. 根据自己的需要，定义protocol buffer，定义请求、相应、service。
+1. protoc生成grpc.go和pb.go文件
+1. 实现grpc的service接口
+1. 调用service实现
+
 ```protocolbuffer
 syntax = "proto3";
 package tutorial; // 定义报名，避免命名冲突
+
+option go_package="/services";
 
 import "google/protobuf/timestamp.proto";
 
@@ -52,7 +60,35 @@ message AddressBook {
 
 下载protoc ：https://github.com/protocolbuffers/protobuf/releases/tag/v3.19.1
 
+## protoc生成grpc.pb.go和pb.go文件
 安装插件：
+```shell
+go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.26
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.1
 ```
-go install google.golang.org/protobuf/cmd/protoc-gen-go
+
+生成grpc和pb.go两个文件：
+```shell
+protoc --go_out=. --go_opt=paths=source_relative \
+    --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+    helloworld/helloworld.proto
 ```
+
+- `option go_package="/services"` 会将生成的文件当作go的一个package，名字为services
+- `--go_out=.` 在当前目录下生成pb.go文件
+
+## 实现grpc的service接口
+
+```go
+// server is used to implement helloworld.GreeterServer.
+type server struct {
+	pb.UnimplementedGreeterServer
+}
+
+// SayHello implements helloworld.GreeterServer
+func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
+	log.Printf("Received: %v", in.GetName())
+	return &pb.HelloReply{Message: "Hello " + in.GetName()}, nil
+}
+```
+pb为生成的pb.go包名，UnimplementedGreeterServer为pb.go中实现了server的结构体，将它委托到我们的server结构体中，相当于我们的server结成了它。然后实现我们自己的SayHello方法即可完成server的开发。
