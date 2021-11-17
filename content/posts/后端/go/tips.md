@@ -291,3 +291,10 @@ var columns []Column
 columns = make([]Column, 0)
 sort.Sort(ByOrdinal(columns))
 ```
+
+## context
+
+```
+c.Ctx.Value("token").(string)
+c.Ctx = context.WithValue(c.Ctx, "token", "123")
+```

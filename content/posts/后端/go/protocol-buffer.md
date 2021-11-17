@@ -91,4 +91,12 @@ func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloRe
 	return &pb.HelloReply{Message: "Hello " + in.GetName()}, nil
 }
 ```
-pb为生成的pb.go包名，UnimplementedGreeterServer为pb.go中实现了server的结构体，将它委托到我们的server结构体中，相当于我们的server结成了它。然后实现我们自己的SayHello方法即可完成server的开发。
+pb为生成的pb.go包名，UnimplementedGreeterServer为pb.go中实现了server的结构体，将它委托到我们的server结构体中，相当于我们的server结成了它。然后实现我们自己的SayHello方法即可完成server的开发。、
+
+----
+Go语言高级编程
+## 安全认证
+4.5.1，4.5.2
+
+## 截取器
+4.5.3
