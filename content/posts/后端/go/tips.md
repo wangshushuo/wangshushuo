@@ -298,3 +298,5 @@ sort.Sort(ByOrdinal(columns))
 c.Ctx.Value("token").(string)
 c.Ctx = context.WithValue(c.Ctx, "token", "123")
 ```
+## 值传递
+map和slice创建后得到的就是它们的指针，所以赋值给变量后，变量就是一个指针，当把他们传给方法、函数时，传递的是变量的值。但是值里面其实是指针。
