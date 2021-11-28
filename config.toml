@@ -1172,7 +1172,7 @@ uglyURLs = false
     displaySiteCopyright = true
 
     # 自定义页脚（支持 Markdown）
-    customFooter = "[蜀ICP备20009942](http://www.beian.miit.gov.cn/)"
+    customFooter = "[蜀ICP备20009942号-1](http://www.beian.miit.gov.cn/)"
 
     displayBusuanziSiteUVAndPV = false
     busuanziSiteUVText = "本站访客数"
