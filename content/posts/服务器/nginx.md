@@ -116,3 +116,27 @@ location /wss {
   proxy_set_header X-Real-IP $remote_addr;
 }
 ```
+
+## default_server
+
+> 使用了宝塔版本的wordpress，其中包含了nginx，我又额外想在这个机器上部署其他应用，也要用到nginx。
+
+wordpress的配置文件中用了 `default_server` ，所有未匹配到的请求都会使用它。
+```
+server {
+    listen 80 default_server;
+}
+```
+
+下面是我的配置。如果 `server_name` 设置成 `wow.com` 的话，访问 `hello.wow.com/mr` 就属于匹配不到的情况，就会走到 default_server 中。改成下面这样就可以了。
+
+```
+server {
+  listen 80;
+  server_name  hello.wow.com;
+
+  location /mr {
+      proxy_pass http://localhost:8082/mr;
+  }
+}
+```
