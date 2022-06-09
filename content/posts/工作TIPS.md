@@ -1,8 +1,10 @@
 ---
-title: 工作TIPS url: /工作TIPS.html date: 2020-12-18T13:46:12+08:00 description: 记录各种工作中的代码，提高效率 categories:
-
+title: 工作TIPS 
+url: /工作TIPS.html 
+date: 2020-12-18T13:46:12+08:00 
+description: 记录各种工作中的代码，提高效率 
+categories:
 - 工作
-
 ---
 
 ## go
