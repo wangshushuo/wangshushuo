@@ -1,15 +1,15 @@
 ---
-title: 工作TIPS
-url: /工作TIPS.html
-date: 2020-12-18T13:46:12+08:00
-description: 记录各种工作中的代码，提高效率
-categories:
+title: 工作TIPS url: /工作TIPS.html date: 2020-12-18T13:46:12+08:00 description: 记录各种工作中的代码，提高效率 categories:
+
 - 工作
+
 ---
 
 ## go
 
 ### 为表单加一个字段
+
+![](http://hugo-1256216240.cos.ap-chengdu.myqcloud.com/pasteimageintomarkdown/2022-05-16/53911817974500.png)
 
 ```go
 // 自定义field中间件
@@ -71,3 +71,8 @@ func addMasterFields(ctx form_context.FormContext) {
 }
 
 ```
+
+{"quickSearchFields":null,"fileName":"WorkforceResource-uFGva.json","name":"custom-object-bill-refer","entityName":"
+WorkforceResource","displayField":"name","multi":false,"displayMode":"list","listOptions":{},"gridOptions":{"
+gridColumnsName":""},"treeOptions":{},"advanceEnabled":true,"advanceOptions":{"gridColumnsName":"
+custom-object-bill-list"}}

@@ -22,7 +22,6 @@ git clone --recurse-submodules https://github.com/wangshushuo/wangshushuo.git
 - [ ] ◡ ヽ(`Д´)ﾉ ┻━┻ 其他
 
 用 issue 写，与 gitee 的策略一样，研究用 action 把 issue 的内容生成文件，集成到博客中。
-
 ## 内容组织
 
 section | categories 
