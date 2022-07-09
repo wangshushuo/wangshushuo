@@ -11,6 +11,15 @@ keywords:
 - aa
 ---
 
+https://www.flysnow.org/2017/05/08/go-in-action-go-reader-writer.html
+https://www.jianshu.com/p/cb12e88c60d6
+
+https://segmentfault.com/a/1190000015591319
+
+https://juejin.cn/post/6976841033795502093
+
+https://www.bilibili.com/read/cv9179650
+
 ## 是什么
 首先writer/reader都是接口
 
