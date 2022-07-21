@@ -131,6 +131,7 @@ server {
 下面是我的配置。如果 `server_name` 设置成 `wow.com` 的话，访问 `hello.wow.com/mr` 就属于匹配不到的情况，就会走到 default_server 中。改成下面这样就可以了。
 
 ```
+vim /www/server/panel/vhost/nginx/wss.cool.conf
 server {
   listen 80;
   server_name  hello.wow.com;
