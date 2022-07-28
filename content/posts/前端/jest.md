@@ -86,3 +86,63 @@ mockFn.mockResolvedValueOnce(value)
 mockFn.mockRejectedValue(value)
 mockFn.mockRejectedValueOnce(value)
 ```
+
+## jest.spyOn(object, methodName)
+```js
+const video = {
+  play() {
+    return true;
+  },
+};
+
+module.exports = video;
+```
+```js
+const video = require('./video');
+
+afterEach(() => {
+  // restore the spy created with spyOn
+  jest.restoreAllMocks();
+});
+
+test('plays video', () => {
+  const spy = jest.spyOn(video, 'play');
+  const isPlaying = video.play();
+
+  expect(spy).toHaveBeenCalled();
+  expect(isPlaying).toBe(true);
+});
+```
+jest.spyOn(object, methodName)会跟踪对应的方法，会使其成为一个 mock function ，就可以调用 mockFn 的各种方法和断言。
+
+比如原函数是未被覆盖的，想要覆盖的话，就可以通过调用mockImplementation方法覆盖。
+```js
+jest.spyOn(object, methodName).mockImplementation(() => customImplementation)
+object[methodName] = jest.fn(() => customImplementation)
+```
+
+因为 jest.spyOn 是一个模拟。 您可以在 afterEach 方法上调用 jest.restoreAllMocks 恢复初始状态。
+
+## jest.spyOn(object, methodName, accessType?)
+accessType为get或set，可以追踪get/set方法。
+```js
+const video = {
+  // it's a getter!
+  const video = {
+  // it's a getter!
+  get play() {
+    return true;
+  },
+};
+
+module.exports = video;
+
+// xx.test.js
+test('plays video', () => {
+  const spy = jest.spyOn(video, 'play', 'get'); // we pass 'get'
+  const isPlaying = video.play;
+
+  expect(spy).toHaveBeenCalled();
+  expect(isPlaying).toBe(true);
+});
+```
