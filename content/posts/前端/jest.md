@@ -59,32 +59,85 @@ jest.fn() 只接受空参数的函数作为参数，并返回一个值。如果�
 [jest api document](https://jestjs.io/zh-Hans/docs/mock-function-api#mockfnmockresolvedvaluevalue)
 模拟函数也就是 jest.fn() 它返回一个 mockFn 对象，它有很多方法，可以从多个角度测试我们的代码。
 
-```
-mockFn.getMockName()
-mockFn.mock.calls 函数被调用时所接收到的参数。
-mockFn.mock.results
-mockFn.mock.instances
-mockFn.mock.contexts
-mockFn.mock.lastCall
+名字
+- mockFn.mockName(name)
+- mockFn.getMockName()
+
+调用信息：
+- mockFn.mock.calls 函数被调用时所接收到的参数。
+- mockFn.mock.results
+- mockFn.mock.instances
+- mockFn.mock.contexts
+- mockFn.mock.lastCall
+
+清理mock，比如虚拟函数被调用了，mock.calls中会有值，可能影响其他用例的结果，就需要清理一下
+- mockFn.mockClear()
+- mockFn.mockReset()
+- mockFn.mockRestore()
+
+模拟函数的实现，可以在mock模块时使用
+- mockFn.mockImplementation(fn)  模拟函数的实现，也就是中间有逻辑，可以根据接收参数，根据参数进行一些计算，与 mockReturnValue 做比较的话，
+mockReturnValue是直接返回一个结果，并可以通过 mockFn.mock.calls 拿到调用函数时的参数
+- mockFn.mockImplementationOnce(fn)
+
+函数直接返回值：
+- mockFn.mockReturnThis()
+- mockFn.mockReturnValue(value)
+- mockFn.mockReturnValueOnce(value)
+
+函数异步返回结果：
+- mockFn.mockResolvedValue(value)
+- mockFn.mockResolvedValueOnce(value)
+- mockFn.mockRejectedValue(value)
+- mockFn.mockRejectedValueOnce(value)
+### 虚拟函数的例子
+1. 模拟模块，并模拟其中的方法
+```js
+jest.mock('metadata', () => ({
+  metadata: {
+    getEnumValue: jest.fn().mockImplementation((id, value) => {
+      const enumMap = {
+        ChangeViewType: {
+          'adjust': {
+            id: 'adjust',
+            name: 'adjust',
+            title: '调整',
+          },
+        },
+      };
+      return enumMap[id][value];
+    }),
+  },
+}));
 ```
 
-mockFn.mockClear()
-mockFn.mockReset()
-mockFn.mockRestore()
-mockFn.mockImplementation(fn)
-mockFn.mockImplementationOnce(fn)
-
-mockFn.mockName(name)
-mockFn.mockReturnThis()
-mockFn.mockReturnValue(value)
-mockFn.mockReturnValueOnce(value)
-
-异步：
+2. 模拟模块，其中的方法直接返回数据
+```js
+jest.mock('metadata', () => ({
+  metadata: {
+    getEnumValue: jest.fn().mockReturnValue({
+      id: 'adjust',
+      name: 'adjust',
+      title: '调整',
+    }),
+  },
+}));
 ```
-mockFn.mockResolvedValue(value)
-mockFn.mockResolvedValueOnce(value)
-mockFn.mockRejectedValue(value)
-mockFn.mockRejectedValueOnce(value)
+
+## 断言举例
+```js
+// 断言对象的实例
+expect(buttonController).toBeInstanceOf(BudgetPlanChangeButtonController);
+
+// 断言方法是否被调用，源代码中的函数可以通过spyOn追踪
+expect(spy).toHaveBeenCalled();
+
+// 断言虚拟函数的调用情况，mock.calls会记录调用函数的参数
+expect(metadata.getEnumValue.mock.calls.length).toBe(1);
+expect(metadata.getEnumValue.mock.calls[0]).toEqual([
+  'ChangeViewType',
+  'ChangeViewType.adjust',
+]);
 ```
 
 ## jest.spyOn(object, methodName)
