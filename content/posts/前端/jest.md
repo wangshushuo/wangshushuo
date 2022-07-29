@@ -176,8 +176,6 @@ accessType为get或set，可以追踪get/set方法。
 ```js
 const video = {
   // it's a getter!
-  const video = {
-  // it's a getter!
   get play() {
     return true;
   },
@@ -194,3 +192,6 @@ test('plays video', () => {
   expect(isPlaying).toBe(true);
 });
 ```
+
+## 模拟模块
+![](http://hugo-1256216240.cos.ap-chengdu.myqcloud.com/pasteimageintomarkdown/2022-07-29/352636115774400.png)
