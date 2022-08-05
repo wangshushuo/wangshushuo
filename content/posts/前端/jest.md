@@ -50,6 +50,47 @@ describe('模拟模块', () => {
 jest.mock 会模拟 @metadata 模块，无论是测试文件中还是原代码中的 @metadata 模块都会被模拟。
 jest.fn() 只接受空参数的函数作为参数，并返回一个值。如果想有参数，就要在调用 mockImplementation 方法，来提供有逻辑的实现过程。
 
+## 模拟ES6类
+上面的mock方式
+```js
+jest.mock('@metadata', () => {
+  return {
+    metadata: {
+      getEntity: jest.fn().mockImplementation(id => {
+        return entity[id];
+      }),
+    }
+  };
+});
+jest.mock('@client', () => {
+  return jest.fn().mockImplementation(() => {
+    return {
+      post: jest.fn()
+    };
+  });
+})
+import client from '@client';
+
+client.post = jest.fn().mockImplementation(() =>
+  Promise.resolve({
+      data: {}
+  })
+)
+```
+如果上面的mock方式不起作用，可以看看mock的目标是一个 class ，比如这种：
+```js
+import { Client } from './client';
+export * from './types';
+
+const client = new Client();
+
+export default client;
+```
+
+### 手动模拟
+![](http://hugo-1256216240.cos.ap-chengdu.myqcloud.com/pasteimageintomarkdown/2022-07-29/352636115774400.png)
+在 __mock__ 目录中，新建与模拟目标目录相同的一个文件。在测试文件中，就回用它代替原本的依赖。
+
 ## 模拟函数
 [jest api document](https://jestjs.io/zh-Hans/docs/mock-function-api#mockfnmockresolvedvaluevalue)
 模拟函数也就是 jest.fn() 它返回一个 mockFn 对象，它有很多方法，可以从多个角度测试我们的代码。
@@ -193,5 +234,4 @@ test('plays video', () => {
 });
 ```
 
-## 模拟模块
-![](http://hugo-1256216240.cos.ap-chengdu.myqcloud.com/pasteimageintomarkdown/2022-07-29/352636115774400.png)
+
