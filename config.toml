@@ -2,7 +2,7 @@
 # 站点配置
 
 baseURL = "http://wss.cool/"
-title = "个人经验感想"
+title = "硕的研发日志"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 # 版权信息（支持 Markdown）
