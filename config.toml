@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://wangshushuo.github.io/"
+baseURL = "http://wss.cool/"
 title = "个人经验感想"
 languageCode = "zh-CN"
 hasCJKLanguage = true
