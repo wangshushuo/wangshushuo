@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "http://cdn.wss.cool/"
+baseURL = "http://wss.cool/"
 title = "硕的研发日志"
 languageCode = "zh-CN"
 hasCJKLanguage = true
