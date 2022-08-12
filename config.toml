@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "http://wss.cool/"
+baseURL = "http://cdn.wss.cool/"
 title = "硕的研发日志"
 languageCode = "zh-CN"
 hasCJKLanguage = true
@@ -319,12 +319,12 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "现在是一名前端，希望转到后端，最后做架构师。这里记录了常用到的前端、后端、服务器和各种工具的常用api、知识点等。记录的api方便查找，记录的知识点作为一种输出可以增加理解。"
+    siteDescription = "技术博客"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
     # 站点的创建时间
-    siteCreatedTime = "1990-07-20T20:17:43+00:00"
+    siteCreatedTime = "2015-07-20T20:17:43+00:00"
     # 注意：请保持此格式，更改数字
 
     # 站点的推特帐号

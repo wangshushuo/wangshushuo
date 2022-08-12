@@ -28,5 +28,5 @@ jobs:
           publish_dir: ./public
           keep_files: false
           publish_branch: master
-#          cname: wss.cool
+          cname: cdn.wss.cool
 

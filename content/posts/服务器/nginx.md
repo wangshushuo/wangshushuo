@@ -141,3 +141,43 @@ server {
   }
 }
 ```
+
+## wordpress的配置文件
+```nginx
+server {
+    listen 80;
+    server_tokens off;
+    server_name i.wss.cool;
+    keepalive_timeout 5;
+    client_max_body_size 50m;
+    root /usr/local/lighthouse/softwares/wordpress;
+    index index.php index.html;
+    include /www/server/panel/vhost/nginx/proxy/wordpress.local/*.conf;
+
+    include /www/server/panel/vhost/rewrite/wordpress.local.conf;
+
+    location ~ \.php$ {
+         fastcgi_pass   127.0.0.1:9000;
+         fastcgi_index  index.php;
+         fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+         include        fastcgi_params;
+    }
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ ^/(\.user.ini|\.htaccess|\.git|\.svn|\.project|LICENSE|README.md)
+    {
+        return 404;
+    }
+
+    location ~ \.well-known{
+        allow all;
+    }
+
+    access_log  /www/wwwlogs/wordpress.local.log;
+    error_log  /www/wwwlogs/wordpress.local.error.log;
+}
+```
+如果少了`location ~ \.php$`这段配置会导致网址打不开并下载一个文件
