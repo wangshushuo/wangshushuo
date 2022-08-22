@@ -45,4 +45,11 @@ keywords:
 
 ## 分类
 
+## 调试
+
+可以将数据打印为 json 来调试数据
+
+    {{ dict "title" .Title "content" .Plain | jsonify }}
+
+
 
