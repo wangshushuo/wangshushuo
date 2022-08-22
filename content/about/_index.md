@@ -6,3 +6,8 @@ date: 2019-09-10T00:49:13+00:00
 toc: true
 ---
 
+## 鸣谢
+
+主题MemE https://io-oi.me/hugo-theme-meme/
+
+生成favicon.ico https://realfavicongenerator.net/

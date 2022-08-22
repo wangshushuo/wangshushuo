@@ -62,7 +62,6 @@ server {
     listen 443 ssl http2;
     server_name  blog.wowfriday.cn;
 
-    ssl                      on;
     ssl_certificate          /etc/nginx/1_blog.wowfriday.cn_bundle.crt;
     ssl_certificate_key      /etc/nginx/2_blog.wowfriday.cn.key;
 

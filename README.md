@@ -1,6 +1,43 @@
 # 博客
 
+## 更新主题
+
+    ~/blog $ git submodule update --rebase --remote
+
+If failed, try:
+
+Delete meme folder, e.g.
+
+    ~/blog $ rm -rf themes/meme
+
+Clone MemE again
+
+    ~/blog $ git clone --depth 1 https://github.com/reuixiy/hugo-theme-meme.git themes/meme
+
+
+## 待修复项
+
+- [ ] 年份和Posts的右上角，加一个数量的角标
+- [ ] 自定义shortcodes的样式
+- [ ] 分类页面，分类下不显示具体文章的列表，只显示数量
+- [ ] 首页，footage and video
+- [ ] 个人项目页面
+- [ ] 跟随系统明暗自动切换模式
+- [x] 安装为应用(https证书部署，已有证书)
+- [ ] 搜索
+- [ ] 新页面，常用
+
+
+  ## Service Worker
+
+    # 说明：仅在生产环境（production）下渲染
+
+    enableServiceWorker = true
+
+
 首页内容 `themes/meme/layouts/partials/pages/home-footage-posts.html`
+
+
 
 下载项目 
 ```
