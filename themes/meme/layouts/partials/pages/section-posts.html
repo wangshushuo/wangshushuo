@@ -1,0 +1,30 @@
+{{ $pages := .Scratch.Get "pages" }}
+<!-- 将文章存入各个category数组中 -->
+{{ range $index,$page := $pages }}
+  {{ with .Param "categories" }}
+    {{ $abc := index . 0 }}
+    {{ $.Scratch.Add $abc (slice $page) }} 
+  {{ end }}
+{{ end }}
+<!-- 将各个category数组存入到map中 -->
+{{ range $index,$page := $pages }}
+  {{ with .Param "categories" }}
+    {{ $abc := index . 0 }}
+    {{ $categories := $.Scratch.Get $abc }} 
+    {{ $.Scratch.SetInMap "category_names" $abc $categories}}
+  {{ end }}
+{{ end }}
+<!-- 遍历map，渲染出各个category的文章列表 -->
+{{ range $key,$value := $.Scratch.Get "category_names"}}
+  <ul class="list-part">
+    <h2 class="list-year">
+      <span>{{$key}}<span class="list-year-count">{{len $value}}</span></span>
+    </h2>
+    {{range $value}}
+    <li class="list-item">
+      <a href="{{ .RelPermalink }}" class="list-item-title">{{ .LinkTitle }}</a>
+      {{ printf `<time datetime="%s" class="list-item-time">%s</time>` (.PublishDate.Format "2006-01-02T15:04:05-07:00") (.PublishDate.Format "2006-01-02") | safeHTML }}
+    </li>
+    {{end}}
+  </ul>
+{{ end }}
