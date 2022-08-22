@@ -1,8 +1,0 @@
-<div class="updated-badge-container" style="display: flex;justify-content: space-around; align-items:center; flex-direction: column; height: 60px;">
-{{ with .Params.keywords }}
-    {{$keywords := delimit . " | "}}
-    <img src="https://img.shields.io/badge/keyword-{{$keywords}}-red" style="flex: 0;" alt="">
-{{ end }}
-    {{- $date := .Lastmod.Format "2006--01--02" -}}
-    <img src="https://img.shields.io/badge/updated-{{$date}}-green" alt="">
-</div>
