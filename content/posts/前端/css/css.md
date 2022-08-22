@@ -1,11 +1,10 @@
 ---
-title: css
+title: css小全
 date: 2020-03-29T22:10:30+08:00
-summary: 常用的 css 属性
 categories:
+- 前端
 - CSS
 ---
-
 
 ## 居中
 ```css

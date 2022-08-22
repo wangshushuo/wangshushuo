@@ -3,7 +3,7 @@ date: 2020-01-16T23:55:23+08:00
 url: /Spring探索与扫盲.html
 title: Spring探索与扫盲
 categories:
-- 后端
+- spring
 tags:
 - 入门
 - Java

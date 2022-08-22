@@ -1,13 +1,13 @@
 ---
 title: "MySQL"
 url: "/MySQL.html"
-author: 王书硕
+author: 王书硕·
 date: 2020-04-02T22:24:03+08:00
-lastmod : 2020-04-02T22:24:03+08:00
-toc: true
-summary: ""
 categories:
-- 后端
+- mysql
+tags:
+- 数据库
+- mysql
 ---
 
 ## 安装MySQL

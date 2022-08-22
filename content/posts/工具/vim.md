@@ -3,11 +3,10 @@ title: "vim"
 url: "/vim.html"
 author: 王书硕
 date: 2020-04-01T21:27:14+08:00
-lastmod : 2020-04-01T21:27:14+08:00
 toc: true
 description: vim常用操作，替换、缩紧等
 categories:
-- 工具
+- ide
 ---
 
 ## 替换

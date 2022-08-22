@@ -4,7 +4,6 @@ url: /linux.html
 date: 2019-06-11T23:02:30+08:00
 toc: true
 categories:
-- 服务器
 - linux
 tags:
 - linux

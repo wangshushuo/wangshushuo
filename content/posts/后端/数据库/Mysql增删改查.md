@@ -3,9 +3,10 @@ title: Mysql增删改查
 url: /Mysql增删改查.html
 date: 2020-05-25T17:47:39+08:00
 categories:
-- 后端
+- mysql
 tags:
-- api
+- 数据库
+- mysql
 ---
 
 

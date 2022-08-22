@@ -7,7 +7,7 @@ url: "/vscode.html"
 title: "vscode"
 summary: ""
 categories:
-- 工具
+- IDE
 ---
 
 ## Git自动刷新

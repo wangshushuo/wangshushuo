@@ -4,11 +4,9 @@ url: /使用systemd.html
 date: 2022-07-21T23:40:40+08:00
 description: 使用systemd启动关闭程序
 categories:
-- 分类
+- linux
 tags:
-- 显示在底部
-keywords:
-- aa
+- systemd
 ---
 
 [参考1](https://stackoverflow.com/a/28704296/6021280)

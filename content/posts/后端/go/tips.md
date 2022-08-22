@@ -3,7 +3,7 @@ title: Go Tips
 url: /GoTips.html
 date: 2021-01-27T15:03:39+08:00
 categories:
-- 后端
+- golang
 ---
 
 ## 去map的size

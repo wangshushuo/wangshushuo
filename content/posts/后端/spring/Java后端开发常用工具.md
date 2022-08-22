@@ -5,7 +5,7 @@ url: /Java后端开发常用工具.html
 title: Java后端开发常用工具
 summary: 常用的文档和工具的集合
 categories:
-- 后端
+- java
 ---
 
 ## Spring Web MVC Reference

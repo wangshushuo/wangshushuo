@@ -4,9 +4,9 @@ url: /Grpc.html
 date: 2022-08-14T17:03:12+08:00
 description: 摘要，显示在meta的description中
 categories:
-- Go
+- Golang
 tags:
-- Go
+- Golang
 - grpc
 ---
 

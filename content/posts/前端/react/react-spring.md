@@ -2,9 +2,8 @@
 title: React Spring
 date: 2019-10-22T14:19:59+08:00
 categories:
+- React
 - React库
-tags:
-- api
 ---
 
 [react-spring](https://www.react-spring.io) 是一个基于弹簧物理学的动画库。

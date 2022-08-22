@@ -4,7 +4,7 @@ url: /learn-go-1.html
 date: 2020-06-29T10:06:01+08:00
 description: 
 categories:
-- 后端
+- golang
 ---
 
 ## 包

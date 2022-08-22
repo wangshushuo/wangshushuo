@@ -3,6 +3,7 @@ title: Diff
 date: 2018-11-17T08:33:37+00:00
 url: /react-reconciliation.html
 categories:
+- react
 - React原理
 tags:
 - knowledge

@@ -4,7 +4,7 @@ url: /React-生命周期.html
 date: 2020-06-19T09:41:43+08:00
 description: React生命周期
 categories:
-- 前端
+- react
 ---
 
 ## 挂载

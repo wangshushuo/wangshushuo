@@ -4,7 +4,7 @@ url: /Openvpn.html
 date: 2022-07-21T16:23:05+08:00
 description: install openvpn client on Linux server
 categories:
-- 服务器
+- linux
 tags:
 - openvpn
 - centos7

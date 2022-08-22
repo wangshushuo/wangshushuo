@@ -3,9 +3,8 @@ title: 常用DOM操作
 url: /常用DOM操作.html
 date: 2020-04-22T19:20:48+08:00
 categories:
+- 前端
 - DOM
-tags:
-- api
 keywords:
 - 复制文字
 - 剪切实践
@@ -13,7 +12,6 @@ keywords:
 - class
 - 图片原始尺寸
 ---
-
 
 ## 上传图片时，怎么拿到图片的src地址？
 input选中图片以后，只是得到了file对象，如果想在img中显示该图片的话，并不知道src，所以想得到src还需要额外的操作。

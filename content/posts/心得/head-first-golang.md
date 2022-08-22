@@ -2,13 +2,8 @@
 title: Head-First-Golang
 url: /Head-First-Golang.html
 date: 2021-05-06T13:16:08+08:00
-description: 摘要，显示在meta的description中
 categories:
-- 分类
-tags:
-- 显示在底部
-keywords:
-- aa
+- 读书笔记
 ---
 
 ## goroutine

@@ -3,6 +3,8 @@ title: JavaScript变量类型
 url: /JavaScript变量类型.html
 date: 2020-05-25T18:23:09+08:00
 categories:
+- JavaScript
+tags:
 - JavaScript基础
 ---
 

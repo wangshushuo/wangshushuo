@@ -3,9 +3,10 @@ title: Mysql数据类型
 url: /Mysql数据类型.html
 date: 2020-05-25T17:46:03+08:00
 categories:
-- 后端
+- mysql
 tags:
-- api
+- 数据库
+- mysql
 ---
 
 
