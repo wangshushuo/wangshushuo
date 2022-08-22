@@ -2,4 +2,6 @@ public
 resources
 images
 .idea
-.idea/blog.iml
+.deploy
+deploy.sh
+*.tar.gz

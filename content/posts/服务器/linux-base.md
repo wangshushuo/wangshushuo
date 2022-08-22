@@ -5,11 +5,21 @@ date: 2019-06-11T23:02:30+08:00
 toc: true
 categories:
 - 服务器
+- linux
 tags:
 - linux
 - 入门
 ---
 
+## 压缩与解压文件夹
+
+压缩 `public` 文件夹为 `blog.tar.gz`
+
+    tar -zcvf blog.tar.gz public
+
+解压 `blog.tar.gz`的内容到 `public` 文件夹内
+
+    tar -zxvf blog.tar.gz public
 
 ## 安装二进制软件
 

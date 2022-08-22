@@ -1,14 +1,13 @@
 ---
-title: Openvpn
+title: Linux安装openvpn客户端
 url: /Openvpn.html
 date: 2022-07-21T16:23:05+08:00
-description: 摘要，显示在meta的description中
+description: install openvpn client on Linux server
 categories:
-- 分类
+- 服务器
 tags:
-- 显示在底部
-keywords:
-- aa
+- openvpn
+- centos7
 ---
 
 参考1：https://www.icode9.com/content-3-113422.html

@@ -1,24 +1,16 @@
 ---
-title: Writer与reade
-url: /Writer与reader.html
+title: 了解Golang的writer/reader接口
+url: /understanding-writer-reader-interface-of-golang.html
 date: 2022-06-21T18:48:11+08:00
-description: 摘要，显示在meta的description中
+description: Understanding Golang's writer/reader interface
 categories:
-- 分类
+- golang
 tags:
-- 显示在底部
+- 入门
 keywords:
-- aa
+- writer
+- reader
 ---
-
-https://www.flysnow.org/2017/05/08/go-in-action-go-reader-writer.html
-https://www.jianshu.com/p/cb12e88c60d6
-
-https://segmentfault.com/a/1190000015591319
-
-https://juejin.cn/post/6976841033795502093
-
-https://www.bilibili.com/read/cv9179650
 
 ## 是什么
 首先writer/reader都是接口
@@ -131,6 +123,13 @@ fmt.Println(buf.String())
 ```go
 readline
 ```
+
+## 参考资料
+https://www.flysnow.org/2017/05/08/go-in-action-go-reader-writer.html
+https://www.jianshu.com/p/cb12e88c60d6
+https://segmentfault.com/a/1190000015591319
+https://juejin.cn/post/6976841033795502093
+https://www.bilibili.com/read/cv9179650
 
 ## 参考资料
 - [ronniesong.Go中io包的使用方法.2018-07-10](https://segmentfault.com/a/1190000015591319)

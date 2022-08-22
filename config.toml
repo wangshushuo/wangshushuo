@@ -194,16 +194,22 @@ uglyURLs = false
         pre = "internal"
         post = "th"
     [[menu.main]]
+        url = "/tags/"
+        name = "标签"
+        weight = 4
+        pre = "internal"
+        post = "tags"
+    [[menu.main]]
         url = "/about/"
         name = "关于"
-        weight = 4
+        weight = 5
         pre = "internal"
         post = "user-circle"
     [[menu.main]]
-        weight = 5
+        weight = 6
         identifier = "theme-switcher"
     [[menu.main]]
-        weight = 6
+        weight = 7
         identifier = "lang-switcher"
 
 
@@ -319,7 +325,7 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "技术博客"
+    siteDescription = "王书硕的技术博客"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
@@ -566,13 +572,13 @@ uglyURLs = false
     # 说明：仅在生产环境（production）下渲染
 
     # 是否开启（全局设置）
-    enableComments = false
+    enableComments = true
     # 说明：文章的 Front Matter 中的 `comments`
     #      的优先级高于此处
 
     ## Disqus
-    enableDisqus = false
-    disqusShortname = ""
+    enableDisqus = true
+    disqusShortname = "wss-cool"
 
     ## Valine
     enableValine = false

@@ -1,10 +1,12 @@
 ---
-title: Nginx导致的bug
+title: nginx转发自定义header
 date: 2020-04-18T01:24:25+08:00
+description: nginx forwards custom headers
 categories:
-- spring
+- nginx
 tags:
 - bug
+- http header
 keywords:
 - invalid_redirect_uri_parameter
 ---

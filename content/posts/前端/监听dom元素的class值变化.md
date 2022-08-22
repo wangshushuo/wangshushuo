@@ -2,16 +2,17 @@
 title: 监听dom元素的class值变化
 url: /监听dom元素的class值变化.html
 date: 2022-04-25T15:32:41+08:00
-description: 摘要，显示在meta的description中
+description: Event trigger on a class change
 categories:
-- 分类
+- 前端
 tags:
-- 显示在底部
-keywords:
-- aa
+- javascript
+- html
+- MutationObserver
 ---
 
 https://stackoverflow.com/a/53914092/6021280
+https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver
 
 
 ```js
@@ -82,3 +83,6 @@ class ClassWatcher {
     }
 }
 ```
+
+## MutationObserver
+创建并返回一个新的 MutationObserver 它会在指定的 DOM 发生变化时被调用。

@@ -1,5 +1,7 @@
 # 博客
 
+首页内容 `themes/meme/layouts/partials/pages/home-footage-posts.html`
+
 下载项目 
 ```
 git clone --recurse-submodules https://github.com/wangshushuo/wangshushuo.git
