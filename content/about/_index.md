@@ -8,6 +8,11 @@ toc: true
 
 ## 鸣谢
 
-主题MemE https://io-oi.me/hugo-theme-meme/
+[主题MemE](https://io-oi.me/hugo-theme-meme/)
 
-生成favicon.ico https://realfavicongenerator.net/
+[生成favicon.ico](https://realfavicongenerator.net/)
+
+## 目标
+- 前端（复杂）组件设计
+- Golang -> GDE
+  - 演讲，文章（技术教程、代码示例）

@@ -5,6 +5,7 @@ date: 2022-04-25T15:32:41+08:00
 description: Event trigger on a class change
 categories:
 - 前端
+- javascript
 tags:
 - javascript
 - html
@@ -14,6 +15,10 @@ tags:
 https://stackoverflow.com/a/53914092/6021280
 https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver
 
+## MutationObserver
+这个类可以监听指定 `DOM` 的变化。
+
+下面的代码创建监听了一个元素，并在class变化时出发回调函数。
 
 ```js
 let targetNode = document.getElementById('test')
@@ -83,6 +88,3 @@ class ClassWatcher {
     }
 }
 ```
-
-## MutationObserver
-创建并返回一个新的 MutationObserver 它会在指定的 DOM 发生变化时被调用。
