@@ -2,6 +2,7 @@
 title: 断言函数
 url: /AssertFunction.html
 date: 2021-01-13T15:52:47+08:00
+categories:
 - 前端
 - typescript
 ---
