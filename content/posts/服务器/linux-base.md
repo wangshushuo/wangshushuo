@@ -10,6 +10,31 @@ tags:
 - 入门
 ---
 
+## 过滤 grep
+```shell
+history | grep chmod
+```
+
+## chmod
+
+给脚本运行的权限
+```shell
+chmod 777 proxy.sh
+chmod u+x deploy-hugo.sh
+```
+
+## 远程执行命令
+```shell
+ssh t "service 77kpi stop"
+```
+t 使ssh配置文件中的别名，会连接到服务器，在服务器上执行引号中的命令。
+
+## scp
+```shell
+scp -i ~/.ssh/证书 /mnt/c/Users/aa/bb.txt  root@6.6.6.6:~/bb.txt
+```
+-i 使用证书 本地文件名绝对路径 用户名@ip:绝对路径
+
 ## 压缩与解压文件夹
 
 压缩 `public` 文件夹为 `blog.tar.gz`
