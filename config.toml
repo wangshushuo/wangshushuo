@@ -196,6 +196,7 @@ uglyURLs = false
     #     pre = "internal"
     #     post = "home"
     [[menu.main]]
+        url = "/posts/"
         pageref = "/posts/"
         name = "文章"
         weight = 2
