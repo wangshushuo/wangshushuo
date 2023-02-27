@@ -12,7 +12,7 @@ Delete meme folder, e.g.
 
 Clone MemE again
 
-    ~/blog $ git clone --depth 1 https://github.com/reuixiy/hugo-theme-meme.git themes/meme
+    ~/blog $ git clone --depth 1 https://github.com/wangshushuo/hugo-theme-meme.git themes/meme
 
 
 ## 待修复项
