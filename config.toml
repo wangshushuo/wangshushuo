@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "http://blog.wss.cool/"
+baseURL = "http://blog.wss.cool"
 title = "硕的研发日志"
 languageCode = "zh-CN"
 hasCJKLanguage = true
