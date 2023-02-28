@@ -1,6 +1,6 @@
 ---
 title: 监听dom元素的class值变化
-url: /监听dom元素的class值变化.html
+
 date: 2022-04-25T15:32:41+08:00
 description: Event trigger on a class change
 categories:

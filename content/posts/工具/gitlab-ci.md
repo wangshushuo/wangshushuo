@@ -1,7 +1,7 @@
 ---
 date: 2019-11-29T16:42:18+08:00
 toc: true
-url: "/Gitlab-Ci.html"
+
 title: "使用Gitlab的Ci"
 summary: 使用gitlab的ci/cd打包部署前端项目到oss对象存储
 categories:

@@ -1,6 +1,6 @@
 ---
 title: Goland
-url: /Goland.html
+
 date: 2021-04-19T14:05:03+08:00
 ---
 

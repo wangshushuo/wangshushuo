@@ -1,6 +1,5 @@
 ---
 title: {{ replace .Name "-" "-" | title }}
-url: /{{ replace .Name "-" "-" | title }}.html
 date: {{ .Date }}
 description: 摘要，显示在meta的description中
 categories:

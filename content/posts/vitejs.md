@@ -1,6 +1,6 @@
 ---
 title: Vitejs
-url: /Vitejs.html
+
 date: 2022-11-14T22:34:08+08:00
 description: 摘要，显示在meta的description中
 categories:

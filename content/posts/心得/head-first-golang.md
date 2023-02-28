@@ -1,6 +1,6 @@
 ---
 title: Head-First-Golang
-url: /Head-First-Golang.html
+
 date: 2021-05-06T13:16:08+08:00
 categories:
 - 读书笔记

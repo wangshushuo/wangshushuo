@@ -1,6 +1,6 @@
 ---
 title: Git设置代理
-url: /Git设置代理.html
+
 date: 2020-05-25T17:32:50+08:00
 summary: 设置git的代理
 categories:

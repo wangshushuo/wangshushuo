@@ -1,6 +1,6 @@
 ---
 title: 使用systemd
-url: /使用systemd.html
+
 date: 2022-07-21T23:40:40+08:00
 description: 使用systemd启动关闭程序
 categories:

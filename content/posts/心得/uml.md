@@ -1,6 +1,6 @@
 ---
 title: Uml
-url: /Uml.html
+
 date: 2021-11-01T12:55:14+08:00
 description: 摘要，显示在meta的description中
 categories:

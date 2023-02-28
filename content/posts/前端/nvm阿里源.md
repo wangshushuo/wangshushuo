@@ -1,6 +1,6 @@
 ---
 title: NVM阿里源
-url: /NVM阿里源.html
+
 date: 2020-11-07T22:57:53+08:00
 description: 为NVM设置阿里源下载nodejs
 categories:

@@ -1,6 +1,6 @@
 ---
 title: "vim"
-url: "/vim.html"
+
 author: 王书硕
 date: 2020-04-01T21:27:14+08:00
 toc: true

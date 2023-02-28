@@ -1,6 +1,6 @@
 ---
 title: 用html字符串生成dom元素
-url: /用html字符串生成dom元素.html
+
 date: 2022-04-25T16:48:51+08:00
 description: 摘要，显示在meta的description中
 categories:

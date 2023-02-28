@@ -1,6 +1,6 @@
 ---
 title: Styled-Component
-url: /Styled-Component.html
+
 date: 2021-05-16T11:30:23+08:00
 categories:
 - react

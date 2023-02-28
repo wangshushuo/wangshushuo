@@ -2,7 +2,7 @@
 title: 命令行发送email
 date: 2019-01-04T04:49:13+00:00
 summary: python发送邮件
-url: /mac-ubuntu-send-email.html
+
 categories:
   - 折腾
 ---

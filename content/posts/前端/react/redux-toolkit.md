@@ -1,7 +1,7 @@
 ---
 date: 2019-10-28T10:54:37+08:00
 toc: true
-url: /redux-toolkit.html
+
 title: Redux Toolkit
 categories:
 - React

@@ -1,6 +1,6 @@
 ---
 title: "React"
-url: "/React.html"
+
 author: 王书硕
 date: 2020-03-30T23:19:26+08:00
 lastmod : 2020-03-30T23:19:26+08:00

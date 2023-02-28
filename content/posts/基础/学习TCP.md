@@ -1,6 +1,6 @@
 ---
 title: 学习TCP
-url: /学习TCP.html
+
 date: 2020-05-27T13:30:38+08:00
 description: 了解TCP是什么，及一些基本概念
 categories:

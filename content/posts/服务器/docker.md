@@ -1,6 +1,6 @@
 ---
 title: docker
-url: /docker.html
+
 date: 2019-06-06T01:47:46+00:00
 toc: true
 categories:

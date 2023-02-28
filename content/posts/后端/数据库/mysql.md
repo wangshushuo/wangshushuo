@@ -1,6 +1,6 @@
 ---
 title: "MySQL"
-url: "/MySQL.html"
+
 author: 王书硕·
 date: 2020-04-02T22:24:03+08:00
 categories:

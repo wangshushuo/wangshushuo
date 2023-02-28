@@ -1,6 +1,6 @@
 ---
 title: Git记住密码
-url: /Git记住密码.html
+
 date: 2020-05-25T17:34:13+08:00
 summary: 如果操作远程仓库时每次都要输入账号密码，可以通过设置让git记住密码
 categories:

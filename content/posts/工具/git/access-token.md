@@ -1,6 +1,6 @@
 ---
 title: AccessToken认证
-url: /access-token-for-get.html
+
 date: 2020-04-22T23:11:20+08:00
 summary: 使用 access token 为认证方式操作 gitlab、github 等远程 git 仓库，代替 ssh 公钥和用户名密码。
 toc: false

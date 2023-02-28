@@ -1,6 +1,6 @@
 ---
 title: Go基础三：方法和接口
-url: /learn-go-3.html
+
 date: 2020-07-06T12:27:59+08:00
 description: 
 categories:

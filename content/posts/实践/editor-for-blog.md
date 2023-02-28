@@ -1,6 +1,6 @@
 ---
 title: "为博客打造在线编辑器"
-url: "/online-editor-for-markdown-blog"
+
 type: posts
 date: 2019-06-23T21:12:32+08:00
 lastmod: 2019-10-18T08:47:32+08:00

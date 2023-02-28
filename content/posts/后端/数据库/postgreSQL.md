@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL
-url: /PostgreSQL.html
+
 date: 2021-02-07T14:08:07+08:00
 categories:
 - 数据库

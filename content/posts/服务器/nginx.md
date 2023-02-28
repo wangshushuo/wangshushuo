@@ -1,6 +1,6 @@
 ---
 title: "Nginx的简单使用"
-url: "/Nginx.html"
+
 toc: true
 date: 2019-09-27T13:08:38+08:00
 description: nginx的配置文件目录，默认静态网站目录，ubuntu安装nginx，websocket代理。

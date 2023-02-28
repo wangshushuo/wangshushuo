@@ -1,6 +1,6 @@
 ---
 title: WebStorm Changelist更新时间长
-url: /changelist-git-ignore.html
+
 date: 2021-01-15T10:45:56+08:00
 description: 有时changelist会进行长时间的updating并占用大量cpu，这里会解决这个问题
 categories:

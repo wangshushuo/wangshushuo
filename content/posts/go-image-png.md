@@ -1,6 +1,6 @@
 ---
 title: Go-Image-Png
-url: /Go-Image-Png.html
+
 date: 2022-09-24T21:35:35+08:00
 categories:
 - golang

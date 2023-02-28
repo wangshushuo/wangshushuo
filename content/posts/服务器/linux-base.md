@@ -1,6 +1,6 @@
 ---
 title: Linux的简单使用
-url: /linux.html
+
 date: 2019-06-11T23:02:30+08:00
 toc: true
 categories:

@@ -1,6 +1,6 @@
 ---
 title: 开发一个ops的新客户端
-url: /开发一个ops的新客户端.html
+
 date: 2021-11-20T17:51:17+08:00
 description: 摘要，显示在meta的description中
 categories:

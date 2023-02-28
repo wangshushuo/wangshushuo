@@ -1,6 +1,6 @@
 ---
 title: "workbox"
-url: "/workbox"
+
 toc: true
 date: 2019-08-28T09:53:21+08:00
 description: 利用workbox实现资源的预下载

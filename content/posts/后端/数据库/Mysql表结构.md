@@ -1,6 +1,6 @@
 ---
 title: Mysql表结构
-url: /Mysql表结构.html
+
 date: 2020-05-25T17:46:51+08:00
 categories:
 - mysql

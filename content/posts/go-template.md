@@ -1,6 +1,6 @@
 ---
 title: Go-Template
-url: /Go-Template.html
+
 date: 2022-09-24T16:06:31+08:00
 categories:
 - go

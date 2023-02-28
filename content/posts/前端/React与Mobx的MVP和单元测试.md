@@ -1,6 +1,6 @@
 ---
 title: React与Mobx的MVP和单元测试
-url: /React与Mobx的MVP和单元测试.html
+
 date: 2020-08-14T09:35:25+08:00
 description: 摘要，显示在meta的description中
 categories:

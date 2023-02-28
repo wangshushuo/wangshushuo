@@ -1,7 +1,7 @@
 ---
 date: 2020-01-19T13:51:29+08:00
 toc: true
-url: /Spring Security JWT.html
+ Security JWT.html
 title: Spring Security JWT
 categories:
 - spring

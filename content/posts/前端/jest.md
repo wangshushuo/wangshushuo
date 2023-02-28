@@ -1,6 +1,6 @@
 ---
 title: Jest
-url: /Jest.html
+
 date: 2022-07-22T16:35:49+08:00
 categories:
 - 前端

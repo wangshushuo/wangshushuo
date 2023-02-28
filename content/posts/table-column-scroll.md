@@ -1,6 +1,6 @@
 ---
 title: Table-Column-Scroll
-url: /Table-Column-Scroll.html
+
 date: 2022-07-09T15:29:33+08:00
 description: 摘要，显示在meta的description中
 categories:

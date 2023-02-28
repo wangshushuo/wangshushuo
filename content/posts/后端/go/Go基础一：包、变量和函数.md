@@ -1,6 +1,6 @@
 ---
 title: Go基础一：包、变量和函数
-url: /learn-go-1.html
+
 date: 2020-06-29T10:06:01+08:00
 description: 
 categories:

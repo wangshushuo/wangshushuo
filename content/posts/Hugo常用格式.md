@@ -3,7 +3,7 @@ author: 王书硕
 date: 2020-03-28T02:52:52+08:00
 lastmod : 2020-03-28T05:02:40+08:00
 toc: true
-url: "/hugo常用格式.html"
+
 title: "hugo常用格式"
 summary: "代说明的图片，reference，表格"
 categories:

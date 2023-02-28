@@ -1,6 +1,6 @@
 ---
 title: Git分支操作
-url: /Git分支操作.html
+
 date: 2020-05-25T17:30:46+08:00
 summary: 常用的Git分支操作
 categories:

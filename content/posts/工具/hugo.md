@@ -72,7 +72,7 @@ categories         <- Taxonomy
 ```yml
 ---
 title: "Hugo"
-url: "/Hugo"
+
 toc: true
 date: 2019-10-10T14:15:23+08:00
 author: 王书硕

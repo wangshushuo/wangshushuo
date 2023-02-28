@@ -1,6 +1,6 @@
 ---
 title: 了解Golang的writer/reader接口
-url: /understanding-writer-reader-interface-of-golang.html
+
 date: 2022-06-21T18:48:11+08:00
 description: Understanding Golang's writer/reader interface
 categories:

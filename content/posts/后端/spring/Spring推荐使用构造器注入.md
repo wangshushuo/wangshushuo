@@ -2,7 +2,7 @@
 author: 王书硕
 date: 2020-01-18T18:30:02+08:00
 toc: true
-url: /Spring推荐使用构造器注入.html
+
 title: Spring推荐使用构造器注入
 categories:
 - spring
