@@ -45,6 +45,20 @@ function handle(data){
 使用 fetch 进行请求时，可在参数中加 `mode : 'no-cors'`，使浏览器不发送 option 请求，直接发起网络请求。但是请求的 header 只能是 CORS-safelisted 列表中的。其他 header 浏览器不会发送。比如 `Authorization` 
 `no-cors` 对 header 有影响，
 
+#### fetch
+
+```
+  fetch('https://english-workers.407590300.workers.dev/corsproxy/login', {
+    credentials: 'include',
+    // mode: 'cors',
+    // method:"GET",
+    headers: new Headers({
+      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+      'X-Custom-PSK': 'mypresharedkey1',
+    })
+  })
+  ```
+
 ## 参照
 
 https://fetch.spec.whatwg.org/#cors-safelisted-response-header-name
