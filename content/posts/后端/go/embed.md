@@ -1,4 +1,9 @@
-# 用embed解决CLI程序使用模板文件
+---
+title: 用embed解决CLI程序使用模板文件
+date: 2023-10-16T17:32:50+08:00
+categories:
+- golang
+---
 
 QUESTION:
 
