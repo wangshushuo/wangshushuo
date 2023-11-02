@@ -28,3 +28,11 @@ git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
 ```
 git config --global --unset http.https://github.com.proxy
 ```
+
+## 配置文件
+windows：
+在 ~/.gitconfig文件中
+```
+[http "https://github.com"]
+  proxy = socks5://127.0.0.1:10808
+```

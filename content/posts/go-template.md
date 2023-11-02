@@ -47,3 +47,24 @@ Execute 将已解析的模板应用于指定的数据对象，并将输出写入
 </fieldset>
 ```
 
+## 使用数据
+举几个例子
+```go
+{{range $b, $u := .Users}}
+    <span>{{$u}}</span>,
+{{end}}
+```
+
+{{$Users := .Users}}
+
+    {{with pipeline}} T1 {{end}}
+        If the value of the pipeline is empty, no output is generated;
+        otherwise, dot is set to the value of the pipeline and T1 is
+        executed.
+
+    {{with pipeline}} T1 {{else}} T0 {{end}}
+        If the value of the pipeline is empty, dot is unaffected and T0
+        is executed; otherwise, dot is set to the value of the pipeline
+        and T1 is executed.
+
+pipeline 指的数据
