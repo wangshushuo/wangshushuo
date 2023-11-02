@@ -23,6 +23,8 @@ git config --global core.eol lf
 
 3. 设置编辑器/IDE将 CRLF 改成 LF 
 
+![20231102185450_69d41e36003ab3bf8792d90f0affd74a.png](https://hugo-1256216240.cos.ap-chengdu.myqcloud.com/20231102185450_69d41e36003ab3bf8792d90f0affd74a.png)
+
 ## 原理
 
 Git 默认的行为是，在藏库里只保存 LF 换行符，但是Windows系统的默认换行符是 CRLF 。在Windows系统中，Git 为了实现只保存 LF 换行符，在提交代码时，Git 会自动进行转化为 LF ，签出代码时自动转换回 CRLF 。
