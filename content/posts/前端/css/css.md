@@ -84,6 +84,7 @@ outline:  9999px solid rgba(0,0,0,.76);
 
 
 ## 渐变色文字
+方式1：
 ```css
 .text{
   background-image: -webkit-gradient(linear,0% 0%,25% 100%,from(#ff2c2c),to(#7a5e91));
@@ -95,6 +96,34 @@ span {
   -webkit-background-clip: text;
   color: transparent;
 }
+```
+
+方式2，带边框：
+```html
+<button class="button">
+  <span class="button__label">Click me</span>
+</button>
+```
+
+```css
+    .button {
+      background: transparent;
+      padding: 3px 6px;
+      background-image: linear-gradient(90deg, white, white),
+         linear-gradient(166deg, #ff507a, #7d51df 33%, #2265de 66%, #0bc786);
+      background-clip: padding-box, border-box;
+      background-origin: border-box;
+      border: 2px solid transparent;
+      border-radius: 1.75rem;
+    }
+    
+    .button__label {
+      background-image: linear-gradient(166deg, #ff507a, #7d51df 33%, #2265de 66%, #0bc786);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 600;
+    }
 ```
 
 ## IOS 阴影 input textarea
