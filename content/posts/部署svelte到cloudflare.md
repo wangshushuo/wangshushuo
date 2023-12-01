@@ -22,7 +22,7 @@ npm run dev
 将项目放到github上，代码push后就会自动运行pages部署。🚀
 
 首先要修改svelte项目，安装 @sveltejs/adapter-cloudflare ，然受修改 svelte.config.js 文件
-```
+```js
 import adapter from '@sveltejs/adapter-cloudflare';
  
 export default {
