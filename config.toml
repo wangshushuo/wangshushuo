@@ -685,7 +685,7 @@ uglyURLs = false
     googleAdClient = ""
 
     ## 自动广告
-    enableGoogleAutoAds = true
+    enableGoogleAutoAds = false
 
     ## 广告单元
     enableGoogleAdUnits = false
