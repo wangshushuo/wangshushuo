@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "f2f0e9e200819a45",
+    "type": "split",
+    "children": [
+      {
+        "id": "943f15ed2926aaea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca27f982c5fb9ceb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "技能/设计模式.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e79887417a1666f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "b912d1680f9227aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6a768f226b1fe6c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "24d0e6198c79dea1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "896a3bc86400cc32",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7f30979e2d155193",
+    "type": "split",
+    "children": [
+      {
+        "id": "1b3f70ee0679960f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "778c354afd445987",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "技能/设计模式.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "03f98c20cb9a8c8a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "技能/设计模式.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "299680305761abf8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "02410dbffdebd548",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "技能/设计模式.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "ca27f982c5fb9ceb",
+  "lastOpenFiles": [
+    "技能/BOM.md",
+    "技能/设计模式.md",
+    "准备面试.md",
+    "技能/webpack.md",
+    "技能/CSS模块化.md",
+    "技能/new操作符.md",
+    "技能/箭头函数.md",
+    "技能/词法作用域.md",
+    "简历.md",
+    "技能/原型.md",
+    "附件/箭头函数1.png",
+    "附件/1.png",
+    "技能/==类型转换.md",
+    "技能/缓存.md",
+    "技能/TCP.md",
+    "技能/基础知识.md",
+    "技能/es6.md",
+    "工程化/vite与webpack比较.md",
+    "技能/跨域.md",
+    "工程化",
+    "附件/Pasted image 20240402202036.jpg",
+    "附件/Pasted image 20240402201217.jpg",
+    "附件/285729db06404505887b554c12d4c230~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp",
+    "附件/cf9bd409c5624da0970f8227784ac728~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp",
+    "附件",
+    "技能/promise.md",
+    "技能/语义化标签.md",
+    "技能",
+    "old/榜单.md",
+    "old",
+    "old/面试/基础面试题.md",
+    "old/笔记.md",
+    "old/博客分类.md",
+    "old/前端/css/css.md",
+    "old/库",
+    "old/前端/css/高斯模糊.md",
+    "old/服务器/内容分发网络.md"
+  ]
+}
