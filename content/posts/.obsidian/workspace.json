@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技能/设计模式.md",
+                "file": "技能/跨域.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技能/设计模式.md",
+                "file": "技能/跨域.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技能/设计模式.md",
+                "file": "技能/跨域.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技能/设计模式.md"
+                "file": "技能/跨域.md"
               }
             }
           }
@@ -148,25 +148,30 @@
   },
   "active": "ca27f982c5fb9ceb",
   "lastOpenFiles": [
-    "技能/BOM.md",
     "技能/设计模式.md",
+    "技能/缓存.md",
+    "技能/跨域.md",
+    "技能/箭头函数.md",
+    "template/template.md",
+    "template",
+    "old/企业微信机器人.md",
+    "技能/CSS3.md",
+    "简历.md",
+    "技能/数组常用方法.md",
+    "技能/BOM.md",
     "准备面试.md",
     "技能/webpack.md",
     "技能/CSS模块化.md",
     "技能/new操作符.md",
-    "技能/箭头函数.md",
     "技能/词法作用域.md",
-    "简历.md",
     "技能/原型.md",
     "附件/箭头函数1.png",
     "附件/1.png",
     "技能/==类型转换.md",
-    "技能/缓存.md",
     "技能/TCP.md",
     "技能/基础知识.md",
     "技能/es6.md",
     "工程化/vite与webpack比较.md",
-    "技能/跨域.md",
     "工程化",
     "附件/Pasted image 20240402202036.jpg",
     "附件/Pasted image 20240402201217.jpg",
@@ -180,10 +185,6 @@
     "old",
     "old/面试/基础面试题.md",
     "old/笔记.md",
-    "old/博客分类.md",
-    "old/前端/css/css.md",
-    "old/库",
-    "old/前端/css/高斯模糊.md",
-    "old/服务器/内容分发网络.md"
+    "old/库"
   ]
 }
