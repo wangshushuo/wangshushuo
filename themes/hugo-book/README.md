@@ -248,7 +248,6 @@ weight = 10
 bookFlatSection = false
 
 # (Optional) Set to hide nested sections or pages at that level. Works only with file-tree menu mode
-# 变成一个可以收起的节点
 bookCollapseSection = true
 
 # (Optional) Set true to hide page or section from side menu (if BookMenuBundle not set)
