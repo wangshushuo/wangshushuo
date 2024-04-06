@@ -69,7 +69,7 @@ outline:  9999px solid rgba(0,0,0,.76);
 }
 ```
 
-## 使用css画不规则边框
+## 不规则边框
 
 ```css
 .node {
@@ -81,8 +81,6 @@ outline:  9999px solid rgba(0,0,0,.76);
 ```
 
 这段样式可以画半个左边框。其中用到了渐变色属性。
-
-
 ## 渐变色文字
 方式1：
 ```css
@@ -126,14 +124,12 @@ span {
     }
 ```
 
-## IOS 阴影 input textarea
+## IOS 阴影 input textarea
 ```css
 input,textarea{
 	-webkit-appearance: none;
 }
 ```
-
-
 ## margin塌陷
 在标准文档流中，竖直方向的margin会出现叠加现象，即较大的margin会覆盖掉较小的margin，竖直方向的两个盒子中间只有一个较大的margin，这就是margin的塌陷现象。  
 margin的塌陷现象分两种情况：

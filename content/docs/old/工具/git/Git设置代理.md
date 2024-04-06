@@ -1,10 +1,6 @@
 ---
 title: Git设置代理
-
 date: 2020-05-25T17:32:50+08:00
-summary: 设置git的代理
-categories:
-- git
 ---
 
 全局设置

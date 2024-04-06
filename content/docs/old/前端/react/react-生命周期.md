@@ -1,10 +1,8 @@
 ---
 title: React-生命周期
-
 date: 2020-06-19T09:41:43+08:00
-description: React生命周期
-categories:
-- react
+tags:
+  - react
 ---
 
 ## 挂载

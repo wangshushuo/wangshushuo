@@ -1,15 +1,7 @@
 ---
-title: "React"
-
-author: 王书硕
+title: React
 date: 2020-03-30T23:19:26+08:00
-lastmod : 2020-03-30T23:19:26+08:00
-toc: true
-summary: 摘要，显示在meta的description中，
-categories:
-- React
 ---
-
 ## 生命周期
 
 用于初始化 state  constructor() {}

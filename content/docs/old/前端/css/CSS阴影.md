@@ -13,12 +13,13 @@ tags:
 - 按钮
 - 突出
 ---
-
 ## 水滴
 https://codepen.io/mewoma/pen/gOWXQyO
 
 ![](http://hugo-1256216240.cos.ap-chengdu.myqcloud.com/pasteimageintomarkdown/2022-06-17/744101469976800.png)
 
+{{< details title="code" open=false >}}
+### code
 ```html
 <div class="drops">
   <div class="drop"></div>
@@ -93,11 +94,16 @@ body{
   border-radius: 64% 36% 33% 67% / 49% 53% 47% 51% ;
 }
 ```
+{{< /details >}}
 
 ## 按钮
 https://codepen.io/thebabydino/pen/bGrLprB
 
 ![](http://hugo-1256216240.cos.ap-chengdu.myqcloud.com/pasteimageintomarkdown/2022-06-17/745055875034800.png)
+
+
+{{< details title="code" open=false >}}
+### code
 
 ```pug
 - let data = {
@@ -165,12 +171,16 @@ button {
 	&:active { --press: 1 }
 }
 ```
+{{< /details >}}
 
 ## 钟
 https://codepen.io/BurmesePotato/details/LYyOVoe
 
 ![](http://hugo-1256216240.cos.ap-chengdu.myqcloud.com/pasteimageintomarkdown/2022-06-17/745302399860100.png)
 
+{{< details title="code" open=false >}}
+### code
+html
 ```html
 <div class="clock">
   <div class="outer-clock-face">
@@ -187,7 +197,7 @@ https://codepen.io/BurmesePotato/details/LYyOVoe
   </div>
 </div>
 ```
-
+css
 ```scss
 $color-bg: #9C2D41;
 $color-bg-dark: #9C2D41;
@@ -340,7 +350,7 @@ body {
   z-index: 1;
 }
 ```
-
+js
 ```js
 const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
@@ -366,3 +376,4 @@ setInterval(setDate, 1000);
 
 setDate();
 ```
+{{< /details >}}

@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "ac0048631127bd4f",
+        "id": "f8cd205ec254739d",
         "type": "tabs",
         "children": [
           {
-            "id": "b4206de871329801",
+            "id": "6908dd39ae4e6440",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "技能/浏览器缓存.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
+                "file": "技能/浏览器缓存.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "技能/浏览器缓存.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,14 +124,17 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "技能/浏览器缓存.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 277.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -139,53 +148,53 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b4206de871329801",
+  "active": "6908dd39ae4e6440",
   "lastOpenFiles": [
-    "template/template/文件夹.md",
-    "template/template/文章.md",
-    "工程化/_index.md",
-    "技能/_index.md",
-    "old/前端/_index.md",
-    "old/前端/Untitled.md",
-    "技能/xinde/index.md",
-    "技能/xinde/未命名.md",
-    "技能/xinde",
+    "template/template/embed.md",
+    "技能/浏览器缓存.md",
+    "[.md",
+    "old/前端/网站的兼容性.md",
+    "old/前端/组件化.md",
+    "old/记录/jest.md",
+    "old/记录/npm与yarn.md",
+    "old/前端/React与Mobx的MVP和单元测试.md",
+    "old/前端/js-script-tag.md",
+    "old/记录/nvm阿里源.md",
+    "old/记录/字体bug.md",
+    "old/前端/React/dva中处理超时.md",
+    "old/前端/React/异步组件.md",
+    "old/前端/React/react-生命周期.md",
+    "old/前端/React/create-react-app.md",
+    "old/前端/React/react-元素与组件.md",
+    "old/前端/React/react.md",
+    "old/前端/css/CSS知识点总结.md",
+    "old/前端/css/linear-gradient.md",
+    "old/前端/css/CSS阴影.md",
+    "template/template/code detail.md",
     "template/_index.md",
-    "简历.md",
-    "技能/试一下/index.md",
-    "技能/2024-04-06-00-00-11.png",
-    "技能/a/未命名.md",
-    "技能/a/Untitled.md",
-    "技能/a",
-    "技能/试一下/Untitled.md",
-    "技能/试一下/Untitled 1.md",
-    "index.md",
-    "技能/试一下/index1.md",
-    "技能/试一下/Untitled 2.md",
-    "技能/试一下/Untitled 6.md",
-    "技能/试一下/未命名 1.md",
-    "技能/试一下/Untitled 5.md",
-    "技能/试一下/Untitled 4.md",
-    "技能/试一下/Untitled 3.md",
-    "template/javascript/folder.js",
-    "template/javascript",
-    "template/javascriot",
-    "template/template",
-    "template/template.md",
-    "template/folder.js",
-    "未命名.md",
-    "技能/试一下/Pasted image 20240406100910.png",
-    "技能/TCP.md",
-    "技能/试一下/Pastedimage20240406095258.png",
-    "技能/试一下/Pasted image 20240406095258.png",
-    "技能/试一下",
-    "template",
-    "附件/箭头函数1.png",
-    "附件/1.png",
-    "工程化",
-    "附件/Pasted image 20240402202036.jpg",
-    "附件/Pasted image 20240402201217.jpg",
-    "附件/285729db06404505887b554c12d4c230~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp",
-    "附件/cf9bd409c5624da0970f8227784ac728~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp"
+    "old/前端/css/高斯模糊.md",
+    "old/前端/css/_index.md",
+    "old/前端/css/css.md",
+    "old/前端/css/CSS模块化/index.md",
+    "old/前端/css/渐变色/linear-gradient-5.gif",
+    "old/前端/css/渐变色/linear-gradient-4.gif",
+    "old/前端/css/渐变色/linear-gradient-3.gif",
+    "old/前端/css/渐变色/linear-gradient-2.png",
+    "old/前端/css/渐变色/linear-gradient-1.jpg",
+    "old/前端/css/渐变色",
+    "old/前端/css/CSS模块化/image-9.png",
+    "old/前端/css/CSS模块化/image-8.png",
+    "old/前端/css/CSS模块化/image-7.png",
+    "old/前端/css/CSS模块化/image-6.png",
+    "old/前端/css/CSS命名/css_class_name/image-9.png",
+    "old/前端/css/CSS命名/css_class_name",
+    "old/前端/css/CSS模块化",
+    "old/hugo",
+    "old/工具/gitlab-ci",
+    "old/记录",
+    "old/功能",
+    "old/框架",
+    "old/项目",
+    "技能/xinde"
   ]
 }

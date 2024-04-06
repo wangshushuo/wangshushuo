@@ -1,9 +1,4 @@
 ---
 title: 前端
-url: front
-weight: 1
+bookCollapseSection: true
 ---
-
-
-
-666666666

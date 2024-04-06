@@ -1,23 +1,8 @@
 ---
 title: dva取消异步任务
 date: 2018-12-31T09:54:21+00:00
-
-categories:
-- React
-keywords:
-- cancel effect
-- dva
-- dva cancel effect
-- dva effect超时
-- saga超时
-- 取消axios
-- 取消effect
-- 取消saga
-- 取消saga异步任务
-- 取消异步任务
-- 取消网络请求
-- 超时
-
+tags:
+  - React
 ---
 
 先声明一个axios的网络请求函数login🤪：

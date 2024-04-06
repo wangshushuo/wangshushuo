@@ -9,7 +9,7 @@ tags:
 ---
 原文：[使用Fetch][1] 、[axios文档][2]
 
-# 什么是 fetch ？
+## 什么是 fetch ？
 
 以前通过JS进行网络请求都是使用`ajax`也就是`XMLHttpRequest`实现的。如果用原生方式实现起来比较麻烦。
 
@@ -88,7 +88,7 @@ fetch('https://example.com/profile/avatar', {
 })
 ```
 
-# 什么是 axios ？
+## 什么是 axios ？
 
 它是一个库，可以用`Promise`的方式进行网络请求。
 
