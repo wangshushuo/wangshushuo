@@ -1,4 +1,10 @@
 {
-  "attachmentFolderPath": "附件",
-  "alwaysUpdateLinks": true
+  "attachmentFolderPath": "./",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "userIgnoreFilters": [
+    "_index",
+    "_index.md"
+  ],
+  "promptDelete": false
 }

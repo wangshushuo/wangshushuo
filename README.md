@@ -1,4 +1,12 @@
-# Hugo Book Theme
+# Hugo Book
+
+## 使用obsidian编辑
+为了解决图片的问题，文章采用文件夹的形式。
+
+新建文章时，先创建一个文件夹，名字就是文章的名字，文件夹内部是一个index.md文件，在obsidian中粘贴的图片会保存在文件夹中，这样obsidian能实时看到，hugo编译也能显示。
+
+文章初始化的信息，通过templater插件实现（设置title和date）
+
 
 [![Hugo](https://img.shields.io/badge/hugo-0.79-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)

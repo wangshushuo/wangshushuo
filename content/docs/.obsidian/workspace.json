@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "943f15ed2926aaea",
+        "id": "ac0048631127bd4f",
         "type": "tabs",
         "children": [
           {
-            "id": "ca27f982c5fb9ceb",
+            "id": "b4206de871329801",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技能/TCP.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技能/TCP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技能/TCP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "技能/TCP.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -143,48 +135,57 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "ca27f982c5fb9ceb",
+  "active": "b4206de871329801",
   "lastOpenFiles": [
-    "技能/跨域.md",
-    "技能/设计模式.md",
-    "技能/缓存.md",
-    "技能/箭头函数.md",
-    "template/template.md",
-    "template",
-    "old/企业微信机器人.md",
-    "技能/CSS3.md",
+    "template/template/文件夹.md",
+    "template/template/文章.md",
+    "工程化/_index.md",
+    "技能/_index.md",
+    "old/前端/_index.md",
+    "old/前端/Untitled.md",
+    "技能/xinde/index.md",
+    "技能/xinde/未命名.md",
+    "技能/xinde",
+    "template/_index.md",
     "简历.md",
-    "技能/数组常用方法.md",
-    "技能/BOM.md",
-    "准备面试.md",
-    "技能/webpack.md",
-    "技能/CSS模块化.md",
-    "技能/new操作符.md",
-    "技能/词法作用域.md",
-    "技能/原型.md",
+    "技能/试一下/index.md",
+    "技能/2024-04-06-00-00-11.png",
+    "技能/a/未命名.md",
+    "技能/a/Untitled.md",
+    "技能/a",
+    "技能/试一下/Untitled.md",
+    "技能/试一下/Untitled 1.md",
+    "index.md",
+    "技能/试一下/index1.md",
+    "技能/试一下/Untitled 2.md",
+    "技能/试一下/Untitled 6.md",
+    "技能/试一下/未命名 1.md",
+    "技能/试一下/Untitled 5.md",
+    "技能/试一下/Untitled 4.md",
+    "技能/试一下/Untitled 3.md",
+    "template/javascript/folder.js",
+    "template/javascript",
+    "template/javascriot",
+    "template/template",
+    "template/template.md",
+    "template/folder.js",
+    "未命名.md",
+    "技能/试一下/Pasted image 20240406100910.png",
+    "技能/TCP.md",
+    "技能/试一下/Pastedimage20240406095258.png",
+    "技能/试一下/Pasted image 20240406095258.png",
+    "技能/试一下",
+    "template",
     "附件/箭头函数1.png",
     "附件/1.png",
-    "技能/==类型转换.md",
-    "技能/TCP.md",
-    "技能/基础知识.md",
-    "技能/es6.md",
-    "工程化/vite与webpack比较.md",
     "工程化",
     "附件/Pasted image 20240402202036.jpg",
     "附件/Pasted image 20240402201217.jpg",
     "附件/285729db06404505887b554c12d4c230~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp",
-    "附件/cf9bd409c5624da0970f8227784ac728~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp",
-    "附件",
-    "技能/promise.md",
-    "技能/语义化标签.md",
-    "技能",
-    "old/榜单.md",
-    "old",
-    "old/面试/基础面试题.md",
-    "old/笔记.md",
-    "old/库"
+    "附件/cf9bd409c5624da0970f8227784ac728~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp"
   ]
 }
