@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "技能/浏览器缓存.md",
+                "file": "old/面试/简历.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "简历",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "7f30979e2d155193",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技能/浏览器缓存.md",
+                "file": "old/面试/简历.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技能/浏览器缓存.md",
+                "file": "old/面试/简历.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "技能/浏览器缓存.md"
+                "file": "old/面试/简历.md"
               }
             }
           }
@@ -150,43 +151,44 @@
   },
   "active": "6908dd39ae4e6440",
   "lastOpenFiles": [
-    "template/template/embed.md",
+    "old/面试/怎么写简历/index.md",
+    "old/面试/简历.md",
+    "old/面试/基础面试题.md",
+    "old/记录/electron.md",
+    "old/记录/Pasted image 20240407132410.png",
+    "old/X 摘录.md",
+    "old/记录/npm与yarn.md",
+    "old/记录/nvm阿里源.md",
+    "old/未读.md",
+    "old/笔记.md",
+    "old/递归map.md",
+    "old/趣闻轶事.md",
+    "old/记录/策略模式.md",
+    "old/面试/准备面试.md",
+    "old/面试/项目面试题.md",
+    "old/面试/前端知识点.md",
+    "old/面试/面试题.md",
+    "old/面试/怎么写简历.md",
+    "old/面试/怎么写简历",
+    "old/面试/怎么写简历/Pasted image 20240406230726.png",
+    "old/心得/职业发展.md",
+    "附件/Pasted image 20240402202036.jpg",
+    "附件/Pasted image 20240402201217.jpg",
+    "附件/箭头函数1.png",
+    "附件/285729db06404505887b554c12d4c230~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp",
+    "old/_index.md",
+    "附件/2024-04-06-00-01-46.png",
+    "old/博客分类.md",
     "技能/浏览器缓存.md",
+    "template/template/embed.md",
     "[.md",
     "old/前端/网站的兼容性.md",
     "old/前端/组件化.md",
     "old/记录/jest.md",
-    "old/记录/npm与yarn.md",
-    "old/前端/React与Mobx的MVP和单元测试.md",
-    "old/前端/js-script-tag.md",
-    "old/记录/nvm阿里源.md",
-    "old/记录/字体bug.md",
-    "old/前端/React/dva中处理超时.md",
-    "old/前端/React/异步组件.md",
-    "old/前端/React/react-生命周期.md",
-    "old/前端/React/create-react-app.md",
-    "old/前端/React/react-元素与组件.md",
-    "old/前端/React/react.md",
-    "old/前端/css/CSS知识点总结.md",
-    "old/前端/css/linear-gradient.md",
-    "old/前端/css/CSS阴影.md",
-    "template/template/code detail.md",
-    "template/_index.md",
-    "old/前端/css/高斯模糊.md",
-    "old/前端/css/_index.md",
-    "old/前端/css/css.md",
-    "old/前端/css/CSS模块化/index.md",
     "old/前端/css/渐变色/linear-gradient-5.gif",
     "old/前端/css/渐变色/linear-gradient-4.gif",
     "old/前端/css/渐变色/linear-gradient-3.gif",
-    "old/前端/css/渐变色/linear-gradient-2.png",
-    "old/前端/css/渐变色/linear-gradient-1.jpg",
     "old/前端/css/渐变色",
-    "old/前端/css/CSS模块化/image-9.png",
-    "old/前端/css/CSS模块化/image-8.png",
-    "old/前端/css/CSS模块化/image-7.png",
-    "old/前端/css/CSS模块化/image-6.png",
-    "old/前端/css/CSS命名/css_class_name/image-9.png",
     "old/前端/css/CSS命名/css_class_name",
     "old/前端/css/CSS模块化",
     "old/hugo",
@@ -194,7 +196,6 @@
     "old/记录",
     "old/功能",
     "old/框架",
-    "old/项目",
-    "技能/xinde"
+    "old/项目"
   ]
 }
