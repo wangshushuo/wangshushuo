@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b3e94fa80467c2e1",
+        "id": "47696e65bec38462",
         "type": "tabs",
         "children": [
           {
-            "id": "de0aa3f1a4fed1be",
+            "id": "2594f10e5eb5a07b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "个人项目/企业微信机器人.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "个人项目/企业微信机器人.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "个人项目/企业微信机器人.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "个人项目/企业微信机器人.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,10 +139,21 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "de0aa3f1a4fed1be",
+  "active": "2594f10e5eb5a07b",
   "lastOpenFiles": [
-    "个人项目/我的博客支持服务.md",
+    "hugo与obsidian/hugo与obsidian结合使用/index.md",
+    "hugo与obsidian/hugo与obsidian结合使用/Pasted image 20240407233334.png",
+    "hugo与obsidian/hugo与obsidian结合使用/Pasted image 20240407233129.png",
+    "old/前端/CSS/CSS阴影.md",
+    "old/前端/CSS/CSS使用笔记.md",
+    "hugo与obsidian/hugo与obsidian结合使用/Pasted image 20240407231943.png",
+    "template/template/note index.md",
+    "template/template/note.md",
+    "hugo与obsidian/Hugo主题的构成.md",
+    "hugo与obsidian/hugo与obsidian结合使用.md",
+    "hugo与obsidian/hugo与obsidian结合使用",
     "个人项目/企业微信机器人.md",
+    "个人项目/我的博客支持服务.md",
     "个人项目/开发一个ops的新客户端.md",
     "个人项目/开发一个带缓存的代理.md",
     "个人项目/计算贝塞尔曲线.md",
@@ -167,16 +170,8 @@
     "小功能/将emoji表情作为网站的favicon.md",
     "小功能/用html字符串生成dom元素.md",
     "小功能/IOS的固定列头滚动效果.md",
-    "小功能/Java执行shell命令.md",
-    "小功能/Table固定列头和行头.md",
-    "old/大杂烩/笔记.md",
-    "old/大杂烩/博客分类.md",
     "old/大杂烩",
-    "技术知识点/_index.md",
-    "技术知识点/设计模式.md",
-    "技术知识点/ES6/箭头函数.md",
     "技术知识点/JS",
-    "技术知识点/语义化标签.md",
     "技术知识点/ES6/未命名",
     "技术知识点/工程化",
     "技术知识点/CSS",
@@ -188,12 +183,8 @@
     "优化/授课项目首屏加载慢/优化-代码.png",
     "优化/授课项目首屏加载慢/优化-前.jpg",
     "优化/授课项目首屏加载慢/优化-后2.jpg",
-    "优化/授课项目首屏加载慢",
     "old/技术笔记/electron/Pasted image 20240407132410.png",
     "old/面试/怎么写简历/Pasted image 20240406230726.png",
-    "附件/Pasted image 20240402202036.jpg",
-    "附件/Pasted image 20240402201217.jpg",
-    "附件/箭头函数1.png",
-    "附件/285729db06404505887b554c12d4c230~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp"
+    "附件/Pasted image 20240402202036.jpg"
   ]
 }

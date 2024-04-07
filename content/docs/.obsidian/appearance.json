@@ -1,5 +1,8 @@
 {
   "accentColor": "",
   "cssTheme": "Obsidian gruvbox",
-  "monospaceFontFamily": "Cascadia Code"
+  "monospaceFontFamily": "Cascadia Code",
+  "enabledCssSnippets": [
+    "my"
+  ]
 }
