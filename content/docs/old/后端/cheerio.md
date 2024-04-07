@@ -1,20 +1,17 @@
 ---
 title: Cheerio
-
 date: 2019-01-25T01:20:58+00:00
-author: 王书硕
-categories:
-- 后端
-
 ---
 ## 1.解析表格table
 
-<pre class="wp-block-code"><code><tr class="listingTrailer">
-	<td>
-		</td><td colspan="2">Summa tillgodoräknade poäng:
-		</td><td class="credits">10,5
-		</td><td>
-</td></tr></code></pre>
+```html
+<tr>
+<td></td>
+<td colspan="2">Summa tillgodoräknade poäng:</td>
+<td class="credits">10,5</td>
+<td></td>
+</tr>
+```
 
 如果只是一段tr，cheerio不会识别，需要是一个完整的table才可以，而且table外面好像还有包一层div之类的东西，cheerio才能解析。
 

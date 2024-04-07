@@ -1,23 +1,15 @@
 ---
-title: Mysql增删改查
-
+title: MySQL增删改查
 date: 2020-05-25T17:47:39+08:00
-categories:
-- mysql
-tags:
-- 数据库
-- mysql
 ---
-
-
 ## create
+
 ```sql
 INSERT INTO tasks(subject,start_date,end_date,description)
 VALUES('Learn MySQL INSERT','2017-07-21','2017-07-22','Start learning..');
 ```
 
 [image1]:/images/mysql-1.png
-
 ## read 左右链接
 
 ```sql
@@ -40,7 +32,6 @@ SET
 WHERE
     condition;
 ```
-
 ### 无则添加，有则修改
 
 ```sql
@@ -51,8 +42,8 @@ values
 ON DUPLICATE KEY UPDATE 
 number = 46, name = ‘李四’;
 ```
-
 ## delete
+
 ```sql
 DELETE FROM table_name
 WHERE condition;

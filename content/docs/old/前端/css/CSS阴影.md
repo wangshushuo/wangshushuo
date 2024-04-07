@@ -1,17 +1,6 @@
 ---
 title: CSS阴影
-
 date: 2022-06-17T10:22:31+08:00
-description: 纯CSS实现的有亮面暗面的逼真光照阴影效果
-categories:
-- 前端
-- css
-tags:
-- 阴影
-- 水滴
-- 卡片
-- 按钮
-- 突出
 ---
 ## 水滴
 https://codepen.io/mewoma/pen/gOWXQyO

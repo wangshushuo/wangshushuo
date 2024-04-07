@@ -1,16 +1,8 @@
 ---
-title: Mysql表结构
-
+title: MySQL表结构
 date: 2020-05-25T17:46:51+08:00
-categories:
-- mysql
-tags:
-- 数据库
-- mysql
 ---
-
-
-### 修改表结构
+## 修改表结构
 
 1. 查看列：`desc 表名;`
 1. 修改表名：`alter table t_book rename to bbb;`
@@ -20,10 +12,9 @@ tags:
 1. 修改列名SQLServer：`exec sp_rename't_student.name','nn','column';`
 1. 修改列名Oracle：`lter table bbb rename column nnnnn to hh int;`
 1. 修改列属性：`alter table t_book modify name varchar(22);`
+## 唯一性约束
 
-### 唯一性约束
-
-#### 建表时加上唯一性约束：
+### 建表时加上唯一性约束：
 
 ```sql
 CREATE TABLE `t_user` (
@@ -34,7 +25,7 @@ CREATE TABLE `t_user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1018 DEFAULT CHARSET=gbk; 
 ```
 
-#### 给已经建好的表加上唯一性约束：
+### 给已经建好的表加上唯一性约束：
 
 ```sql
 ALTER TABLE `t_user` ADD unique(`username`);
@@ -47,9 +38,9 @@ create unique index UserNameIndex on 't_user' ('username');
 ```
 
 
-### 索引
+## 索引
 
-#### mysql索引类型
+### mysql索引类型
 
 - primary：唯一索引，不允许为null。
 - key：普通非唯一索引。

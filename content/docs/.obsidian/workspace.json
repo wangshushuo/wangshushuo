@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f8cd205ec254739d",
+        "id": "b3e94fa80467c2e1",
         "type": "tabs",
         "children": [
           {
-            "id": "6908dd39ae4e6440",
+            "id": "de0aa3f1a4fed1be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "old/面试/简历.md",
+                "file": "个人项目/企业微信机器人.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "7f30979e2d155193",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "old/面试/简历.md",
+                "file": "个人项目/企业微信机器人.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "old/面试/简历.md",
+                "file": "个人项目/企业微信机器人.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "old/面试/简历.md"
+                "file": "个人项目/企业微信机器人.md"
               }
             }
           }
@@ -135,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5,
-    "collapsed": true
+    "width": 277.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,53 +147,53 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "6908dd39ae4e6440",
+  "active": "de0aa3f1a4fed1be",
   "lastOpenFiles": [
-    "old/面试/怎么写简历/index.md",
-    "old/面试/简历.md",
-    "old/面试/基础面试题.md",
-    "old/记录/electron.md",
-    "old/记录/Pasted image 20240407132410.png",
-    "old/X 摘录.md",
-    "old/记录/npm与yarn.md",
-    "old/记录/nvm阿里源.md",
-    "old/未读.md",
-    "old/笔记.md",
-    "old/递归map.md",
-    "old/趣闻轶事.md",
-    "old/记录/策略模式.md",
-    "old/面试/准备面试.md",
-    "old/面试/项目面试题.md",
-    "old/面试/前端知识点.md",
-    "old/面试/面试题.md",
-    "old/面试/怎么写简历.md",
-    "old/面试/怎么写简历",
+    "个人项目/我的博客支持服务.md",
+    "个人项目/企业微信机器人.md",
+    "个人项目/开发一个ops的新客户端.md",
+    "个人项目/开发一个带缓存的代理.md",
+    "个人项目/计算贝塞尔曲线.md",
+    "个人项目/创建MergeRequest的CLI工具.md",
+    "个人项目/博客在线编辑器.md",
+    "old/前端/fetch与axios.md",
+    "old/前端/组件化.md",
+    "old/前端/网站的兼容性.md",
+    "old/面试/_index.md",
+    "old/大杂烩/_index.md",
+    "个人项目/_index.md",
+    "小功能/_index.md",
+    "小功能/调试proxy对象.md",
+    "小功能/将emoji表情作为网站的favicon.md",
+    "小功能/用html字符串生成dom元素.md",
+    "小功能/IOS的固定列头滚动效果.md",
+    "小功能/Java执行shell命令.md",
+    "小功能/Table固定列头和行头.md",
+    "old/大杂烩/笔记.md",
+    "old/大杂烩/博客分类.md",
+    "old/大杂烩",
+    "技术知识点/_index.md",
+    "技术知识点/设计模式.md",
+    "技术知识点/ES6/箭头函数.md",
+    "技术知识点/JS",
+    "技术知识点/语义化标签.md",
+    "技术知识点/ES6/未命名",
+    "技术知识点/工程化",
+    "技术知识点/CSS",
+    "技术知识点/ES6",
+    "技能/未命名",
+    "技术知识点/浏览器与网络协议",
+    "优化",
+    "优化/授课项目首屏加载慢/优化-后.jpg",
+    "优化/授课项目首屏加载慢/优化-代码.png",
+    "优化/授课项目首屏加载慢/优化-前.jpg",
+    "优化/授课项目首屏加载慢/优化-后2.jpg",
+    "优化/授课项目首屏加载慢",
+    "old/技术笔记/electron/Pasted image 20240407132410.png",
     "old/面试/怎么写简历/Pasted image 20240406230726.png",
-    "old/心得/职业发展.md",
     "附件/Pasted image 20240402202036.jpg",
     "附件/Pasted image 20240402201217.jpg",
     "附件/箭头函数1.png",
-    "附件/285729db06404505887b554c12d4c230~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp",
-    "old/_index.md",
-    "附件/2024-04-06-00-01-46.png",
-    "old/博客分类.md",
-    "技能/浏览器缓存.md",
-    "template/template/embed.md",
-    "[.md",
-    "old/前端/网站的兼容性.md",
-    "old/前端/组件化.md",
-    "old/记录/jest.md",
-    "old/前端/css/渐变色/linear-gradient-5.gif",
-    "old/前端/css/渐变色/linear-gradient-4.gif",
-    "old/前端/css/渐变色/linear-gradient-3.gif",
-    "old/前端/css/渐变色",
-    "old/前端/css/CSS命名/css_class_name",
-    "old/前端/css/CSS模块化",
-    "old/hugo",
-    "old/工具/gitlab-ci",
-    "old/记录",
-    "old/功能",
-    "old/框架",
-    "old/项目"
+    "附件/285729db06404505887b554c12d4c230~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp"
   ]
 }

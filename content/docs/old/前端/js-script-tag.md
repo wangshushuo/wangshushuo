@@ -1,15 +1,6 @@
 ---
 title: 加载script标签
 date: 2019-03-13T02:03:07+00:00
-summary: script标签书写位置和方式如何影响其加载
-categories:
-- 前端
-keywords:
-- async
-- def
-- script
-- script标签
-
 ---
 将script标签写在2个地方——head中和body中——进行观察：
 

@@ -1,20 +1,13 @@
 ---
 title: Fetch 与 Axios
 date: 2019-07-17T10:27:44+00:00
-categories:
-- 前端
-tags:
-- api
-
 ---
 原文：[使用Fetch][1] 、[axios文档][2]
-
 ## 什么是 fetch ？
 
 以前通过JS进行网络请求都是使用`ajax`也就是`XMLHttpRequest`实现的。如果用原生方式实现起来比较麻烦。
 
 `Fetch API`是浏览器提供的一个代替`XMLHttpRequest`的新方法。
-
 ## 怎么使用 fetch ？
 
 最简单的形式：
@@ -35,7 +28,6 @@ fetch('http://example.com/movies.json')
 3. 只有当网络故障或者请求被阻止时才会是`reject`。
 4. `resolve`中进行`response.json()`才能拿到返回数据。
 5. `response.json()`会读取body，如果是json格式的，会将其转化。如果是不是json要用`response.text()`
-
 ## 怎么设置 method、header等参数呢？
 
 fetch() 方法接受第二个可选参数——一个对象——用来设置请求的参数：
@@ -56,7 +48,6 @@ fetch(url, {
 })
 ```
 ⚠️`credentials: 'include'` 这个字段可以让请求带上 cookie 。
-
 ## 上传JSON数据
 
 ⚠️需要设置`header`的`'Content-Type': 'application/json'`

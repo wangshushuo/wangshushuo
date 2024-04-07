@@ -1,12 +1,6 @@
 ---
-title: Mysql数据类型
-
+title: MySQL数据类型
 date: 2020-05-25T17:46:03+08:00
-categories:
-- mysql
-tags:
-- 数据库
-- mysql
 ---
 
 

@@ -1,13 +1,8 @@
 ---
 title: CSS知识点汇总
 date: 2019-09-15T21:53:21+08:00
-categories:
-- 前端
-- CSS
 ---
-
 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
-
 ## 选择器
 
 ## 优先级

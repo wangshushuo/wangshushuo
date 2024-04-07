@@ -1,14 +1,6 @@
 ---
 title: Redis基本操作
-
 date: 2022-06-27T23:21:09+08:00
-description: 摘要，显示在meta的description中
-categories:
-- 分类
-tags:
-- 显示在底部
-keywords:
-- aa
 ---
 
 1. 进入Redis的命令行

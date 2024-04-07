@@ -1,11 +1,8 @@
 ---
 title: JavaScript变量类型
-
 date: 2020-05-25T18:23:09+08:00
-categories:
-- JavaScript
 tags:
-- JavaScript基础
+  - JavaScript基础
 ---
 
 变量类型的值分为基本类型和引用类型。

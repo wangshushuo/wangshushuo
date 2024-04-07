@@ -1,12 +1,7 @@
 ---
 title: JavaScript
 date: 2020-04-04T02:13:49+08:00
-categories:
-- JavaScript
-tags:
-- api
 ---
-
 ## 避免高频率调用
 ```js
 function throttle(method, context) {
@@ -16,7 +11,6 @@ function throttle(method, context) {
   }, 200);
 }
 ```
-
 ## ES6新语法--扩展运算符（三个点）
 ### 第二个参数以及之后的任意多个参数都会被放到values数组中
 ```js
