@@ -1,11 +1,11 @@
 ---
-tags:
-  - es6
+title: 箭头函数
+date: 2024-04-07 23:57
 ---
 - 箭头函数没有独立的 [`this`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/this)、[`arguments`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments) 和 [`super`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/super) [绑定](https://developer.mozilla.org/zh-CN/docs/Glossary/Binding)，并且不可被用作[方法](https://developer.mozilla.org/zh-CN/docs/Glossary/Method)。
 - 箭头函数不能用作[构造函数](https://developer.mozilla.org/zh-CN/docs/Glossary/Constructor)。使用 [`new`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new) 调用它们会引发 [`TypeError`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/TypeError)。
+## 不能用作方法没有this
 
-## 不能用作方法
 箭头函数表达式只能用于非方法函数，因为它们没有自己的 `this`。让我们看看将它们用作方法时会发生什么：
 ```js
 const obj = {
@@ -44,8 +44,8 @@ autoBoundMethod(); // 1
 - 由于箭头函数的 this 是[[词法作用域]]绑定的，因此无法被他们修改。即使调了这几个方法，this也会被忽略，而使用原来的 this 值。
 
 在回头看上面的两端代码，对象字面量的上下文是全局window，类字段的上线问是类实例。
-
 ## 不能用作构造器
+
 箭头函数不能用作构造函数，当使用[[new操作符|new]]调用时会出错，因为他们没有prototype。
 
 ```js
@@ -54,4 +54,6 @@ const foo = new Foo(); // TypeError: Foo is not a constructor
 console.log("prototype" in Foo); // false
 ```
 
-![[箭头函数1.png]]
+![没有prototype](箭头函数1.png)
+没有prototype
+

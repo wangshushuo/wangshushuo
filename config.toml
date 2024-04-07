@@ -5,10 +5,10 @@ title = "wss.cool"
 languageCode = "zh"
 theme = 'hugo-book'
 publishDir = 'public'
-ignorefiles = ["content/docs/template/.*","content/docs/附件/.*"]
+ignorefiles = ["content/docs/template/.*"]
 
 # Book configuration
-disablePathToLower = true
+disablePathToLower = false
 enableGitInfo = true
 
 # Needed for mermaid/katex shortcodes

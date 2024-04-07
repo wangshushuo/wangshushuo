@@ -1,3 +1,7 @@
+---
+title: 了解TCP协议
+date: 2024-04-07 23:47
+---
 TCP头的格式
 ![[Pasted image 20240402201217.jpg]]
 
@@ -9,6 +13,14 @@ TCP头的格式
 - 第一次握手：客户端发送给服务端一个SYN报文（synchronize，think nai zi）
 - 第二次握手：服务端发送给客户端一个SYN/ACK报文
 - 第三次握手：客户端回复一个ACK报文，握手完成。
+
+1. SYN：client 随机生成起始分组序列号 x ，并发送SYN分组，还有其他TCP表示和选项
+2. SYN ACK：server 将 x+1 ，生成随机序列号 y
+3. ACK：client 将 x + 1，y + 1，发送ACK分组，完成握手。
+
+> SYN与ACK都是报文中的flags字段，它是一个二进制数据
+> x+1与y+1都是作为报文中的 Acknowledge Number 字段发送的
+> 序列号叫Sequence Number，为了解决数据包的顺序和重复请求
 
 双方各进行了一次SYN和ACK，使彼此确认了对方可以正常接受和发送能力。
 第一次，客户端发送能力正常
@@ -27,8 +39,3 @@ server收到后FIN后，把序列号A+1作为报文的序列号，并发送ACK�
 server发送FIN报文，和一个序列号，
 client收到FIN后，发送一个SYN报文和服务器序列号+1，告诉服务器收到了。
 
-![](images/2024-04-06-00-21-15.png)
-
-111
-
-![](/images/2024-04-06-00-23-07.png)
