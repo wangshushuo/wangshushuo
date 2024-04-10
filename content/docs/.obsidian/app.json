@@ -6,5 +6,6 @@
     "_index",
     "_index.md"
   ],
-  "promptDelete": false
+  "promptDelete": false,
+  "showLineNumber": false
 }

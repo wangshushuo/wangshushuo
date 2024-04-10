@@ -8,7 +8,7 @@ publishDir = 'public'
 ignorefiles = ["content/docs/template/.*"]
 
 # Book configuration
-disablePathToLower = false
+disablePathToLower = true
 enableGitInfo = true
 
 # Needed for mermaid/katex shortcodes
