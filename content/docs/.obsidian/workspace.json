@@ -11,8 +11,12 @@
             "id": "2c875e6fda29b20a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "old/记录/vercel 和 github 模版/index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "old/记录/vercel 和 github 模版/index.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "old/记录/vercel 和 github 模版/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "old/记录/vercel 和 github 模版/index.md"
+              }
             }
           }
         ],
@@ -141,6 +149,18 @@
   },
   "active": "2c875e6fda29b20a",
   "lastOpenFiles": [
+    "old/记录/vercel 和 github 模版.md",
+    "old/记录/vercel 和 github 模版/index.md",
+    "old/记录/vercel 和 github 模版/_index.md",
+    "old/记录/vercel 和 github 模版",
+    "old/记录/vercel 和 github 模版/Pasted image 20240411205626.png",
+    "old/记录/next-postgres-prisma.md",
+    "old/记录/最近用到的技术.md",
+    "old/记录/设计模式实践.md",
+    "old/记录/字体bug.md",
+    "old/大杂烩/X 摘录.md",
+    "old/记录/Untitled.md",
+    "未命名.canvas",
     "日志/2024-04-09.md",
     "日志/2024-04-08.md",
     "技术知识点/JS/数组的方法.md",
@@ -158,16 +178,7 @@
     "old/面试/前端知识点.md",
     "技术知识点/浏览器与网络协议/浏览器缓存.md",
     "技术知识点/浏览器与网络协议/CDN内容分发网络.md",
-    "old/面试/准备面试.md",
-    "old/面试/简历.md",
-    "日志/_index.md",
-    "old/面试/_index.md",
     "日志",
-    "2024-04-08.md",
-    "old/面试/面试题汇总.md",
-    "old/面试/招聘条件.md",
-    "old/面试/CSS面试题.md",
-    "old/面试/React面试题.md",
     "工作项目",
     "技术知识点/ES6/箭头函数/箭头函数1.png",
     "技术知识点/ES6/箭头函数",
@@ -183,9 +194,7 @@
     "技术知识点/JS",
     "技术知识点/工程化",
     "技术知识点/CSS",
-    "技术知识点/ES6",
     "优化/授课项目首屏加载慢/优化-后.jpg",
-    "优化/授课项目首屏加载慢/优化-代码.png",
-    "优化/授课项目首屏加载慢/优化-前.jpg"
+    "优化/授课项目首屏加载慢/优化-代码.png"
   ]
 }
