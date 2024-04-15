@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "old/记录/太想进步了.md",
+                "file": "技术知识点/React/React v18 新特性.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "old/记录/太想进步了.md",
+                "file": "技术知识点/React/React v18 新特性.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "old/记录/太想进步了.md",
+                "file": "技术知识点/React/React v18 新特性.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "old/记录/太想进步了.md"
+                "file": "技术知识点/React/React v18 新特性.md"
               }
             }
           }
@@ -149,8 +149,11 @@
   },
   "active": "f8a6987e705709c9",
   "lastOpenFiles": [
-    "old/记录/笔记.md",
+    "技术知识点/React/_index.md",
+    "技术知识点/React/React v18 新特性.md",
     "old/记录/太想进步了.md",
+    "技术知识点/React",
+    "old/记录/笔记.md",
     "old/记录/markdown思维导图/index.md",
     "old/记录/未读.md",
     "old/技术笔记/authjs/index.md",
@@ -175,8 +178,6 @@
     "日志/2024-04-08.md",
     "个人项目/创建MergeRequest的CLI工具.md",
     "个人项目/博客在线编辑器.md",
-    "工作项目/课件编辑器.md",
-    "工作项目/互动游戏.md",
     "old/记录/vercel 和 github 模版",
     "old/记录/vercel 和 github 模版/Pasted image 20240411205626.png",
     "未命名.canvas",
@@ -193,7 +194,6 @@
     "hugo与obsidian/hugo与obsidian结合使用/Pasted image 20240407231943.png",
     "hugo与obsidian/hugo与obsidian结合使用",
     "old/大杂烩",
-    "技术知识点/JS",
     "优化/授课项目首屏加载慢/优化-后.jpg",
     "优化/授课项目首屏加载慢/优化-代码.png"
   ]
