@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2c875e6fda29b20a",
+            "id": "f8a6987e705709c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "old/记录/vercel 和 github 模版/index.md",
+                "file": "old/记录/太想进步了.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "old/记录/vercel 和 github 模版/index.md",
+                "file": "old/记录/太想进步了.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "old/记录/vercel 和 github 模版/index.md",
+                "file": "old/记录/太想进步了.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "old/记录/vercel 和 github 模版/index.md"
+                "file": "old/记录/太想进步了.md"
               }
             }
           }
@@ -147,37 +147,39 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2c875e6fda29b20a",
+  "active": "f8a6987e705709c9",
   "lastOpenFiles": [
-    "old/记录/vercel 和 github 模版.md",
-    "old/记录/vercel 和 github 模版/index.md",
-    "old/记录/vercel 和 github 模版/_index.md",
-    "old/记录/vercel 和 github 模版",
-    "old/记录/vercel 和 github 模版/Pasted image 20240411205626.png",
-    "old/记录/next-postgres-prisma.md",
-    "old/记录/最近用到的技术.md",
-    "old/记录/设计模式实践.md",
+    "old/记录/笔记.md",
+    "old/记录/太想进步了.md",
+    "old/记录/markdown思维导图/index.md",
+    "old/记录/未读.md",
+    "old/技术笔记/authjs/index.md",
+    "技术知识点/ES6/promise.md",
+    "old/技术笔记/authjs",
+    "old/记录/策略模式.md",
+    "old/技术笔记/未命名.md",
+    "old/记录/部署svelte到cloudflare.md",
     "old/记录/字体bug.md",
-    "old/大杂烩/X 摘录.md",
-    "old/记录/Untitled.md",
-    "未命名.canvas",
+    "old/记录/问题合集.md",
+    "old/记录/ARTS打卡.md",
+    "old/记录/next-postgres-prisma.md",
+    "old/记录/build-free.md",
+    "old/记录/博客分类.md",
+    "old/记录/X 摘录.md",
+    "old/记录/shadcn问题.md",
+    "old/记录/markdown思维导图",
+    "个人项目/未命名.md",
+    "old/记录/最近用到的技术.md",
+    "日志/_index.md",
     "日志/2024-04-09.md",
     "日志/2024-04-08.md",
-    "技术知识点/JS/数组的方法.md",
-    "技术知识点/JS/原型.md",
-    "技术知识点/JS/BOM.md",
-    "技术知识点/JS/JavaScript.md",
-    "技术知识点/JS/new操作符.md",
-    "old/面试/记录遇到的面试.md",
-    "技术知识点/ES6/promise.md",
-    "技术知识点/ES6/Set Map.md",
-    "old/面试/基础面试题.md",
-    "技术知识点/ES6/es6.md",
-    "技术知识点/JS/词法作用域.md",
-    "old/面试/项目面试题.md",
-    "old/面试/前端知识点.md",
-    "技术知识点/浏览器与网络协议/浏览器缓存.md",
-    "技术知识点/浏览器与网络协议/CDN内容分发网络.md",
+    "个人项目/创建MergeRequest的CLI工具.md",
+    "个人项目/博客在线编辑器.md",
+    "工作项目/课件编辑器.md",
+    "工作项目/互动游戏.md",
+    "old/记录/vercel 和 github 模版",
+    "old/记录/vercel 和 github 模版/Pasted image 20240411205626.png",
+    "未命名.canvas",
     "日志",
     "工作项目",
     "技术知识点/ES6/箭头函数/箭头函数1.png",
@@ -192,8 +194,6 @@
     "hugo与obsidian/hugo与obsidian结合使用",
     "old/大杂烩",
     "技术知识点/JS",
-    "技术知识点/工程化",
-    "技术知识点/CSS",
     "优化/授课项目首屏加载慢/优化-后.jpg",
     "优化/授课项目首屏加载慢/优化-代码.png"
   ]
