@@ -8,10 +8,13 @@
 .book-section > span::after {
   content: "📁";
 }
+.book-section > a[href]:not([href=""])::after {
+  content: "📁🥳";
+}
 .book-section > input + label > a::after {
   content: "📁";
 }
-.active::after {
-  content: "👈🏼";
+.active::before {
+  content: "👉🏼";
 }
 // @import "plugins/numbered";
