@@ -1,3 +1,17 @@
 /* You can add custom styles here. */
-
+.book-section > span {
+  font-weight: bolder;
+}
+.book-section > input + label > a {
+  font-weight: bolder;
+}
+.book-section > span::after {
+  content: "📁";
+}
+.book-section > input + label > a::after {
+  content: "📁";
+}
+.active::after {
+  content: "👈🏼";
+}
 // @import "plugins/numbered";
