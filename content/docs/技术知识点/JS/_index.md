@@ -1,4 +1,4 @@
 ---
 title: JS
-bookCollapseSection: true
+# bookCollapseSection: true
 ---

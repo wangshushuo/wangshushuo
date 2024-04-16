@@ -1,4 +1,4 @@
 ---
 title: React
-bookCollapseSection: true
+# bookCollapseSection: true
 ---

@@ -1,4 +1,4 @@
 ---
 title: 工程化
-bookCollapseSection: true
+# bookCollapseSection: true
 ---

@@ -1,4 +1,4 @@
 ---
 title: ES6
-bookCollapseSection: true
+# bookCollapseSection: true
 ---
