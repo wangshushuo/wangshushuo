@@ -11,10 +11,16 @@
 .book-section > a[href]:not([href=""])::after {
   content: "📁🥳";
 }
+.book-section > a[href]:not([href=""]).active::after {
+  content: "📁🥳📌";
+}
 .book-section > input + label > a::after {
   content: "📁";
 }
-.active::before {
-  content: "👉🏼";
+// .active::before {
+//   content: "👉🏼";
+// }
+.active::after {
+  content: "📌";
 }
 // @import "plugins/numbered";
