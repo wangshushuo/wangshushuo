@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "0e27ab680cce2555",
+        "id": "3d645e6fb60f41c6",
         "type": "tabs",
         "children": [
           {
-            "id": "f8a6987e705709c9",
+            "id": "d47273ece074f697",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "日志/2024-04-22.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "7f30979e2d155193",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "日志/2024-04-22.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "日志/2024-04-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "日志/2024-04-22.md"
+              }
             }
           }
         ],
@@ -126,7 +135,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5
+    "width": 277.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -139,8 +149,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f8a6987e705709c9",
+  "active": "d47273ece074f697",
   "lastOpenFiles": [
+    "日志/2024-04-22.md",
+    "template/日记.md",
     "工作项目/课件编辑器.md",
     "工作项目/表单组件.md",
     "工作项目/互动游戏.md",
@@ -173,8 +185,6 @@
     "个人项目/开发一个带缓存的代理.md",
     "个人项目/开发一个ops的新客户端.md",
     "个人项目/博客在线编辑器.md",
-    "个人项目/创建MergeRequest的CLI工具.md",
-    "个人项目/企业微信机器人.md",
     "个人项目",
     "template/javascript/folder.js",
     "template/template",
