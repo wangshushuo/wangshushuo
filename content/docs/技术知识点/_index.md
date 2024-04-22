@@ -1,3 +1,27 @@
+第一部分：基础知识
+- 第1章：HTML与HTML5
+- 第2章：CSS与CSS3
+- 第三章：JavaScript基础
+- 第4章：重要的JavaScript API
+- typescript
+
+第二部分：React
+- 第5章：React基础
+生命周期
+hook
+- 第6章：React原理
+diff
+fiber
+并发
+事件机制
+- 第7章：v18特性
+
+第三部分：浏览器与协议(事件循环 http tcp websocket)
+
+第四部分：工程化（webpack vite）
+
+----
+
 # 面试题
 ## 浏览器
 ### 跨域

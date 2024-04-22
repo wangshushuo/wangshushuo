@@ -11,12 +11,8 @@
             "id": "f8a6987e705709c9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "技术知识点/React/React v18 新特性.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "技术知识点/React/React v18 新特性.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "技术知识点/React/React v18 新特性.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "技术知识点/React/React v18 新特性.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -149,52 +141,52 @@
   },
   "active": "f8a6987e705709c9",
   "lastOpenFiles": [
-    "技术知识点/React/_index.md",
-    "技术知识点/React/React v18 新特性.md",
-    "old/记录/太想进步了.md",
-    "技术知识点/React",
-    "old/记录/笔记.md",
-    "old/记录/markdown思维导图/index.md",
-    "old/记录/未读.md",
-    "old/技术笔记/authjs/index.md",
-    "技术知识点/ES6/promise.md",
-    "old/技术笔记/authjs",
-    "old/记录/策略模式.md",
-    "old/技术笔记/未命名.md",
-    "old/记录/部署svelte到cloudflare.md",
-    "old/记录/字体bug.md",
-    "old/记录/问题合集.md",
-    "old/记录/ARTS打卡.md",
-    "old/记录/next-postgres-prisma.md",
-    "old/记录/build-free.md",
-    "old/记录/博客分类.md",
-    "old/记录/X 摘录.md",
-    "old/记录/shadcn问题.md",
-    "old/记录/markdown思维导图",
-    "个人项目/未命名.md",
-    "old/记录/最近用到的技术.md",
-    "日志/_index.md",
-    "日志/2024-04-09.md",
-    "日志/2024-04-08.md",
-    "个人项目/创建MergeRequest的CLI工具.md",
-    "个人项目/博客在线编辑器.md",
-    "old/记录/vercel 和 github 模版",
-    "old/记录/vercel 和 github 模版/Pasted image 20240411205626.png",
-    "未命名.canvas",
-    "日志",
+    "工作项目/课件编辑器.md",
+    "工作项目/表单组件.md",
+    "工作项目/互动游戏.md",
+    "工作项目/_index.md",
     "工作项目",
-    "技术知识点/ES6/箭头函数/箭头函数1.png",
-    "技术知识点/ES6/箭头函数",
-    "技术知识点/浏览器与网络协议/了解TCP协议/Pasted image 20240402202036.jpg",
-    "技术知识点/浏览器与网络协议/了解TCP协议/Pasted image 20240402201217.jpg",
-    "技术知识点/浏览器与网络协议/了解TCP协议/285729db06404505887b554c12d4c230~tplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp",
-    "技术知识点/浏览器与网络协议/了解TCP协议",
-    "hugo与obsidian/hugo与obsidian结合使用/Pasted image 20240407233334.png",
-    "hugo与obsidian/hugo与obsidian结合使用/Pasted image 20240407233129.png",
-    "hugo与obsidian/hugo与obsidian结合使用/Pasted image 20240407231943.png",
-    "hugo与obsidian/hugo与obsidian结合使用",
-    "old/大杂烩",
+    "小功能/递归map.md",
+    "小功能/调试proxy对象.md",
+    "小功能/监听dom元素的class值变化.md",
+    "小功能/用html字符串生成dom元素.md",
+    "小功能/将emoji表情作为网站的favicon.md",
+    "小功能/命令行发送email.md",
+    "小功能/利用workbox实现资源的预下载.md",
+    "小功能/_index.md",
+    "小功能/Table固定列头和行头.md",
+    "小功能/Java执行shell命令.md",
+    "小功能/IOS的固定列头滚动效果.md",
+    "小功能",
+    "优化/授课项目首屏加载慢/优化-后2.jpg",
     "优化/授课项目首屏加载慢/优化-后.jpg",
-    "优化/授课项目首屏加载慢/优化-代码.png"
+    "优化/授课项目首屏加载慢/优化-前.jpg",
+    "优化/授课项目首屏加载慢/优化-代码.png",
+    "优化/授课项目首屏加载慢/index.md",
+    "优化/收集多次请求合并为一次请求.md",
+    "优化/授课项目首屏加载慢",
+    "优化/拆分代码封装组件.md",
+    "优化/_index.md",
+    "优化",
+    "个人项目/计算贝塞尔曲线.md",
+    "个人项目/我的博客支持服务.md",
+    "个人项目/开发一个带缓存的代理.md",
+    "个人项目/开发一个ops的新客户端.md",
+    "个人项目/博客在线编辑器.md",
+    "个人项目/创建MergeRequest的CLI工具.md",
+    "个人项目/企业微信机器人.md",
+    "个人项目",
+    "template/javascript/folder.js",
+    "template/template",
+    "template/javascript",
+    "template",
+    "old/前端/CSS/渐变色/linear-gradient-5.gif",
+    "old/前端/CSS/渐变色/linear-gradient-4.gif",
+    "old/前端/CSS/渐变色/linear-gradient-3.gif",
+    "old/前端/CSS/渐变色/linear-gradient-2.png",
+    "old/前端/CSS/渐变色/linear-gradient-1.jpg",
+    "old/前端/CSS/CSS模块化/image-9.png",
+    "old/前端/CSS/渐变色",
+    "未命名.canvas"
   ]
 }
