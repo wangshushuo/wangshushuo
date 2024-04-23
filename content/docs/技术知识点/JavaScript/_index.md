@@ -1,5 +1,5 @@
 ---
-title: 第一章 JavaScript
+title: JavaScript
 # bookCollapseSection: true
 weight: 1
 ---

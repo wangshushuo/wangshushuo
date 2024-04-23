@@ -5,7 +5,7 @@ title = "wss.cool"
 languageCode = "zh"
 theme = 'hugo-book'
 publishDir = 'public'
-ignorefiles = ["content/docs/template/.*", "content/posts/template/.*"]
+ignorefiles = ["content/docs/template/.*", "content/posts/template/.*", "content/docs/日志"]
 
 # Book configuration
 disablePathToLower = true

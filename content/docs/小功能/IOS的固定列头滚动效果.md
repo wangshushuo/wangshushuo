@@ -116,6 +116,8 @@ https://codepen.io/seansean11/pen/MYbMpw
 </body>
 ```
 
+css部分
+
 ```css
 .ioslist-wrapper{
 	height: 100%;
@@ -320,6 +322,4 @@ body {
 $(function(){
     $("#list1").ioslist();
 });
-
-
 ```

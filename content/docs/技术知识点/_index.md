@@ -1,3 +1,7 @@
+---
+bookCollapseSection: true
+---
+
 第一部分：基础知识
 - 第1章：HTML与HTML5
 - 第2章：CSS与CSS3
