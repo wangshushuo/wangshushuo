@@ -2,8 +2,9 @@
 title: 箭头函数
 date: 2024-04-07 23:57
 ---
-- 箭头函数没有独立的 [`this`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/this)、[`arguments`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/arguments) 和 [`super`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/super) [绑定](https://developer.mozilla.org/zh-CN/docs/Glossary/Binding)，并且不可被用作[方法](https://developer.mozilla.org/zh-CN/docs/Glossary/Method)。
-- 箭头函数不能用作[构造函数](https://developer.mozilla.org/zh-CN/docs/Glossary/Constructor)。使用 [`new`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new) 调用它们会引发 [`TypeError`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/TypeError)。
+- 箭头函数没有独立的 `this`、`arguments` 和 `super` 
+- 箭头函数不能用作构造函数。使用 `new` 调用它们会引发 `TypeError`。
+
 ## 不能用作方法没有this
 
 箭头函数表达式只能用于非方法函数，因为它们没有自己的 `this`。让我们看看将它们用作方法时会发生什么：

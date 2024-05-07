@@ -16,8 +16,8 @@
 - any，第一个resolve状态的
 
 ## await/async
-await是相当于把下面的代码放到了then的回调里。
-async是相当于将函数放到了promise的构造函数里，resolve()之前。
+- await是相当于把下面的代码放到了then的回调里。
+- async是相当于将函数放到了promise的构造函数里，resolve()之前。
 
 ```js
 console.log(0);
