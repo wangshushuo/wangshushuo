@@ -3,6 +3,11 @@
 <head>
   {{ partial "docs/html-head" . }}
   {{ partial "docs/inject/head" . }}
+  <style>
+    .mermaid .decision {
+    transform: scale(0.7); /* 调整比例 */
+}
+  </style>
 </head>
 <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
@@ -43,6 +48,13 @@
   </main>
 
   {{ partial "docs/inject/body" . }}
+
+  {{ if .Store.Get "hasMermaid" }}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'base', });
+  </script>
+{{ end }}
 </body>
 </html>
 
