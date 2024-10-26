@@ -1,4 +1,0 @@
----
-bookHidden: true
-bookSearchExclude: true
----
