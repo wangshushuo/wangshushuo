@@ -1,9 +1,0 @@
-.image-embed img {
-  box-shadow: rgba(3, 102, 214, 0.3) -1px -1px 0px 2px;
-  margin-left: 1px;
-  margin-top: 1px;
-}
-
-.internal-embed img:not([width]) {
-  max-width: calc(100% - 2px);
-}
