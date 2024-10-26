@@ -1,6 +1,6 @@
 ---
 title: CSS模块化
-date: 2019-03-27 14:15
+date: 2019-03-27 14:15:00
 ---
 使用less和css module。在A和B两个less文件中分别写如下的样式。
 

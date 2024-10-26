@@ -1,6 +1,6 @@
 ---
 title: shadcn问题
-date: 2024-04-13 00:08
+date: 2024-04-13 00:08:00
 ---
 启动项目时，报错 border-border 这个class找不到
 

@@ -1,6 +1,6 @@
 ---
 title: vercel 和 github 模版
-date: 2024-04-11 20:57
+date: 2024-04-11 20:57:00
 ---
 经常看到一些 github 库有一个一键部署到 vercel 按钮，它其实是一个 markdown 链接。
 

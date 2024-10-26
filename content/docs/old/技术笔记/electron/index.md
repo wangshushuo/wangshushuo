@@ -1,6 +1,6 @@
 ---
 title: electron
-date: 2024-04-07 21:18
+date: 2024-04-07 21:18:00
 ---
 基于 [electronforge](https://www.electronforge.io/) 开发
 ```

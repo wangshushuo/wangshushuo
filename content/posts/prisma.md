@@ -1,5 +1,5 @@
 ---
-title: prisma
+title: Prisma
 date: 2024-04-11T23:39:44+08:00
 ---
 # Prisma ORM 使用指南

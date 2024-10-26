@@ -1,6 +1,6 @@
 ---
 title: next-postgres-prisma
-date: 2024-04-11 14:44
+date: 2024-04-11 14:44:00
 ---
 [Vercel Postgres Demo with Prisma](https://postgres-prisma-next-speech.vercel.app/) 使用这个模版点部署到 vercel ，会在 github 创建一个仓库。然后正常部署。
 

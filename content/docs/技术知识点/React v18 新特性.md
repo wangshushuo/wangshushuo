@@ -1,6 +1,6 @@
 ---
 title: React v18 新特性
-date: 2024-04-15 22:37
+date: 2024-04-15 22:37:00
 ---
 ## 并发渲染模式
 - ReactDOM.createRoot开启并发模式

@@ -1,6 +1,6 @@
 ---
 title: authjs
-date: 2024-04-13 23:54
+date: 2024-04-13 23:54:00
 ---
 ```ts
 import NextAuth from "next-auth"  
