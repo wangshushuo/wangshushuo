@@ -1,3 +1,7 @@
+---
+title: Array的方法
+date: 2024-04-22
+---
 # Array的方法
 
 - 1.遍历foreach

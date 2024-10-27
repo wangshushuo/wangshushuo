@@ -1,3 +1,7 @@
+---
+date: 2024-06-27
+title: userland
+---
 # 启动ubuntu后运行ssh
 修改 /support/startSSHServer.sh 文件，在最下面加两行
 

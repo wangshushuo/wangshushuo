@@ -1,3 +1,7 @@
+---
+title: promise
+date: 2024-04-22
+---
 # promise
 
 ## promise状态
