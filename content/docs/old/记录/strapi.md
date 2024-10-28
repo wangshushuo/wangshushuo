@@ -1,3 +1,7 @@
+---
+date: 2024-06-27
+title: strapi
+---
 ubuntu服务器
 
 ## 安装nodejs
