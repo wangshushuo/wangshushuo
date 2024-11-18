@@ -58,7 +58,7 @@ ul {
   padding-left: 2ch;
 }
 ul li {
-  text-indent: -2ch;
+  /* text-indent: -2ch; */
 }
 ul > li::before {
   content: '* ';
