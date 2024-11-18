@@ -132,4 +132,3 @@ req.addEventListener("loadend", loadEnd, false);
 
 [BinaryData]:https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest/Sending_and_Receiving_Binary_Data
 [http-state-code]:http://www.runoob.com/http/http-status-codes.html
-[cors]:/2018/06/22/cors.html

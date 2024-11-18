@@ -62,10 +62,6 @@ function clone(旧对象) {
 ![alt](/images/xx.png "说明文字")
 ```
 
-**效果**⬇️
-![52区](/images/hugo01.jpg "外域52区" )[^1]
-![52区](/images/linear-gradient-2.png "外域52区" )[^1]
-
 
 ## 脚注
 

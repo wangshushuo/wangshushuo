@@ -9,10 +9,18 @@
 }
   </style>
 </head>
-<body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+<body dir="{{ default "ltr" .Site.Language.LanguageDirection }}" >
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
+  <nav class="container flex" style="height: 65px;">
+    <div>
+      {{ partial "docs/brand" . }}
+    </div>
+    <div>
+{{ partial "docs/search" . }}
+    </div>
+  </nav>
+  <main class="container flex" style="transform: translate(0);">
     <aside class="book-menu">
       <div class="book-menu-content">
         {{ template "menu" . }} <!-- Left menu Content -->

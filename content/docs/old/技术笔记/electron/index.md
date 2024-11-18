@@ -8,4 +8,4 @@ npm init electron-app@latest my-app -- --template=vite
 ```
 
 不能用 pnpm 因为软连接导致 make 报错了
-![](Pasted%20image%2020240407132410.png)
+![](20240407132410.png)

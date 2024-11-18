@@ -1,5 +1,5 @@
 ---
-bookCollapseSection: true
+bookCollapseSection: false
 ---
 
 第一部分：基础知识
