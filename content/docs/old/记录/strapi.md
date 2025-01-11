@@ -56,12 +56,26 @@ sudo ln -s /etc/nginx/sites-available/1.conf /etc/nginx/sites-enabled/
 sudo ln -s /etc/nginx/sites-available/2.conf /etc/nginx/sites-enabled/
 
 ## 解决sharp库加载慢或失败的问题
-1. 安装依赖项
+方法1：安装依赖项
+
 确保你的系统上安装了sharp所需的依赖项。例如，在Ubuntu上，你可以使用以下命令安装libvips
 ```
 sudo apt-get install libvips-dev
 ```
 
+方法2：使用预构建的二进制文件
+
+sharp 会尝试从源代码编译其依赖项，但如果编译失败，可以强制使用预编译的二进制文件：
+```
+yarn add sharp --ignore-scripts
+```
+
+然后设置环境变量以使用预编译的二进制文件：
+```
+set npm_config_sharp_binary_host=https://npm.taobao.org/mirrors/sharp
+set npm_config_sharp_libvips_binary_host=https://npm.taobao.org/mirrors/sharp-libvips
+yarn install
+```
 
 ## 部署
 NODE_ENV=production yarn build
